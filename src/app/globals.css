@@ -1,39 +1,39 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f8fafc;
-  --foreground: #0f172a;
+  --background: #fdfafb;
+  --foreground: #1b131c;
   --card: #ffffff;
-  --card-foreground: #0f172a;
-  --border: #e2e8f0;
-  --primary: #4f46e5;
+  --card-foreground: #1b131c;
+  --border: #e8dce2;
+  --primary: #e05fa7;
   --primary-foreground: #ffffff;
-  --muted: #64748b;
-  --muted-foreground: #475569;
-  --accent: #8b5cf6;
-  --accent-foreground: #ffffff;
+  --muted: #8b7d85;
+  --muted-foreground: #6c5d66;
+  --accent: #f9f2e5;
+  --accent-foreground: #1b131c;
   
-  --card-border: #e2e8f0;
-  --navy-deep: #0f172a;
-  --glow-color: rgba(99, 102, 241, 0.15);
+  --card-border: #e8dce2;
+  --navy-deep: #1b131c;
+  --glow-color: rgba(224, 95, 167, 0.08);
 }
 
 .dark {
-  --background: #070a13; /* Premium, professional deep dark slate-blue */
-  --foreground: #f8fafc;
-  --card: #0d1220; /* Slate card background */
-  --card-foreground: #f8fafc;
-  --border: #1e293b;
-  --primary: #6366f1;
-  --primary-foreground: #ffffff;
-  --muted: #94a3b8;
-  --muted-foreground: #cbd5e1;
-  --accent: #a78bfa;
-  --accent-foreground: #ffffff;
+  --background: #140f17;
+  --foreground: #f9f2e5;
+  --card: #1d1822;
+  --card-foreground: #f9f2e5;
+  --border: #322638;
+  --primary: #e05fa7;
+  --primary-foreground: #140f17;
+  --muted: #a2949e;
+  --muted-foreground: #cbbec7;
+  --accent: #f9f2e5;
+  --accent-foreground: #140f17;
   
-  --card-border: #1e293b;
-  --navy-deep: #070a13;
-  --glow-color: rgba(99, 102, 241, 0.25);
+  --card-border: #322638;
+  --navy-deep: #140f17;
+  --glow-color: rgba(224, 95, 167, 0.12);
 }
 
 @theme {
@@ -79,11 +79,11 @@ body {
   background: var(--muted);
 }
 
-/* Hero gradient grid overlay */
+/* Hero gradient grid overlay — warm plum/pink glow */
 .grid-glow {
   background-image: 
     radial-gradient(at 0% 0%, var(--glow-color) 0px, transparent 50%),
-    radial-gradient(at 100% 0%, rgba(139, 92, 246, 0.1) 0px, transparent 50%);
+    radial-gradient(at 100% 0%, rgba(224, 95, 167, 0.05) 0px, transparent 50%);
 }
 
 .glassmorphism {
@@ -94,6 +94,6 @@ body {
 }
 
 .dark .glassmorphism {
-  background: rgba(13, 18, 32, 0.4);
+  background: rgba(29, 24, 34, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.05);
 }

@@ -2,7 +2,6 @@ import { SuccessStory, initialSuccessStories } from '../data/initialData';
 import { Language } from '../data/translations';
 
 const SUCCESS_STORIES_KEY = 'evalguild_success_stories';
-const NEWSLETTER_SUBSCRIBERS_KEY = 'evalguild_newsletter_subscribers';
 const THEME_KEY = 'evalguild_theme';
 const LANGUAGE_KEY = 'evalguild_language';
 
@@ -54,32 +53,6 @@ export function deleteSuccessStory(id: string): SuccessStory[] {
   } catch (error) {
     console.error('Error deleting success story from localStorage', error);
     return [];
-  }
-}
-
-export function getNewsletterSignups(): string[] {
-  if (!isClient()) return [];
-  try {
-    const data = localStorage.getItem(NEWSLETTER_SUBSCRIBERS_KEY);
-    return data ? JSON.parse(data) : [];
-  } catch (error) {
-    console.error('Error reading newsletter signups from localStorage', error);
-    return [];
-  }
-}
-
-export function addNewsletterSignup(email: string): boolean {
-  if (!isClient()) return false;
-  try {
-    const signups = getNewsletterSignups();
-    if (signups.includes(email)) return true; // Already signed up
-    
-    signups.push(email);
-    localStorage.setItem(NEWSLETTER_SUBSCRIBERS_KEY, JSON.stringify(signups));
-    return true;
-  } catch (error) {
-    console.error('Error saving newsletter signup to localStorage', error);
-    return false;
   }
 }
 

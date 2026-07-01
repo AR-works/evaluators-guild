@@ -6,7 +6,8 @@ import { usePathname } from 'next/navigation';
 import { useLanguage } from './LanguageProvider';
 import { useTheme } from './ThemeProvider';
 import LanguageToggle from './LanguageToggle';
-import { Menu, X, Sun, Moon, ShieldAlert } from 'lucide-react';
+import Logo from './Logo';
+import { Menu, X, Sun, Moon } from 'lucide-react';
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -17,8 +18,7 @@ export default function Navbar() {
   const navLinks = [
     { href: '/', label: t('nav.home') },
     { href: '/resources', label: t('nav.resources') },
-    { href: '/success-stories', label: t('nav.successStories') },
-    { href: '/admin', label: t('nav.admin'), icon: ShieldAlert }
+    { href: '/community-voices', label: t('nav.communityVoices') }
   ];
 
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
@@ -29,13 +29,8 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo / Brand */}
           <div className="flex items-center">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-accent text-white shadow-lg">
-                <span className="text-lg font-bold">EG</span>
-              </div>
-              <span className="font-heading text-lg font-bold tracking-tight text-foreground sm:block">
-                Evaluators&apos; Guild
-              </span>
+            <Link href="/" className="flex items-center">
+              <Logo variant="horizontal" size={34} />
             </Link>
           </div>
 
@@ -53,7 +48,6 @@ export default function Navbar() {
                       : 'text-muted-foreground hover:text-foreground hover:bg-muted/30'
                   }`}
                 >
-                  {link.icon && <link.icon className="w-3.5 h-3.5" />}
                   <span>{link.label}</span>
                 </Link>
               );
@@ -70,17 +64,17 @@ export default function Navbar() {
               className="flex h-9 w-9 items-center justify-center rounded-lg border border-border bg-card text-foreground hover:bg-muted/30 transition-colors"
               aria-label="Toggle theme"
             >
-              {theme === 'dark' ? <Sun className="w-4 h-4 text-amber-500" /> : <Moon className="w-4 h-4 text-indigo-600" />}
+              {theme === 'dark' ? <Sun className="w-4 h-4 text-amber-500" /> : <Moon className="w-4 h-4 text-slate-600" />}
             </button>
 
-            {/* Discord CTA */}
+            {/* Community CTA */}
             <a
-              href="https://discord.gg/evaluatorsguild"
+              href="https://discord.gg/56xGWJRqEQ"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 text-sm font-semibold rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 shadow-md transition-colors"
             >
-              {t('nav.joinDiscord')}
+              {t('nav.joinCommunity')}
             </a>
           </div>
 
@@ -92,7 +86,7 @@ export default function Navbar() {
               className="flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-card text-foreground"
               aria-label="Toggle theme"
             >
-              {theme === 'dark' ? <Sun className="w-4 h-4 text-amber-500" /> : <Moon className="w-4 h-4 text-indigo-600" />}
+              {theme === 'dark' ? <Sun className="w-4 h-4 text-amber-500" /> : <Moon className="w-4 h-4 text-slate-600" />}
             </button>
             <button
               onClick={toggleMobileMenu}
@@ -121,19 +115,18 @@ export default function Navbar() {
                     : 'text-muted-foreground hover:text-foreground hover:bg-muted/30'
                 }`}
               >
-                {link.icon && <link.icon className="w-4 h-4" />}
                 <span>{link.label}</span>
               </Link>
             );
           })}
           <div className="pt-4 border-t border-border flex flex-col gap-2">
             <a
-              href="https://discord.gg/evaluatorsguild"
+              href="https://discord.gg/56xGWJRqEQ"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full text-center py-2.5 text-sm font-semibold rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors shadow-md"
             >
-              {t('nav.joinDiscord')}
+              {t('nav.joinCommunity')}
             </a>
           </div>
         </div>

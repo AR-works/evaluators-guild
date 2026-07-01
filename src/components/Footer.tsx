@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useLanguage } from './LanguageProvider';
 import { Globe, Mail } from 'lucide-react';
+import Logo from './Logo';
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -13,13 +14,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand Info */}
           <div className="md:col-span-2 space-y-4">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-accent text-white shadow-md">
-                <span className="text-sm font-bold">EG</span>
-              </div>
-              <span className="font-heading text-base font-bold tracking-tight text-foreground">
-                Evaluators&apos; Guild
-              </span>
+            <Link href="/" className="flex items-center">
+              <Logo variant="horizontal" size={38} />
             </Link>
             <p className="text-muted-foreground max-w-sm leading-relaxed">
               {t('footer.desc')}
@@ -32,7 +28,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Community Links */}
           <div>
             <h3 className="font-bold text-foreground mb-4 uppercase tracking-wider text-xs">
               {t('footer.community')}
@@ -40,7 +36,7 @@ export default function Footer() {
             <ul className="space-y-2 text-muted-foreground">
               <li>
                 <a
-                  href="https://discord.gg/evaluatorsguild"
+                  href="https://discord.gg/56xGWJRqEQ"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-foreground transition-colors"
@@ -50,52 +46,57 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://reddit.com/r/EvaluatorsGuild"
+                  href="https://www.reddit.com/r/talentcollective/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-foreground transition-colors"
                 >
-                  Reddit (r/EvaluatorsGuild)
+                  Reddit (r/talentcollective)
                 </a>
               </li>
               <li>
-                <a href="#twitter" className="hover:text-foreground transition-colors">
+                <a href="#" className="hover:text-foreground transition-colors">
                   Twitter / X
                 </a>
               </li>
               <li>
-                <a href="#instagram" className="hover:text-foreground transition-colors">
+                <a href="#" className="hover:text-foreground transition-colors">
                   Instagram
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-foreground transition-colors">
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-foreground transition-colors">
+                  Facebook
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Platform Links */}
+          {/* Quick Links */}
           <div>
             <h3 className="font-bold text-foreground mb-4 uppercase tracking-wider text-xs">
-              {t('footer.legal')}
+              {t('footer.quickLinks')}
             </h3>
             <ul className="space-y-2 text-muted-foreground">
+              <li>
+                <Link href="/" className="hover:text-foreground transition-colors">
+                  {t('nav.home')}
+                </Link>
+              </li>
               <li>
                 <Link href="/resources" className="hover:text-foreground transition-colors">
                   {t('nav.resources')}
                 </Link>
               </li>
               <li>
-                <Link href="/success-stories" className="hover:text-foreground transition-colors">
-                  {t('nav.successStories')}
+                <Link href="/community-voices" className="hover:text-foreground transition-colors">
+                  {t('nav.communityVoices')}
                 </Link>
-              </li>
-              <li>
-                <a href="#privacy" className="hover:text-foreground transition-colors">
-                  {t('footer.privacy')}
-                </a>
-              </li>
-              <li>
-                <a href="#terms" className="hover:text-foreground transition-colors">
-                  {t('footer.terms')}
-                </a>
               </li>
             </ul>
           </div>

@@ -18,35 +18,8 @@ export interface ResourceItem {
   date: string;
 }
 
-export const initialSuccessStories: SuccessStory[] = [
-  {
-    id: 'story-1',
-    author: 'Elena Rostova',
-    role: 'AI Quality Evaluator at Outlier',
-    content: 'I found my very first high-paying AI evaluation opportunity through the job board channel in the Guild. The members helped me understand the onboarding requirements and navigate the difficult tier-qualification exam. Now, I am averaging $35/hour and working fully remote from Montenegro!',
-    date: '2026-05-12',
-    tag: 'Job Referral',
-    isInitial: true
-  },
-  {
-    id: 'story-2',
-    author: 'Marcus Chen',
-    role: 'Language Specialist at Alignerr',
-    content: 'The resume review and preparation guides here are top-tier. I received invaluable peer feedback on my application materials, which led to a successful onboarding. Having an active community of professionals to check in with keeps me motivated in an otherwise isolated freelancing environment.',
-    date: '2026-06-03',
-    tag: 'Interview Prep',
-    isInitial: true
-  },
-  {
-    id: 'story-3',
-    author: 'Sarah Jenkins',
-    role: 'Senior Prompt Analyst (Freelance)',
-    content: 'Evaluating AI responses can be highly subjective. The deep-dive guideline discussions in the Guild have helped me align with platform expectations and avoid quality audits. It is like having a water cooler and HR department rolled into one global Slack/Discord server.',
-    date: '2026-06-18',
-    tag: 'Mentorship',
-    isInitial: true
-  }
-];
+// Empty — user will provide community voices content later
+export const initialSuccessStories: SuccessStory[] = [];
 
 export const initialResources: ResourceItem[] = [
   {
@@ -144,7 +117,6 @@ Modern models are evaluated against complex prompts. Writing test prompts is a s
 
 export const mockMetrics = {
   activeUsersToday: 342,
-  newsletterSubscribers: 184,
   guildApplicationsThisMonth: 120,
   trafficGrowth: [
     { month: 'Jan', pageviews: 2400 },

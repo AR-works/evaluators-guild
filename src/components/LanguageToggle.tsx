@@ -8,9 +8,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const languagesList: { code: Language; name: string; local: string }[] = [
   { code: 'en', name: 'English', local: 'EN' },
-  { code: 'es', name: 'Spanish', local: 'ES' },
-  { code: 'fr', name: 'French', local: 'FR' },
-  { code: 'ja', name: 'Japanese', local: 'JA' }
+  { code: 'es', name: 'Español', local: 'ES' },
+  { code: 'fr', name: 'Français', local: 'FR' },
+  { code: 'ja', name: '日本語', local: 'JA' },
+  { code: 'it', name: 'Italiano', local: 'IT' },
+  { code: 'de', name: 'Deutsch', local: 'DE' },
+  { code: 'pt', name: 'Português', local: 'PT' }
 ];
 
 export default function LanguageToggle() {
@@ -52,7 +55,7 @@ export default function LanguageToggle() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 8, scale: 0.95 }}
             transition={{ duration: 0.15, ease: 'easeOut' }}
-            className="absolute right-0 mt-2 w-40 rounded-xl border border-border bg-card p-1.5 shadow-xl z-50"
+            className="absolute right-0 mt-2 w-44 rounded-xl border border-border bg-card p-1.5 shadow-xl z-50 max-h-72 overflow-y-auto"
           >
             {languagesList.map((lang) => (
               <button
