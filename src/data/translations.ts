@@ -1,13 +1,12 @@
-export type Language = 'en' | 'es' | 'fr' | 'ja';
+export type Language = 'en' | 'es' | 'fr' | 'ja' | 'it' | 'de' | 'pt';
 
 export interface TranslationDict {
   nav: {
     home: string;
     resources: string;
-    successStories: string;
+    communityVoices: string;
     guidelines: string;
-    admin: string;
-    joinDiscord: string;
+    joinCommunity: string;
   };
   hero: {
     headline: string;
@@ -17,7 +16,6 @@ export interface TranslationDict {
     badgeText: string;
   };
   stats: {
-    membersVal: string;
     membersLabel: string;
     globalVal: string;
     globalLabel: string;
@@ -42,27 +40,21 @@ export interface TranslationDict {
     card6Title: string;
     card6Desc: string;
   };
-  features: {
+  platforms: {
     title: string;
     subtitle: string;
-    discordTitle: string;
-    discordDesc: string;
-    redditTitle: string;
-    redditDesc: string;
-    socialsTitle: string;
-    socialsDesc: string;
+    discord: string;
+    reddit: string;
+    twitter: string;
+    instagram: string;
+    linkedin: string;
+    facebook: string;
   };
-  successStories: {
+  communityVoices: {
     title: string;
     subtitle: string;
+    comingSoon: string;
     readMore: string;
-    backToStories: string;
-    addStoryTitle: string;
-    authorLabel: string;
-    roleLabel: string;
-    contentLabel: string;
-    submitBtn: string;
-    adminEditLink: string;
   };
   resources: {
     title: string;
@@ -87,20 +79,10 @@ export interface TranslationDict {
     rule4Title: string;
     rule4Desc: string;
   };
-  newsletter: {
-    title: string;
-    subtitle: string;
-    placeholder: string;
-    button: string;
-    success: string;
-    invalidEmail: string;
-  };
   footer: {
     desc: string;
     community: string;
-    legal: string;
-    privacy: string;
-    terms: string;
+    quickLinks: string;
     contact: string;
     rights: string;
   };
@@ -111,20 +93,18 @@ export const translations: Record<Language, TranslationDict> = {
     nav: {
       home: 'Home',
       resources: 'Resources',
-      successStories: 'Success Stories',
+      communityVoices: 'Community Voices',
       guidelines: 'Guidelines',
-      admin: 'Admin',
-      joinDiscord: 'Join Discord'
+      joinCommunity: 'Join Community'
     },
     hero: {
       headline: 'Your home for AI evaluators and remote professionals.',
       subheadline: 'Connect with fellow evaluators, discover opportunities, share resources, and grow together in a global community.',
-      ctaJoin: 'Join Discord',
-      ctaExplore: 'Explore Resources',
+      ctaJoin: 'Join Our Community',
+      ctaExplore: 'Explore the Guild',
       badgeText: 'The Global Network for Remote Professionals'
     },
     stats: {
-      membersVal: '500+',
       membersLabel: 'Members',
       globalVal: 'Global',
       globalLabel: 'Community',
@@ -149,27 +129,21 @@ export const translations: Record<Language, TranslationDict> = {
       card6Title: 'Language Channels',
       card6Desc: 'Access regional channels and localized discussion rooms for non-English evaluators.'
     },
-    features: {
-      title: 'Community Spaces',
-      subtitle: 'Connect where you feel most comfortable. Our community spans multiple platforms.',
-      discordTitle: 'Discord Guild',
-      discordDesc: 'The active heart of the Guild. Join real-time chats, voice rooms, live Q&As, and direct networking.',
-      redditTitle: 'r/EvaluatorsGuild',
-      redditDesc: 'For long-form discussions, platform reviews, onboarding threads, and permanent documentation.',
-      socialsTitle: 'Social Channels',
-      socialsDesc: 'Follow us on Twitter/X and Instagram for regular newsletters, tips, and industry announcements.'
+    platforms: {
+      title: 'Where to Find Us',
+      subtitle: 'Our community lives across multiple platforms. Pick the one that works for you.',
+      discord: 'Discord',
+      reddit: 'Reddit',
+      twitter: 'Twitter / X',
+      instagram: 'Instagram',
+      linkedin: 'LinkedIn',
+      facebook: 'Facebook'
     },
-    successStories: {
-      title: 'Guild Success Stories',
-      subtitle: 'See how our members have transformed their remote work careers through community support.',
-      readMore: 'Read full story',
-      backToStories: 'Back to success stories',
-      addStoryTitle: 'Submit Your Story',
-      authorLabel: 'Your Name',
-      roleLabel: 'Role / Platform (e.g. AI Evaluator at Outlier)',
-      contentLabel: 'Your Success Story',
-      submitBtn: 'Submit Story',
-      adminEditLink: 'Admin Dashboard'
+    communityVoices: {
+      title: 'Community Voices',
+      subtitle: 'Hear directly from members of the Guild about their experiences.',
+      comingSoon: 'Community voices are coming soon. Check back shortly.',
+      readMore: 'Read more'
     },
     resources: {
       title: 'Resources Hub',
@@ -194,20 +168,10 @@ export const translations: Record<Language, TranslationDict> = {
       rule4Title: 'No Scams or Spam',
       rule4Desc: 'Strict prohibition of referral spam, unvetted paid gigs, code sharing, or violating project NDAs.'
     },
-    newsletter: {
-      title: 'Stay Ahead of the Curve',
-      subtitle: 'Get weekly updates on new AI platforms, evaluation contract leads, and guild updates directly in your inbox.',
-      placeholder: 'Enter your email address',
-      button: 'Subscribe Now',
-      success: 'Welcome to the Guild! Please check your inbox shortly.',
-      invalidEmail: 'Please enter a valid email address.'
-    },
     footer: {
       desc: 'The professional association and community network for AI annotators, evaluators, and distributed remote freelancers.',
       community: 'Community',
-      legal: 'Legal',
-      privacy: 'Privacy Policy',
-      terms: 'Terms of Service',
+      quickLinks: 'Quick Links',
       contact: 'Contact',
       rights: 'All rights reserved.'
     }
@@ -216,20 +180,18 @@ export const translations: Record<Language, TranslationDict> = {
     nav: {
       home: 'Inicio',
       resources: 'Recursos',
-      successStories: 'Historias de Éxito',
+      communityVoices: 'Voces de la Comunidad',
       guidelines: 'Directrices',
-      admin: 'Admin',
-      joinDiscord: 'Unirse a Discord'
+      joinCommunity: 'Unirse a la Comunidad'
     },
     hero: {
       headline: 'Tu hogar para evaluadores de IA y profesionales remotos.',
       subheadline: 'Conéctate con otros evaluadores, descubre oportunidades, comparte recursos y crezcan juntos en una comunidad global.',
-      ctaJoin: 'Unirse a Discord',
-      ctaExplore: 'Explorar Recursos',
+      ctaJoin: 'Unirse a la Comunidad',
+      ctaExplore: 'Explorar el Gremio',
       badgeText: 'La Red Global para Profesionales Remotos'
     },
     stats: {
-      membersVal: '500+',
       membersLabel: 'Miembros',
       globalVal: 'Global',
       globalLabel: 'Comunidad',
@@ -254,27 +216,21 @@ export const translations: Record<Language, TranslationDict> = {
       card6Title: 'Canales por Idioma',
       card6Desc: 'Accede a canales regionales y salas de discusión localizadas para evaluadores no angloparlantes.'
     },
-    features: {
-      title: 'Espacios Comunitarios',
-      subtitle: 'Conéctate donde te sientas más cómodo. Nuestra comunidad abarca múltiples plataformas.',
-      discordTitle: 'Gremio de Discord',
-      discordDesc: 'El corazón activo del Gremio. Únete a chats en tiempo real, salas de voz, preguntas y respuestas en vivo y networking directo.',
-      redditTitle: 'r/EvaluatorsGuild',
-      redditDesc: 'Para debates detallados, reseñas de plataformas, hilos de incorporación y documentación permanente.',
-      socialsTitle: 'Canales Sociales',
-      socialsDesc: 'Síguenos en Twitter/X e Instagram para boletines periódicos, consejos y anuncios de la industria.'
+    platforms: {
+      title: 'Dónde Encontrarnos',
+      subtitle: 'Nuestra comunidad vive en múltiples plataformas. Elige la que más te convenga.',
+      discord: 'Discord',
+      reddit: 'Reddit',
+      twitter: 'Twitter / X',
+      instagram: 'Instagram',
+      linkedin: 'LinkedIn',
+      facebook: 'Facebook'
     },
-    successStories: {
-      title: 'Historias de Éxito',
-      subtitle: 'Descubre cómo nuestros miembros han transformado sus carreras de trabajo remoto gracias al apoyo comunitario.',
-      readMore: 'Leer historia completa',
-      backToStories: 'Volver a las historias',
-      addStoryTitle: 'Envía tu Historia',
-      authorLabel: 'Tu Nombre',
-      roleLabel: 'Rol / Plataforma (ej. Evaluador de IA en Outlier)',
-      contentLabel: 'Tu Historia de Éxito',
-      submitBtn: 'Enviar Historia',
-      adminEditLink: 'Panel de Administración'
+    communityVoices: {
+      title: 'Voces de la Comunidad',
+      subtitle: 'Escucha directamente de los miembros del Gremio sobre sus experiencias.',
+      comingSoon: 'Las voces de la comunidad llegarán pronto. Vuelve a consultar.',
+      readMore: 'Leer más'
     },
     resources: {
       title: 'Centro de Recursos',
@@ -299,20 +255,10 @@ export const translations: Record<Language, TranslationDict> = {
       rule4Title: 'Sin Estafas ni Spam',
       rule4Desc: 'Prohibición estricta de spam de referidos, ofertas de pago no verificadas, compartir respuestas o violar NDAs de proyectos.'
     },
-    newsletter: {
-      title: 'Mantente al Día',
-      subtitle: 'Recibe actualizaciones semanales sobre nuevas plataformas de IA, ofertas de contratos de evaluación y noticias del gremio directamente en tu correo.',
-      placeholder: 'Introduce tu correo electrónico',
-      button: 'Suscribirse Ahora',
-      success: '¡Bienvenido al Gremio! Por favor, revisa tu bandeja de entrada pronto.',
-      invalidEmail: 'Por favor, introduce un correo electrónico válido.'
-    },
     footer: {
       desc: 'La asociación profesional y red comunitaria para anotadores de IA, evaluadores y freelancers remotos distribuidos.',
       community: 'Comunidad',
-      legal: 'Legal',
-      privacy: 'Política de Privacidad',
-      terms: 'Términos de Servicio',
+      quickLinks: 'Enlaces Rápidos',
       contact: 'Contacto',
       rights: 'Todos los derechos reservados.'
     }
@@ -321,20 +267,18 @@ export const translations: Record<Language, TranslationDict> = {
     nav: {
       home: 'Accueil',
       resources: 'Ressources',
-      successStories: 'Succès',
+      communityVoices: 'Voix de la Communauté',
       guidelines: 'Règles',
-      admin: 'Admin',
-      joinDiscord: 'Rejoindre Discord'
+      joinCommunity: 'Rejoindre la Communauté'
     },
     hero: {
       headline: 'Votre foyer pour les évaluateurs IA et professionnels à distance.',
       subheadline: 'Connectez-vous avec d\'autres évaluateurs, découvrez des opportunités, partagez des ressources et grandissez ensemble dans une communauté mondiale.',
-      ctaJoin: 'Rejoindre Discord',
-      ctaExplore: 'Explorer les Ressources',
+      ctaJoin: 'Rejoindre la Communauté',
+      ctaExplore: 'Explorer la Guilde',
       badgeText: 'Le Réseau Mondial des Professionnels à Distance'
     },
     stats: {
-      membersVal: '500+',
       membersLabel: 'Membres',
       globalVal: 'Mondial',
       globalLabel: 'Communauté',
@@ -359,27 +303,21 @@ export const translations: Record<Language, TranslationDict> = {
       card6Title: 'Canaux Multilingues',
       card6Desc: 'Accédez à des canaux régionaux et des salons de discussion locaux pour les évaluateurs non anglophones.'
     },
-    features: {
-      title: 'Espaces Communautaires',
-      subtitle: 'Connectez-vous là où vous vous sentez le mieux. Notre communauté s\'étend sur plusieurs plateformes.',
-      discordTitle: 'Serveur Discord',
-      discordDesc: 'Le cœur battant de la Guilde. Rejoignez des salons de discussion en temps réel, des salles vocales et profitez du réseautage direct.',
-      redditTitle: 'r/EvaluatorsGuild',
-      redditDesc: 'Pour des discussions approfondies, des avis sur les plateformes, des fils d\'intégration et une documentation permanente.',
-      socialsTitle: 'Réseaux Sociaux',
-      socialsDesc: 'Suivez-nous sur Twitter/X et Instagram pour des newsletters régulières, des astuces et des annonces du secteur.'
+    platforms: {
+      title: 'Où Nous Trouver',
+      subtitle: 'Notre communauté vit sur plusieurs plateformes. Choisissez celle qui vous convient.',
+      discord: 'Discord',
+      reddit: 'Reddit',
+      twitter: 'Twitter / X',
+      instagram: 'Instagram',
+      linkedin: 'LinkedIn',
+      facebook: 'Facebook'
     },
-    successStories: {
-      title: 'Histoires de Réussite',
-      subtitle: 'Découvrez comment nos membres ont transformé leur carrière à distance grâce au soutien de la communauté.',
-      readMore: 'Lire l\'histoire complète',
-      backToStories: 'Retour aux histoires',
-      addStoryTitle: 'Soumettre votre Histoire',
-      authorLabel: 'Votre Nom',
-      roleLabel: 'Rôle / Plateforme (ex. Évaluateur IA chez Outlier)',
-      contentLabel: 'Votre Histoire',
-      submitBtn: 'Soumettre',
-      adminEditLink: 'Tableau de Bord Admin'
+    communityVoices: {
+      title: 'Voix de la Communauté',
+      subtitle: 'Écoutez directement les membres de la Guilde parler de leurs expériences.',
+      comingSoon: 'Les voix de la communauté arrivent bientôt. Revenez sous peu.',
+      readMore: 'Lire la suite'
     },
     resources: {
       title: 'Centre de Ressources',
@@ -404,20 +342,10 @@ export const translations: Record<Language, TranslationDict> = {
       rule4Title: 'Pas d\'Arnaques ni de Spam',
       rule4Desc: 'Interdiction stricte du spam de parrainage, des offres payantes non vérifiées, du partage de réponses ou de la violation des NDA.'
     },
-    newsletter: {
-      title: 'Restez Informé',
-      subtitle: 'Recevez chaque semaine par email des mises à jour sur les nouvelles plateformes d\'IA, des offres de contrats d\'évaluation et des actus de la guilde.',
-      placeholder: 'Entrez votre adresse email',
-      button: 'S\'abonner',
-      success: 'Bienvenue dans la Guilde ! Veuillez vérifier votre boîte de réception sous peu.',
-      invalidEmail: 'Veuillez entrer une adresse email valide.'
-    },
     footer: {
       desc: 'L\'association professionnelle et le réseau communautaire pour les annotateurs d\'IA, les évaluateurs et les freelances à distance.',
       community: 'Communauté',
-      legal: 'Mentions Légales',
-      privacy: 'Politique de Confidentialité',
-      terms: 'Conditions d\'Utilisation',
+      quickLinks: 'Liens Rapides',
       contact: 'Contact',
       rights: 'Tous droits réservés.'
     }
@@ -426,20 +354,18 @@ export const translations: Record<Language, TranslationDict> = {
     nav: {
       home: 'ホーム',
       resources: 'リソース',
-      successStories: '成功体験',
+      communityVoices: 'コミュニティの声',
       guidelines: 'ガイドライン',
-      admin: '管理画面',
-      joinDiscord: 'Discord に参加する'
+      joinCommunity: 'コミュニティに参加'
     },
     hero: {
       headline: 'AI エバリュエーターとリモートプロフェッショナルのためのホーム。',
       subheadline: 'グローバルなコミュニティで、他のエバリュエーターと繋がり、仕事を発見し、リソースを共有し、共に成長しましょう。',
-      ctaJoin: 'Discord に参加する',
-      ctaExplore: 'リソースを探索する',
+      ctaJoin: 'コミュニティに参加',
+      ctaExplore: 'ギルドを探索する',
       badgeText: 'リモートプロフェッショナルのためのグローバルネットワーク'
     },
     stats: {
-      membersVal: '500+',
       membersLabel: 'メンバー',
       globalVal: 'グローバル',
       globalLabel: 'コミュニティ',
@@ -464,27 +390,21 @@ export const translations: Record<Language, TranslationDict> = {
       card6Title: '多言語チャンネル',
       card6Desc: '英語以外のエバリュエーター向けに、地域ごとのチャンネルやローカライズされたディスカッションルームを用意しています。'
     },
-    features: {
-      title: 'コミュニティスペース',
-      subtitle: 'あなたが最も快適に過ごせる場所で繋がりましょう。私たちのコミュニティは複数のプラットフォームにまたがっています。',
-      discordTitle: 'Discord ギルド',
-      discordDesc: 'ギルドのアクティブな中心地。リアルタイムのチャット、音声ルーム、ライブQ&A、ダイレクトなネットワーク構築が可能です。',
-      redditTitle: 'r/EvaluatorsGuild',
-      redditDesc: '長文のディスカッション、プラットフォームのレビュー、オンボーディングのスレッド、永続的なドキュメント保管に適しています。',
-      socialsTitle: 'ソーシャルチャンネル',
-      socialsDesc: 'Twitter/XやInstagramをフォローして、定期的なニュースレター、ヒント、業界の最新情報を受け取ってください。'
+    platforms: {
+      title: '活動場所',
+      subtitle: '私たちのコミュニティは複数のプラットフォームに広がっています。あなたに合った場所を選んでください。',
+      discord: 'Discord',
+      reddit: 'Reddit',
+      twitter: 'Twitter / X',
+      instagram: 'Instagram',
+      linkedin: 'LinkedIn',
+      facebook: 'Facebook'
     },
-    successStories: {
-      title: 'ギルドの成功体験談',
-      subtitle: 'コミュニティのサポートによって、メンバーがどのようにリモートワークキャリアを変革したかをご覧ください。',
-      readMore: 'ストーリーを読む',
-      backToStories: '成功体験談一覧に戻る',
-      addStoryTitle: '体験談を投稿する',
-      authorLabel: 'お名前',
-      roleLabel: '職種 / プラットフォーム (例: AIエバリュエーター - Outlier)',
-      contentLabel: 'あなたの成功体験談',
-      submitBtn: '体験談を送信する',
-      adminEditLink: '管理者ダッシュボード'
+    communityVoices: {
+      title: 'コミュニティの声',
+      subtitle: 'ギルドメンバーの体験談を直接お聞きください。',
+      comingSoon: 'コミュニティの声はまもなく公開されます。しばらくお待ちください。',
+      readMore: '続きを読む'
     },
     resources: {
       title: 'リソースハブ',
@@ -509,22 +429,273 @@ export const translations: Record<Language, TranslationDict> = {
       rule4Title: '詐欺やスパムの禁止',
       rule4Desc: '紹介スパム、未検証の有料案件の勧誘、解答の共有、プロジェクトNDA違反は厳しく禁止します。'
     },
-    newsletter: {
-      title: '最新情報をいち早く入手',
-      subtitle: '新しいAIプラットフォーム、評価案件情報、ギルドの更新情報を毎週直接メールでお届けします。',
-      placeholder: 'メールアドレスを入力',
-      button: '購読する',
-      success: 'ギルドへようこそ！まもなく確認メールが届きます。',
-      invalidEmail: '有効なメールアドレスを入力してください。'
-    },
     footer: {
       desc: 'AIアノテーター、エバリュエーター、および分散型リモートフリーランサーのためのプロフェッショナル協会およびコミュニティネットワーク。',
       community: 'コミュニティ',
-      legal: '法的情報',
-      privacy: 'プライバシーポリシー',
-      terms: '利用規約',
+      quickLinks: 'クイックリンク',
       contact: 'お問い合わせ',
       rights: 'All rights reserved.'
+    }
+  },
+  it: {
+    nav: {
+      home: 'Home',
+      resources: 'Risorse',
+      communityVoices: 'Voci della Comunità',
+      guidelines: 'Linee Guida',
+      joinCommunity: 'Unisciti alla Comunità'
+    },
+    hero: {
+      headline: 'La tua casa per valutatori IA e professionisti da remoto.',
+      subheadline: 'Connettiti con altri valutatori, scopri opportunità, condividi risorse e cresci insieme in una comunità globale.',
+      ctaJoin: 'Unisciti alla Comunità',
+      ctaExplore: 'Esplora la Gilda',
+      badgeText: 'La Rete Globale per Professionisti da Remoto'
+    },
+    stats: {
+      membersLabel: 'Membri',
+      globalVal: 'Globale',
+      globalLabel: 'Comunità',
+      discussionsVal: '24/7',
+      discussionsLabel: 'Discussioni',
+      growingVal: 'In crescita',
+      growingLabel: 'Ogni Giorno'
+    },
+    whyJoin: {
+      title: 'Perché unirsi alla Gilda?',
+      subtitle: 'Forniamo l\'infrastruttura, le risorse e i contatti necessari per avere successo come valutatore da remoto.',
+      card1Title: 'Offerte e Referenze',
+      card1Desc: 'Accedi a contratti verificati, aggiornamenti su micro-task e link di referenza per le principali aziende di IA.',
+      card2Title: 'Networking Globale',
+      card2Desc: 'Connettiti con valutatori di ogni continente, condividendo tariffe di mercato e strategie di candidatura.',
+      card3Title: 'Supporto e Mentoring',
+      card3Desc: 'Affronta le linee guida delle piattaforme, problemi di onboarding e tasse con colleghi esperti.',
+      card4Title: 'Preparazione ai Colloqui',
+      card4Desc: 'Accedi a guide, compiti pratici e rubriche di valutazione per superare gli esami di selezione.',
+      card5Title: 'Discussioni di Settore',
+      card5Desc: 'Analizza le tendenze dei modelli IA, prompt engineering, aggiornamenti alle linee guida e cambiamenti nel freelancing.',
+      card6Title: 'Canali Linguistici',
+      card6Desc: 'Accedi a canali regionali e sale di discussione localizzate per valutatori non anglofoni.'
+    },
+    platforms: {
+      title: 'Dove Trovarci',
+      subtitle: 'La nostra comunità vive su più piattaforme. Scegli quella più adatta a te.',
+      discord: 'Discord',
+      reddit: 'Reddit',
+      twitter: 'Twitter / X',
+      instagram: 'Instagram',
+      linkedin: 'LinkedIn',
+      facebook: 'Facebook'
+    },
+    communityVoices: {
+      title: 'Voci della Comunità',
+      subtitle: 'Ascolta direttamente i membri della Gilda raccontare le loro esperienze.',
+      comingSoon: 'Le voci della comunità arriveranno presto. Torna a breve.',
+      readMore: 'Leggi di più'
+    },
+    resources: {
+      title: 'Centro Risorse',
+      subtitle: 'Guide verificate, modelli e piani per accelerare la tua carriera nella valutazione dell\'IA.',
+      searchPlaceholder: 'Cerca articoli, guide piattaforme, kit di preparazione...',
+      all: 'Tutte le Risorse',
+      gettingStarted: 'Per Iniziare',
+      resumePrep: 'CV e Preparazione',
+      platformGuides: 'Guide Piattaforme',
+      bestPractices: 'Best Practice',
+      readArticle: 'Leggi la Guida'
+    },
+    guidelines: {
+      title: 'Linee Guida della Comunità',
+      subtitle: 'La Gilda si fonda sul rispetto reciproco e sull\'eccellenza professionale. Applichiamo questi standard fondamentali.',
+      rule1Title: 'Professionalità Prima di Tutto',
+      rule1Desc: 'Condividi opinioni costruttive, mantieni informazioni accurate e tratta le piattaforme di lavoro con rigore professionale.',
+      rule2Title: 'Rispetto Incrollabile',
+      rule2Desc: 'Tolleranza zero per discriminazione, molestie o insulti. Celebriamo la diversità.',
+      rule3Title: 'Collaborazione Attiva',
+      rule3Desc: 'Condividi risorse, aiuta i colleghi nell\'onboarding e rispondi alle domande. Ci sosteniamo a vicenda.',
+      rule4Title: 'Niente Truffe né Spam',
+      rule4Desc: 'Divieto assoluto di spam di referral, offerte non verificate, condivisione di risposte o violazione di NDA.'
+    },
+    footer: {
+      desc: 'L\'associazione professionale e la rete comunitaria per annotatori IA, valutatori e freelancer da remoto.',
+      community: 'Comunità',
+      quickLinks: 'Link Rapidi',
+      contact: 'Contatti',
+      rights: 'Tutti i diritti riservati.'
+    }
+  },
+  de: {
+    nav: {
+      home: 'Startseite',
+      resources: 'Ressourcen',
+      communityVoices: 'Stimmen der Community',
+      guidelines: 'Richtlinien',
+      joinCommunity: 'Community beitreten'
+    },
+    hero: {
+      headline: 'Dein Zuhause für KI-Bewerter und Remote-Profis.',
+      subheadline: 'Vernetze dich mit anderen Bewertern, entdecke Möglichkeiten, teile Ressourcen und wachse gemeinsam in einer globalen Community.',
+      ctaJoin: 'Community beitreten',
+      ctaExplore: 'Die Gilde erkunden',
+      badgeText: 'Das globale Netzwerk für Remote-Profis'
+    },
+    stats: {
+      membersLabel: 'Mitglieder',
+      globalVal: 'Global',
+      globalLabel: 'Community',
+      discussionsVal: '24/7',
+      discussionsLabel: 'Diskussionen',
+      growingVal: 'Wachsend',
+      growingLabel: 'Jeden Tag'
+    },
+    whyJoin: {
+      title: 'Warum der Gilde beitreten?',
+      subtitle: 'Wir bieten die Infrastruktur, Ressourcen und Verbindungen, die du brauchst, um als Remote-Bewerter erfolgreich zu sein.',
+      card1Title: 'Jobangebote & Empfehlungen',
+      card1Desc: 'Erhalte geprüfte Vertragsaufträge, Micro-Task-Updates und Empfehlungslinks zu führenden KI-Unternehmen.',
+      card2Title: 'Globales Networking',
+      card2Desc: 'Vernetze dich mit Bewertern auf allen Kontinenten und teile Marktraten und Bewerbungstipps.',
+      card3Title: 'Support & Mentoring',
+      card3Desc: 'Navigiere Plattform-Richtlinien, Onboarding-Probleme und Steuerfragen mit erfahrenen Kollegen.',
+      card4Title: 'Interviewvorbereitung',
+      card4Desc: 'Greife auf Leitfäden, Übungsaufgaben und Bewertungsrubriken zu, um Eignungstests zu bestehen.',
+      card5Title: 'Branchendiskussionen',
+      card5Desc: 'Analysiere KI-Modell-Trends, Prompt Engineering, Richtlinien-Updates und Freelancing-Veränderungen.',
+      card6Title: 'Sprachkanäle',
+      card6Desc: 'Nutze regionale Kanäle und lokalisierte Diskussionsräume für nicht-englischsprachige Bewerter.'
+    },
+    platforms: {
+      title: 'Wo du uns findest',
+      subtitle: 'Unsere Community lebt auf mehreren Plattformen. Wähle die, die am besten zu dir passt.',
+      discord: 'Discord',
+      reddit: 'Reddit',
+      twitter: 'Twitter / X',
+      instagram: 'Instagram',
+      linkedin: 'LinkedIn',
+      facebook: 'Facebook'
+    },
+    communityVoices: {
+      title: 'Stimmen der Community',
+      subtitle: 'Höre direkt von Mitgliedern der Gilde über ihre Erfahrungen.',
+      comingSoon: 'Community-Stimmen kommen bald. Schau in Kürze wieder vorbei.',
+      readMore: 'Weiterlesen'
+    },
+    resources: {
+      title: 'Ressourcen-Hub',
+      subtitle: 'Geprüfte Leitfäden, Arbeitsblätter und Vorlagen, um deine KI-Bewertungskarriere zu beschleunigen.',
+      searchPlaceholder: 'Artikel, Plattform-Guides, Vorbereitungskits suchen...',
+      all: 'Alle Ressourcen',
+      gettingStarted: 'Erste Schritte',
+      resumePrep: 'Lebenslauf & Vorbereitung',
+      platformGuides: 'Plattform-Guides',
+      bestPractices: 'Best Practices',
+      readArticle: 'Guide lesen'
+    },
+    guidelines: {
+      title: 'Community-Richtlinien',
+      subtitle: 'Die Gilde basiert auf gegenseitigem Respekt und professioneller Exzellenz. Wir setzen diese Kernstandards durch.',
+      rule1Title: 'Professionalität zuerst',
+      rule1Desc: 'Teile konstruktive Einblicke, pflege genaue Angaben und behandle Arbeitsplattformen mit professioneller Sorgfalt.',
+      rule2Title: 'Unerschütterlicher Respekt',
+      rule2Desc: 'Wir haben null Toleranz für Diskriminierung, Belästigung oder Anfeindungen. Wir feiern Vielfalt.',
+      rule3Title: 'Aktive Zusammenarbeit',
+      rule3Desc: 'Teile Ressourcen, hilf Kollegen beim Onboarding und beantworte Fragen. Wir stärken uns gegenseitig.',
+      rule4Title: 'Kein Betrug oder Spam',
+      rule4Desc: 'Striktes Verbot von Empfehlungs-Spam, ungeprüften Jobangeboten, Antwort-Sharing oder NDA-Verletzungen.'
+    },
+    footer: {
+      desc: 'Der Berufsverband und das Community-Netzwerk für KI-Annotatoren, Bewerter und verteilte Remote-Freelancer.',
+      community: 'Community',
+      quickLinks: 'Schnelllinks',
+      contact: 'Kontakt',
+      rights: 'Alle Rechte vorbehalten.'
+    }
+  },
+  pt: {
+    nav: {
+      home: 'Início',
+      resources: 'Recursos',
+      communityVoices: 'Vozes da Comunidade',
+      guidelines: 'Diretrizes',
+      joinCommunity: 'Junte-se à Comunidade'
+    },
+    hero: {
+      headline: 'Seu lar para avaliadores de IA e profissionais remotos.',
+      subheadline: 'Conecte-se com outros avaliadores, descubra oportunidades, compartilhe recursos e cresça junto em uma comunidade global.',
+      ctaJoin: 'Junte-se à Comunidade',
+      ctaExplore: 'Explorar a Guilda',
+      badgeText: 'A Rede Global para Profissionais Remotos'
+    },
+    stats: {
+      membersLabel: 'Membros',
+      globalVal: 'Global',
+      globalLabel: 'Comunidade',
+      discussionsVal: '24/7',
+      discussionsLabel: 'Discussões',
+      growingVal: 'Crescendo',
+      growingLabel: 'Todo Dia'
+    },
+    whyJoin: {
+      title: 'Por que se juntar à Guilda?',
+      subtitle: 'Fornecemos a infraestrutura, recursos e conexões que você precisa para ter sucesso como avaliador remoto.',
+      card1Title: 'Vagas e Indicações',
+      card1Desc: 'Acesse contratos verificados, atualizações de micro-tarefas e links de indicação para empresas líderes de IA.',
+      card2Title: 'Networking Global',
+      card2Desc: 'Conecte-se com avaliadores de todos os continentes, compartilhando taxas de mercado e dicas de candidatura.',
+      card3Title: 'Suporte e Mentoria',
+      card3Desc: 'Navegue pelas diretrizes das plataformas, problemas de integração e impostos com colegas experientes.',
+      card4Title: 'Preparação para Entrevistas',
+      card4Desc: 'Acesse guias, tarefas práticas e rubricas de avaliação para passar nos exames de seleção.',
+      card5Title: 'Discussões do Setor',
+      card5Desc: 'Analise tendências de modelos de IA, engenharia de prompts, atualizações de diretrizes e mudanças no freelancing.',
+      card6Title: 'Canais por Idioma',
+      card6Desc: 'Acesse canais regionais e salas de discussão localizadas para avaliadores não falantes de inglês.'
+    },
+    platforms: {
+      title: 'Onde Nos Encontrar',
+      subtitle: 'Nossa comunidade está presente em várias plataformas. Escolha a que funciona melhor para você.',
+      discord: 'Discord',
+      reddit: 'Reddit',
+      twitter: 'Twitter / X',
+      instagram: 'Instagram',
+      linkedin: 'LinkedIn',
+      facebook: 'Facebook'
+    },
+    communityVoices: {
+      title: 'Vozes da Comunidade',
+      subtitle: 'Ouça diretamente dos membros da Guilda sobre suas experiências.',
+      comingSoon: 'As vozes da comunidade chegarão em breve. Volte em breve.',
+      readMore: 'Leia mais'
+    },
+    resources: {
+      title: 'Centro de Recursos',
+      subtitle: 'Guias verificados, modelos e planos para acelerar sua carreira em avaliação de IA.',
+      searchPlaceholder: 'Buscar artigos, guias de plataformas, kits de preparação...',
+      all: 'Todos os Recursos',
+      gettingStarted: 'Primeiros Passos',
+      resumePrep: 'Currículo e Preparação',
+      platformGuides: 'Guias de Plataformas',
+      bestPractices: 'Boas Práticas',
+      readArticle: 'Ler Guia'
+    },
+    guidelines: {
+      title: 'Diretrizes da Comunidade',
+      subtitle: 'A Guilda é construída sobre respeito mútuo e excelência profissional. Aplicamos estes padrões fundamentais.',
+      rule1Title: 'Profissionalismo em Primeiro Lugar',
+      rule1Desc: 'Compartilhe insights construtivos, mantenha informações precisas e trate plataformas de trabalho com rigor profissional.',
+      rule2Title: 'Respeito Inabalável',
+      rule2Desc: 'Temos tolerância zero para discriminação, assédio ou ataques. Celebramos a diversidade.',
+      rule3Title: 'Colaboração Ativa',
+      rule3Desc: 'Compartilhe recursos, ajude colegas na integração e responda perguntas. Nos fortalecemos mutuamente.',
+      rule4Title: 'Sem Golpes ou Spam',
+      rule4Desc: 'Proibição estrita de spam de indicações, ofertas não verificadas, compartilhamento de respostas ou violação de NDAs.'
+    },
+    footer: {
+      desc: 'A associação profissional e rede comunitária para anotadores de IA, avaliadores e freelancers remotos distribuídos.',
+      community: 'Comunidade',
+      quickLinks: 'Links Rápidos',
+      contact: 'Contato',
+      rights: 'Todos os direitos reservados.'
     }
   }
 };
