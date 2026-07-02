@@ -7,6 +7,7 @@ export interface TranslationDict {
     communityVoices: string;
     guidelines: string;
     joinCommunity: string;
+    platforms: string;
   };
   hero: {
     headline: string;
@@ -95,7 +96,8 @@ export const translations: Record<Language, TranslationDict> = {
       resources: 'Resources',
       communityVoices: 'Community Voices',
       guidelines: 'Guidelines',
-      joinCommunity: 'Join Community'
+      joinCommunity: 'Join Community',
+      platforms: 'Platform Guides'
     },
     hero: {
       headline: 'Your home for AI evaluators and remote professionals.',
@@ -182,7 +184,8 @@ export const translations: Record<Language, TranslationDict> = {
       resources: 'Recursos',
       communityVoices: 'Voces de la Comunidad',
       guidelines: 'Directrices',
-      joinCommunity: 'Unirse a la Comunidad'
+      joinCommunity: 'Unirse a la Comunidad',
+      platforms: 'Guías de Plataformas'
     },
     hero: {
       headline: 'Tu hogar para evaluadores de IA y profesionales remotos.',
@@ -269,7 +272,8 @@ export const translations: Record<Language, TranslationDict> = {
       resources: 'Ressources',
       communityVoices: 'Voix de la Communauté',
       guidelines: 'Règles',
-      joinCommunity: 'Rejoindre la Communauté'
+      joinCommunity: 'Rejoindre la Communauté',
+      platforms: 'Guides Plateformes'
     },
     hero: {
       headline: 'Votre foyer pour les évaluateurs IA et professionnels à distance.',
@@ -356,7 +360,8 @@ export const translations: Record<Language, TranslationDict> = {
       resources: 'リソース',
       communityVoices: 'コミュニティの声',
       guidelines: 'ガイドライン',
-      joinCommunity: 'コミュニティに参加'
+      joinCommunity: 'コミュニティに参加',
+      platforms: 'プラットフォームガイド'
     },
     hero: {
       headline: 'AI エバリュエーターとリモートプロフェッショナルのためのホーム。',
@@ -443,7 +448,8 @@ export const translations: Record<Language, TranslationDict> = {
       resources: 'Risorse',
       communityVoices: 'Voci della Comunità',
       guidelines: 'Linee Guida',
-      joinCommunity: 'Unisciti alla Comunità'
+      joinCommunity: 'Unisciti alla Comunità',
+      platforms: 'Guide Piattaforme'
     },
     hero: {
       headline: 'La tua casa per valutatori IA e professionisti da remoto.',
@@ -530,7 +536,8 @@ export const translations: Record<Language, TranslationDict> = {
       resources: 'Ressourcen',
       communityVoices: 'Stimmen der Community',
       guidelines: 'Richtlinien',
-      joinCommunity: 'Community beitreten'
+      joinCommunity: 'Community beitreten',
+      platforms: 'Plattform-Guides'
     },
     hero: {
       headline: 'Dein Zuhause für KI-Bewerter und Remote-Profis.',
@@ -617,7 +624,8 @@ export const translations: Record<Language, TranslationDict> = {
       resources: 'Recursos',
       communityVoices: 'Vozes da Comunidade',
       guidelines: 'Diretrizes',
-      joinCommunity: 'Junte-se à Comunidade'
+      joinCommunity: 'Junte-se à Comunidade',
+      platforms: 'Guias de Plataformas'
     },
     hero: {
       headline: 'Seu lar para avaliadores de IA e profissionais remotos.',

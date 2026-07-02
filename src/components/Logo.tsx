@@ -78,39 +78,28 @@ export default function Logo({ className = '', variant = 'horizontal', size = 40
       {/* Flower */}
       <Flower />
 
-      {/* Stacked Text: "The Evaluators' Guild" */}
+      {/* Stacked Text: "Talent Collective" */}
       <text
-        x="64"
-        y="60"
+        x="44"
+        y="76"
         fill="#000000"
         fontFamily="Impact, sans-serif"
-        fontSize="34"
+        fontSize="38"
         fontWeight="900"
         letterSpacing="0.5"
       >
-        The
+        Talent
       </text>
       <text
-        x="96"
-        y="96"
+        x="44"
+        y="122"
         fill="#000000"
         fontFamily="Impact, sans-serif"
-        fontSize="34"
+        fontSize="38"
         fontWeight="900"
         letterSpacing="0.5"
       >
-        Evaluators&apos;
-      </text>
-      <text
-        x="55"
-        y="142"
-        fill="#000000"
-        fontFamily="Impact, sans-serif"
-        fontSize="34"
-        fontWeight="900"
-        letterSpacing="0.5"
-      >
-        Guild
+        Collective
       </text>
 
       {/* Footer text: "Established 2026" */}
@@ -179,7 +168,7 @@ export default function Logo({ className = '', variant = 'horizontal', size = 40
       {IconSVG(size)}
       <div className="flex flex-col text-left">
         <span className="font-heading text-lg font-black tracking-tight text-foreground leading-none">
-          Evaluators&apos; Guild
+          Talent Collective
         </span>
         <span className="text-[9px] font-bold text-[#e05fa7] uppercase tracking-wider mt-0.5 leading-none">
           Established 2026

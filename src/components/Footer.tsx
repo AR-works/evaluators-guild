@@ -89,8 +89,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/resources" className="hover:text-foreground transition-colors">
-                  {t('nav.resources')}
+                <Link href="/platforms" className="hover:text-foreground transition-colors">
+                  {t('nav.platforms')}
                 </Link>
               </li>
               <li>
@@ -104,7 +104,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
           <p>
-            &copy; {new Date().getFullYear()} Evaluators&apos; Guild. {t('footer.rights')}
+            &copy; {new Date().getFullYear()} Talent Collective. {t('footer.rights')}
           </p>
           <div className="flex items-center gap-1">
             <Globe className="w-3.5 h-3.5" />

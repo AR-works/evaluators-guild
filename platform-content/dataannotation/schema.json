@@ -1,0 +1,77 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "DataAnnotation Review: Jobs, Pay & Application Process (2026)",
+    "description": "DataAnnotation.tech review covering roles, pay, onboarding, and what makes this platform a common entry point for AI conversation rating work.",
+    "datePublished": "2026-07-01",
+    "dateModified": "2026-07-01",
+    "author": {
+      "@type": "Organization",
+      "name": "Talent Collective"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Talent Collective"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "/dataannotation-review-guide"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is DataAnnotation.tech?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A platform offering on-demand AI conversation rating, data annotation, and response evaluation tasks, with no degree required and weekly PayPal payments."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does DataAnnotation pay per hour?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Reported figures range from $15-$23/hr for general work, with on-demand tasks starting at $20+/hr."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does DataAnnotation pay weekly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, payments are processed weekly via PayPal."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a degree for DataAnnotation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, a degree is not required, though writing quality is tested during onboarding."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between DataAnnotation and Outlier AI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "DataAnnotation has a lower barrier to entry and lower pay ceiling ($15-$23/hr); Outlier AI has a more rigorous screening process and a higher ceiling for specialists."
+        }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home" },
+      { "@type": "ListItem", "position": 2, "name": "AI Evaluator Platforms" },
+      { "@type": "ListItem", "position": 3, "name": "DataAnnotation Review" }
+    ]
+  }
+]

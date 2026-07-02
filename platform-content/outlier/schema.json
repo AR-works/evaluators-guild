@@ -1,0 +1,117 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Outlier AI Review: Jobs, Pay & Application Process (2026)",
+    "description": "Outlier AI review covering roles, pay ranges, the general reasoning screening, and community-reported experiences from Scale AI's contributor platform.",
+    "datePublished": "2026-07-01",
+    "dateModified": "2026-07-01",
+    "author": {
+      "@type": "Organization",
+      "name": "Talent Collective"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Talent Collective"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "/outlier-ai-review-guide"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Outlier AI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Outlier is a platform for building AI with expert human input, operated by Scale AI, where freelancers evaluate and improve AI model outputs across many domains."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Outlier AI operated by Scale AI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Outlier AI is a contributor platform operated by Scale AI, founded in 2016 by Alexandr Wang and Lucy Guo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What score do I need to pass the Outlier AI screening?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "80% or higher on the General Reasoning Screening."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does Outlier AI pay per hour?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Advertised rates run $15-$50/hr; community-reported effective rates are closer to $12-$35/hr, with new workers typically at $12-$18/hr initially."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Has Outlier AI cut pay in 2025/2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Rate compression since December 2025 is documented - some projects paying $28-$35/hr in early 2025 were restructured to $18-$22/hr by Q1 2026."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Oracle status on Outlier AI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Outlier's top-tier quality designation, giving access to higher-paying projects and somewhat more queue stability, though it doesn't prevent account removal when a project ends."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Outlier AI a scam?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No - it is operated by Scale AI, a well-funded, established company; the pay and tasks are described as real, though rates have compressed over time."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a degree to work for Outlier AI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most specialist roles (writing, art, coding, fact-checking, medical) require a relevant bachelor's degree or higher; requirements vary by role."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the minimum time commitment for Outlier AI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "None - there are no minimum hour requirements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What coding languages does Outlier AI require?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Java, Python, JavaScript/TypeScript, C++, Swift, or Verilog, depending on the project."
+        }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home" },
+      { "@type": "ListItem", "position": 2, "name": "AI Evaluator Platforms" },
+      { "@type": "ListItem", "position": 3, "name": "Outlier AI Review" }
+    ]
+  }
+]

@@ -1,0 +1,129 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Micro1 Review: Jobs, Pay & Application Process (2026)",
+    "description": "Micro1 review covering roles, pay ranges, the Zara AI interview process, and what certified experts report about the platform.",
+    "datePublished": "2026-07-01",
+    "dateModified": "2026-07-01",
+    "author": {
+      "@type": "Organization",
+      "name": "Talent Collective"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Talent Collective"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "/micro1-review-guide"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Micro1 and how does it work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Micro1 connects domain experts with AI labs and enterprises that need human expertise for training and evaluating AI models. Candidates apply, complete an AI-led interview and technical assessment, and if certified, are matched to paid projects."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I apply to Micro1 as a freelancer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Apply through micro1.ai/experts or a specific listing on jobs.micro1.ai, then build a profile detailing your experience and skills."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the Micro1 AI interview (\"Zara\") and how should I prepare?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zara is Micro1's AI recruiter, conducting asynchronous, recorded interviews with open-ended technical and scenario-based questions. Prepare by practicing clear verbal reasoning and using Micro1's practice tool."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the Micro1 interview live or recorded?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Asynchronous and recorded - you respond on your own time rather than in a live conversation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does the Micro1 hiring process take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Screening typically takes 1-2 weeks; matching with a client afterward can take a few days to several weeks."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does Micro1 pay for AI evaluator roles?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Reported ranges are roughly $20-$65/hr for evaluator roles, $20-$40/hr for trainer/annotator roles, and $50-$150/hr for engineering roles, though candidates set their own rate at registration."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if I fail the Micro1 assessment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can request detailed feedback on your performance and reapply after gaining additional relevant experience."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the acceptance rate at Micro1?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Micro1 states it accepts roughly the top 1% of applicants (company-reported figure)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Micro1 legitimate or a scam?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Micro1 has raised over $40M in funding and reports over 1 million AI-led interviews conducted (company-reported figures). Always verify communications come from an official @micro1.ai, @micro1.io, or @micro1.co address."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Micro1 require a degree?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No prior AI experience is required, and the research emphasizes demonstrated domain knowledge over formal background, though role-specific experience requirements still apply."
+        }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "AI Evaluator Platforms"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Micro1 Review"
+      }
+    ]
+  }
+]
