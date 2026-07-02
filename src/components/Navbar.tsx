@@ -17,7 +17,7 @@ export default function Navbar() {
 
   const navLinks = [
     { href: '/', label: t('nav.home') },
-    { href: '/resources', label: t('nav.resources') },
+    { href: '/platforms', label: t('nav.platforms') },
     { href: '/community-voices', label: t('nav.communityVoices') }
   ];
 

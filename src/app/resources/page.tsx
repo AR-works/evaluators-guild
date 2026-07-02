@@ -2,9 +2,10 @@
 
 import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { useLanguage } from '@/components/LanguageProvider';
 import { initialResources, ResourceItem } from '@/data/initialData';
-import { Search, Clock, Calendar, ArrowLeft, ArrowRight, BookMarked } from 'lucide-react';
+import { Search, Clock, Calendar, ArrowLeft, ArrowRight, BookMarked, ArrowUpRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Simple Markdown parser for resource contents
@@ -252,12 +253,31 @@ function ResourcesHubContent() {
 
 export default function ResourcesPage() {
   return (
-    <Suspense fallback={
-      <div className="flex-grow flex items-center justify-center min-h-[300px]">
-        <div className="h-8 w-8 rounded-full border-4 border-primary border-t-transparent animate-spin" />
+    <>
+      {/* Migration notice — this page is being superseded by Platform Guides */}
+      <div className="w-full border-b border-primary/20 bg-primary/5 py-3 px-4">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-sm">
+          <p className="text-muted-foreground">
+            <strong className="text-foreground">Looking for platform reviews?</strong>{' '}
+            This section is being replaced by our new, in-depth Platform Guides.
+          </p>
+          <Link
+            href="/platforms"
+            className="inline-flex items-center gap-1.5 text-primary font-semibold hover:underline underline-offset-2 shrink-0"
+          >
+            Go to Platform Guides
+            <ArrowUpRight className="w-3.5 h-3.5" />
+          </Link>
+        </div>
       </div>
-    }>
-      <ResourcesHubContent />
-    </Suspense>
+
+      <Suspense fallback={
+        <div className="flex-grow flex items-center justify-center min-h-[300px]">
+          <div className="h-8 w-8 rounded-full border-4 border-primary border-t-transparent animate-spin" />
+        </div>
+      }>
+        <ResourcesHubContent />
+      </Suspense>
+    </>
   );
 }

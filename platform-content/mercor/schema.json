@@ -1,0 +1,117 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Mercor Review: Jobs, Pay & Application Process (2026)",
+    "description": "Mercor review covering roles, pay ranges, the AI interview process, and community-reported experiences from this AI talent platform.",
+    "datePublished": "2026-07-01",
+    "dateModified": "2026-07-01",
+    "author": {
+      "@type": "Organization",
+      "name": "Talent Collective"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Talent Collective"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "/mercor-review-guide"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Mercor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mercor organizes human intelligence to power the AI economy, connecting domain experts with AI labs and enterprises for frontier research, RLHF data, and AI agent training."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who funds Mercor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mercor raised a $100M Series B at a $2B valuation in February 2025, with investors including Benchmark, General Catalyst, Peter Thiel, Adam D'Angelo, Larry Summers, and Jack Dorsey."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long is the Mercor AI interview?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Approximately 20 minutes, and it can be retaken up to 3 times from your candidate dashboard."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Mercor use my interview data to train AI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mercor states it uses interview data to train internal recommendation models only, and does not use it to train third-party LLMs; interview responses are not sold."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does Mercor pay for AI training roles?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Reported figures include roughly $16/hr for entry-level AI Model Specialist roles, about $70/hr for expert contracts, and $70-$200+/hr for engineering roles."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Mercor pay weekly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, payments are processed weekly via Stripe Connect."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Mercor's \"apply once\" model?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Your AI interview and profile are reused across multiple opportunities, reducing the need for repetitive screening."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Mercor require a degree?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Minimum qualifications typically require undergraduate-level expertise; many projects require years of experience or an advanced degree."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Mercor's valuation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "$2B, following a $100M Series B raised in February 2025."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Mercor available in my country?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mercor accepts international applicants generally, though engineering roles may skew toward US/Canada-facing work."
+        }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home" },
+      { "@type": "ListItem", "position": 2, "name": "AI Evaluator Platforms" },
+      { "@type": "ListItem", "position": 3, "name": "Mercor Review" }
+    ]
+  }
+]

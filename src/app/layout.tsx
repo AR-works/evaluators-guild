@@ -17,27 +17,49 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "The Evaluators' Guild | Community for AI Evaluators & Remote Professionals",
+  title: {
+    default: 'Talent Collective | The Knowledge Base for AI Evaluators & Remote Professionals',
+    template: '%s | Talent Collective',
+  },
   description:
-    'A global community and professional association for AI evaluators, freelancers, remote workers, and online professionals. Discover opportunities, share guides, and connect with peers.',
+    'Talent Collective is the definitive knowledge base for AI Evaluators, AI Trainers, Data Annotators, and Prompt Engineers. Discover platform guides, career resources, and a global community.',
   keywords: [
     'AI Evaluator',
-    'AI Annotator',
+    'AI Trainer',
+    'Data Annotator',
+    'Prompt Engineer',
     'Remote Work',
-    'Freelancing Gig',
-    'Evaluation Guide',
-    'Data Annotation Test',
+    'Freelancing',
     'Outlier AI',
-    'Alignerr Prep'
+    'Alignerr',
+    'DataAnnotation',
+    'Mercor',
+    'Micro1',
+    'AI evaluation platform review',
+    'RLHF jobs',
   ],
-  authors: [{ name: "The Evaluators' Guild" }],
+  authors: [{ name: 'Talent Collective' }],
+  metadataBase: new URL('https://talent-collective.org'),
   openGraph: {
-    title: "The Evaluators' Guild",
-    description: 'Your home for AI evaluators, micro-taskers, and remote professionals.',
+    title: 'Talent Collective',
+    description: 'The definitive knowledge base for AI Evaluators, Trainers, Annotators, and Prompt Engineers.',
     type: 'website',
-    url: 'https://evaluatorsguild.org',
-    siteName: "The Evaluators' Guild",
-  }
+    url: 'https://talent-collective.org',
+    siteName: 'Talent Collective',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Talent Collective',
+    description: 'The definitive knowledge base for AI Evaluators, Trainers, Annotators, and Prompt Engineers.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 };
 
 export default function RootLayout({
