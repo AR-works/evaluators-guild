@@ -39,8 +39,9 @@ export default function DiscordMemberCount({ fallback = '500+' }: DiscordMemberC
   useEffect(() => {
     if (!inView || !hasFetched) return;
 
-    const target = count;
-    if (!target) return;
+    const isLive = count !== null;
+    const target = isLive ? count! : (parseInt(fallback.replace('+', ''), 10) || 500);
+    const suffix = isLive ? '' : (fallback.includes('+') ? '+' : '');
 
     const duration = 2000;
     let startTime: number | null = null;
@@ -52,12 +53,12 @@ export default function DiscordMemberCount({ fallback = '500+' }: DiscordMemberC
       const easeProgress = progress * (2 - progress); // ease out quad
       const current = Math.floor(easeProgress * target);
 
-      setDisplayValue(current.toLocaleString());
+      setDisplayValue(current.toLocaleString() + suffix);
 
       if (progress < 1) {
         requestAnimationFrame(animateCount);
       } else {
-        setDisplayValue(target.toLocaleString());
+        setDisplayValue(isLive ? target.toLocaleString() : fallback);
       }
     };
 
