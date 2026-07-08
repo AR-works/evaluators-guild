@@ -169,11 +169,11 @@ export const translations: Record<Language, TranslationDict> = {
       platforms: 'Platform Guides'
     },
     hero: {
-      headline: 'Your home for AI evaluators and remote professionals.',
-      subheadline: 'Connect with fellow evaluators, discover opportunities, share resources, and grow together in a global community.',
+      headline: 'The independent home for AI evaluators and remote freelancers.',
+      subheadline: 'Ask questions, compare platforms, discover opportunities, and build professional support across the AI freelance ecosystem.',
       ctaJoin: 'Join Our Community',
       ctaExplore: 'Explore the Guild',
-      badgeText: 'The Global Network for Remote Professionals'
+      badgeText: 'Community-first and non-aligned'
     },
     stats: {
       membersLabel: 'Members',
@@ -185,8 +185,8 @@ export const translations: Record<Language, TranslationDict> = {
       growingLabel: 'Every Day'
     },
     whyJoin: {
-      title: 'Why Join the Guild?',
-      subtitle: 'We provide the infrastructure, resources, and connections you need to succeed as a remote evaluator.',
+      title: 'Why Join Talent Collective?',
+      subtitle: 'A neutral space for AI evaluators, trainers, annotators, prompt engineers, students, recruiters, and companies.',
       card1Title: 'Job Leads & Referrals',
       card1Desc: 'Get vetted contract gigs, micro-tasking updates, and referral links to leading AI companies.',
       card2Title: 'Global Networking',
@@ -200,14 +200,14 @@ export const translations: Record<Language, TranslationDict> = {
       card6Title: 'Language Channels',
       card6Desc: 'Access regional channels and localized discussion rooms for non-English evaluators.',
       step1Tag: 'Prep & Materials',
-      step1Title: 'Preparation & Vetted Access',
-      step1Desc: 'Access rigorous guidelines, practice tests, and evaluation rubrics designed to help you pass entry assessments on Outlier, Alignerr, and DataAnnotation.',
+      step1Title: 'Preparation & Platform Context',
+      step1Desc: 'Use research-backed guides to understand interviews, pay ranges, task types, verification steps, and realistic expectations before applying.',
       step2Tag: 'Community Hub',
-      step2Title: 'Peer Support & Referrals',
-      step2Desc: 'Connect with a global network of remote professionals. Discover active job opportunities, receive vetted referral codes, and share localization support.',
+      step2Title: 'Peer Support & Vetted Leads',
+      step2Desc: 'Connect with a global network of remote professionals while keeping job posts, recruiter access, and referral links accountable to community safety.',
       step3Tag: 'Professional Growth',
       step3Title: 'Market Intelligence',
-      step3Desc: 'Discuss payment models, hourly rate variations, guideline changes, and tax considerations with seasoned contributors who have been doing this for years.'
+      step3Desc: 'Discuss payment models, empty queues, platform diversification, guideline changes, and long-term AI freelance strategy with experienced contributors.'
     },
     platforms: {
       title: 'Where to Find Us',
@@ -220,8 +220,8 @@ export const translations: Record<Language, TranslationDict> = {
       facebook: 'Facebook',
       vettedData: 'Vetted Data',
       vettedTitle: 'Vetted platform intelligence.',
-      vettedSubtitle: 'Compare pay scales, assessment difficulties, and project types before applying. Vetted by active community members.',
-      dataannotationDesc: 'High-quality prompt/response rating projects with flexible scheduling.',
+      vettedSubtitle: 'Compare pay scales, assessment difficulty, project types, and research confidence before applying.',
+      dataannotationDesc: 'Beginner-friendly conversation rating and annotation work with weekly PayPal payments.',
       outlierDesc: 'Massive scale platform owned by Scale AI. High pay but rigorous quality checks.',
       alignerrDesc: 'Specialized evaluation platform focusing on high-accuracy domain data.',
       chatCodingSearch: 'Chat, Coding, Search',
@@ -233,13 +233,13 @@ export const translations: Record<Language, TranslationDict> = {
     },
     communityVoices: {
       title: 'Community Voices',
-      subtitle: 'Hear directly from members of the Guild about their experiences.',
+      subtitle: 'Stories and lessons from AI freelancers across platforms, not a single company channel.',
       comingSoon: 'Community voices are coming soon. Check back shortly.',
       readMore: 'Read more'
     },
     resources: {
       title: 'Resources Hub',
-      subtitle: 'Vetted guides, worksheets, and blueprints to accelerate your AI evaluation career.',
+      subtitle: 'Mission notes, platform research, pay benchmarks, safety guides, and practical resources for AI freelancers.',
       searchPlaceholder: 'Search articles, platform guides, prep kits...',
       all: 'All Resources',
       gettingStarted: 'Getting Started',
@@ -250,15 +250,15 @@ export const translations: Record<Language, TranslationDict> = {
     },
     guidelines: {
       title: 'Community Guidelines',
-      subtitle: 'The Guild is built on mutual respect and professional excellence. We enforce these core standards.',
+      subtitle: 'Talent Collective stays useful by protecting honest discussion, neutral platform comparison, and member safety.',
       rule1Title: 'Professionalism First',
-      rule1Desc: 'Share constructive insights, maintain accurate details, and treat work platforms with professional rigor.',
+      rule1Desc: 'Share constructive insights, maintain accurate details, and separate verified facts from community reports.',
       rule2Title: 'Unwavering Respect',
       rule2Desc: 'We have zero tolerance for discrimination, harassment, or flame wars. We celebrate diversity.',
       rule3Title: 'Active Collaboration',
       rule3Desc: 'Share resources, help peers onboard, and answer questions. We lift each other up.',
       rule4Title: 'No Scams or Spam',
-      rule4Desc: 'Strict prohibition of referral spam, unvetted paid gigs, code sharing, or violating project NDAs.'
+      rule4Desc: 'No fake recruiters, MLM schemes, referral spam, unvetted paid gigs, code sharing, or NDA violations.'
     },
     footer: {
       desc: 'The professional association and community network for AI annotators, evaluators, and distributed remote freelancers.',
@@ -299,14 +299,14 @@ export const translations: Record<Language, TranslationDict> = {
       independentDatabase: 'Independent Database',
       platformsReviewed: 'platforms reviewed & updated regularly',
       editorialStandard: 'All guides follow the Talent Collective editorial standard. Every claim is labelled with its confidence source: Official, Verified, Supported by Community, or Unknown.',
-      payApproximate: 'Pay ranges are approximate, based on active member reports, and subject to change. No data is fabricated.',
+      payApproximate: 'Pay ranges are approximate, time-sensitive, and vary by role, platform demand, location, and contributor expertise. No data is fabricated.',
       independentNode: 'Independent & Non-Aligned Node',
       noCorporateBS: 'Your crew in AI freelancing. No corporate BS.',
       vettedData: 'Vetted Data',
       vettedPlatformTitle: 'Vetted platform intelligence.',
       vettedPlatformSubtitle: 'Compare pay scales, assessment difficulties, and project types before applying. Vetted by active community members.',
       connectEvaluators: 'Connect with AI Evaluators.',
-      connectSubtitle: 'Get instant support, compare projects, and stay ahead of empty queues with our global community.',
+      connectSubtitle: 'Get support, compare projects, avoid scams, and stay ahead of empty queues with a neutral global community.',
       joinDiscordCrew: 'Join the Discord Crew',
       low: 'Low',
       medium: 'Medium',

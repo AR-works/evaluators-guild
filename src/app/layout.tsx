@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     template: '%s | Talent Collective',
   },
   description:
-    'Talent Collective is the definitive independent knowledge base and global community for AI Evaluators, RLHF Trainers, Data Annotators, and Prompt Engineers. Discover platform reviews, pay rate data, and application prep resources.',
+    'Talent Collective is an independent, non-aligned knowledge base and global community for AI evaluators, RLHF trainers, data annotators, prompt engineers, and AI freelancers.',
   keywords: [
     'AI Evaluator',
     'AI Trainer',
@@ -44,7 +44,10 @@ export const metadata: Metadata = {
     'Mercor',
     'Micro1',
     'AI evaluation guide',
-    'Independent Freelancer Hub'
+    'Independent Freelancer Hub',
+    'AI freelancer community',
+    'AI platform comparison',
+    'AI evaluator pay rates'
   ],
   authors: [{ name: 'Talent Collective' }],
   metadataBase: new URL('https://talent-collective.org'),
@@ -53,7 +56,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Talent Collective — Vetted AI Evaluator Hub & Community',
-    description: 'The definitive independent knowledge base and global community for AI Evaluators, Trainers, and Remote Professionals.',
+    description: 'An independent, non-aligned knowledge base and community for AI evaluators, trainers, annotators, prompt engineers, and remote AI freelancers.',
     type: 'website',
     url: 'https://talent-collective.org',
     siteName: 'Talent Collective',
@@ -69,7 +72,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Talent Collective — Vetted AI Evaluator Hub & Community',
-    description: 'The definitive independent knowledge base and global community for AI Evaluators, Trainers, and Remote Professionals.',
+    description: 'Independent platform guides, pay benchmarks, safety resources, and community support for AI freelancers.',
   },
   robots: {
     index: true,
@@ -103,14 +106,14 @@ export default function RootLayout({
         'image': {
           '@id': 'https://talent-collective.org/#logo'
         },
-        'description': 'The definitive independent community and knowledge base for AI Evaluators, Trainers, Annotators, and Prompt Engineers.'
+        'description': 'An independent, non-aligned community and knowledge base for AI evaluators, trainers, annotators, prompt engineers, and AI freelancers.'
       },
       {
         '@type': 'WebSite',
         '@id': 'https://talent-collective.org/#website',
         'url': 'https://talent-collective.org',
         'name': 'Talent Collective',
-        'description': 'The definitive independent community and knowledge base for AI Evaluators, Trainers, Annotators, and Prompt Engineers.',
+        'description': 'An independent, non-aligned community and knowledge base for AI evaluators, trainers, annotators, prompt engineers, and AI freelancers.',
         'publisher': {
           '@id': 'https://talent-collective.org/#organization'
         }

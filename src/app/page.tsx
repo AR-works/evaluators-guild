@@ -42,7 +42,7 @@ export default function Home() {
   const highlightedPlatforms = [
     {
       name: 'DataAnnotation',
-      rate: '$20 - $40+/hr',
+      rate: '$15 - $23/hr',
       difficulty: t('platforms.mediumHigh'),
       type: t('platforms.chatCodingSearch'),
       link: '/platforms/dataannotation-review-guide',
@@ -157,7 +157,7 @@ export default function Home() {
           {/* Sticky note — platform previews */}
           <div className="zine-sticky sticky-lift p-4 space-y-2" style={{ transform: 'rotate(1.5deg)' }}>
             <p className="zine-handwritten text-base font-bold mb-2">{t('heroCard.topPlatforms')}</p>
-            {[{ name: 'Outlier AI', rate: '$15–50+/hr' }, { name: 'DataAnnotation', rate: '$20–40+/hr' }, { name: 'Alignerr', rate: '$15–60/hr' }].map((p) => (
+            {[{ name: 'Outlier AI', rate: '$15-50+/hr' }, { name: 'DataAnnotation', rate: '$15-23/hr' }, { name: 'Alignerr', rate: '$15-60/hr' }].map((p) => (
               <div key={p.name} className="flex items-center justify-between">
                 <span className="font-body text-xs font-semibold">{p.name}</span>
                 <span className="text-[10px] font-bold text-primary bg-primary/10 px-2 py-0.5 rounded-full">{p.rate}</span>
