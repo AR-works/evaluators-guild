@@ -12,43 +12,51 @@ import { motion, AnimatePresence } from 'framer-motion';
  * designed-as-app · zine card layout
  */
 
+function parseInlineMarkdown(text: string) {
+  const boldRegex = /\*\*([^*]+)\*\*/g;
+  const elements: React.ReactNode[] = [];
+  let match;
+  let lastIndex = 0;
+
+  while ((match = boldRegex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      elements.push(text.substring(lastIndex, match.index));
+    }
+    elements.push(
+      <strong key={`${match.index}-${match[1]}`} className="font-bold text-foreground">
+        {match[1]}
+      </strong>
+    );
+    lastIndex = boldRegex.lastIndex;
+  }
+
+  if (lastIndex < text.length) {
+    elements.push(text.substring(lastIndex));
+  }
+
+  return elements.length > 0 ? elements : text;
+}
+
 // Simple Markdown parser for resource contents
 function parseMarkdown(md: string) {
   return md.split('\n').map((line, idx) => {
     if (line.startsWith('### ')) {
-      return <h3 key={idx} className="font-heading text-2xl font-bold text-foreground mt-8 mb-3 tracking-tight">{line.replace('### ', '')}</h3>;
+      return <h3 key={idx} className="font-heading text-2xl font-bold text-foreground mt-8 mb-3 tracking-tight">{parseInlineMarkdown(line.replace('### ', ''))}</h3>;
     }
     if (line.startsWith('#### ')) {
-      return <h4 key={idx} className="font-heading text-lg font-bold text-foreground mt-6 mb-2 tracking-tight">{line.replace('#### ', '')}</h4>;
+      return <h4 key={idx} className="font-heading text-lg font-bold text-foreground mt-6 mb-2 tracking-tight">{parseInlineMarkdown(line.replace('#### ', ''))}</h4>;
     }
     if (line.startsWith('- ')) {
-      return <li key={idx} className="ml-6 list-disc text-muted-foreground my-1.5 text-sm leading-relaxed font-body">{line.replace('- ', '')}</li>;
+      return <li key={idx} className="ml-6 list-disc text-muted-foreground my-1.5 text-sm leading-relaxed font-body">{parseInlineMarkdown(line.replace('- ', ''))}</li>;
     }
     if (line.match(/^\d+\.\s/)) {
-      return <li key={idx} className="ml-6 list-decimal text-muted-foreground my-1.5 text-sm leading-relaxed font-body">{line.replace(/^\d+\.\s/, '')}</li>;
+      return <li key={idx} className="ml-6 list-decimal text-muted-foreground my-1.5 text-sm leading-relaxed font-body">{parseInlineMarkdown(line.replace(/^\d+\.\s/, ''))}</li>;
     }
     if (line.trim() === '') {
       return <div key={idx} className="h-3" />;
     }
 
-    // Bold replacement
-    const boldRegex = /\*\*(.*?)\*\*/g;
-    let match;
-    const elements: React.ReactNode[] = [];
-    let lastIndex = 0;
-
-    while ((match = boldRegex.exec(line)) !== null) {
-      if (match.index > lastIndex) {
-        elements.push(line.substring(lastIndex, match.index));
-      }
-      elements.push(<strong key={match.index} className="font-bold text-foreground">{match[1]}</strong>);
-      lastIndex = boldRegex.lastIndex;
-    }
-    if (lastIndex < line.length) {
-      elements.push(line.substring(lastIndex));
-    }
-
-    return <p key={idx} className="text-muted-foreground leading-relaxed my-3 text-sm font-body">{elements.length > 0 ? elements : line}</p>;
+    return <p key={idx} className="text-muted-foreground leading-relaxed my-3 text-sm font-body">{parseInlineMarkdown(line)}</p>;
   });
 }
 
