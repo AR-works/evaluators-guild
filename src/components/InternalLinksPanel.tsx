@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { InternalLinks, PlatformMeta } from '@/lib/platforms';
 import { ArrowRight } from 'lucide-react';
+import { useLanguage } from './LanguageProvider';
 
 interface InternalLinksPanelProps {
   links: InternalLinks;
@@ -47,12 +48,12 @@ function LinkGroup({
                   href={href}
                   className="group flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
-                  <ArrowRight className="w-3 h-3 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <ArrowRight className="w-3.5 h-3.5 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" />
                   <span className="hover:underline underline-offset-2">{item}</span>
                 </Link>
               ) : (
                 <span className="flex items-center gap-1.5 text-sm text-muted-foreground/60">
-                  <ArrowRight className="w-3 h-3 shrink-0 opacity-40" />
+                  <ArrowRight className="w-3.5 h-3.5 shrink-0 opacity-40" />
                   <span>{item}</span>
                 </span>
               )}
@@ -65,6 +66,8 @@ function LinkGroup({
 }
 
 export default function InternalLinksPanel({ links, allPlatforms }: InternalLinksPanelProps) {
+  const { t } = useLanguage();
+
   const hasAnyLinks =
     links.relatedPlatformGuides.length > 0 ||
     links.relatedCareerGuides.length > 0 ||
@@ -79,26 +82,26 @@ export default function InternalLinksPanel({ links, allPlatforms }: InternalLink
       className="border border-card-border bg-card rounded-2xl p-5 space-y-5"
     >
       <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground">
-        Related Content
+        {t('ui.relatedContent')}
       </h3>
 
       <LinkGroup
-        heading="Platform Guides"
+        heading={t('ui.platformGuides')}
         items={links.relatedPlatformGuides}
         allPlatforms={allPlatforms}
       />
       <LinkGroup
-        heading="Career Guides"
+        heading={t('ui.careerGuides')}
         items={links.relatedCareerGuides}
         allPlatforms={allPlatforms}
       />
       <LinkGroup
-        heading="Comparisons"
+        heading={t('ui.comparisons')}
         items={links.relatedComparisonPages}
         allPlatforms={allPlatforms}
       />
       <LinkGroup
-        heading="Resources"
+        heading={t('ui.resources')}
         items={links.relatedResourcePages}
         allPlatforms={allPlatforms}
       />

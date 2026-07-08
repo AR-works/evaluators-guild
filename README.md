@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Evaluators Guild
+
+Evaluators Guild is a Next.js app for Talent Collective's AI evaluation platform guides, community pages, and resource content.
+
+## Tech Stack
+
+- Next.js 16.2.9 with the App Router and Turbopack
+- React 19
+- Tailwind CSS 4
+- Markdown platform guides loaded from `platform-content/`
+- Framer Motion and Lucide React for UI motion and icons
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Build for production:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+Start the production build:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Run linting:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run lint
+```
 
-## Deploy on Vercel
+## Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `src/app/` - App Router pages and route files.
+- `src/components/` - Shared UI components.
+- `src/data/` - Static UI copy, resources, and translations.
+- `src/lib/platforms.ts` - Platform guide loader and Markdown parsing.
+- `platform-content/` - Source content for platform guide pages.
+- `public/` - Static assets.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Each platform folder in `platform-content/` contains:
+
+- `guide.md` - Markdown guide body and frontmatter.
+- `metadata.yaml` - SEO metadata, slug, pay range, difficulty, and listing fields.
+- `schema.json` - JSON-LD schema data.
+- `internal-links.md` - Related platform, career, comparison, and resource links.
+
+## Next.js 16 Note
+
+This repo uses Next.js 16.2.9. Before changing Next APIs, routing behavior, or config, read the relevant local docs in:
+
+```text
+node_modules/next/dist/docs/
+```
+
+The app also sets `turbopack.root` in `next.config.ts`. This is intentional for this Windows workspace because there is a parent lockfile above the repo. Changing it can break either platform guide routing or dev-server module resolution.
+
+If `next dev` reports React Client Manifest errors or missing generated `@swc/helpers-*` modules, stop the dev server and remove only the generated dev cache:
+
+```powershell
+Remove-Item -LiteralPath .next\dev -Recurse -Force
+npm run dev
+```
+
+Do not delete source files or `node_modules` for that issue unless the dependency install is actually corrupted.

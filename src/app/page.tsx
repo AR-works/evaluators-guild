@@ -4,357 +4,471 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useLanguage } from '@/components/LanguageProvider';
 import DiscordMemberCount from '@/components/DiscordMemberCount';
-import StatsCounter from '@/components/StatsCounter';
 import { initialResources } from '@/data/initialData';
 import {
   MessageSquare,
-  Globe,
   ArrowRight,
-  ShieldCheck,
-  Coins,
-  HeartHandshake,
-  GraduationCap,
-  TrendingUp,
-  Users,
-  Compass,
-  HelpCircle,
-  ExternalLink
+  ExternalLink,
 } from 'lucide-react';
+
+/* Hallmark · macrostructure: Collage / Zine · tone: playful-editorial · anchor hue: 345 (pink)
+ * studied: no · context: explicit · v1.0.0
+ */
 
 export default function Home() {
   const { t } = useLanguage();
 
-  // Why Join Cards setup
-  const whyJoinCards = [
+  const steps = [
     {
-      titleKey: 'whyJoin.card1Title',
-      descKey: 'whyJoin.card1Desc',
-      icon: Coins,
-      color: 'text-amber-600 dark:text-amber-400'
+      num: '1',
+      title: t('whyJoin.step1Title'),
+      desc: t('whyJoin.step1Desc'),
+      tagKey: t('whyJoin.step1Tag'),
     },
     {
-      titleKey: 'whyJoin.card2Title',
-      descKey: 'whyJoin.card2Desc',
-      icon: Globe,
-      color: 'text-teal-600 dark:text-teal-400'
+      num: '2',
+      title: t('whyJoin.step2Title'),
+      desc: t('whyJoin.step2Desc'),
+      tagKey: t('whyJoin.step2Tag'),
     },
     {
-      titleKey: 'whyJoin.card3Title',
-      descKey: 'whyJoin.card3Desc',
-      icon: HeartHandshake,
-      color: 'text-rose-600 dark:text-rose-400'
-    },
-    {
-      titleKey: 'whyJoin.card4Title',
-      descKey: 'whyJoin.card4Desc',
-      icon: GraduationCap,
-      color: 'text-amber-600 dark:text-amber-400'
-    },
-    {
-      titleKey: 'whyJoin.card5Title',
-      descKey: 'whyJoin.card5Desc',
-      icon: TrendingUp,
-      color: 'text-teal-600 dark:text-teal-400'
-    },
-    {
-      titleKey: 'whyJoin.card6Title',
-      descKey: 'whyJoin.card6Desc',
-      icon: MessageSquare,
-      color: 'text-sky-600 dark:text-sky-400'
+      num: '3',
+      title: t('whyJoin.step3Title'),
+      desc: t('whyJoin.step3Desc'),
+      tagKey: t('whyJoin.step3Tag'),
     }
   ];
 
-  // Guidelines setup
-  const guidelineRules = [
+  const highlightedPlatforms = [
     {
-      titleKey: 'guidelines.rule1Title',
-      descKey: 'guidelines.rule1Desc',
-      icon: ShieldCheck
+      name: 'DataAnnotation',
+      rate: '$20 - $40+/hr',
+      difficulty: t('platforms.mediumHigh'),
+      type: t('platforms.chatCodingSearch'),
+      link: '/platforms/dataannotation-review-guide',
+      desc: t('platforms.dataannotationDesc'),
+      rotation: '-0.6deg',
     },
     {
-      titleKey: 'guidelines.rule2Title',
-      descKey: 'guidelines.rule2Desc',
-      icon: Users
+      name: 'Outlier AI',
+      rate: '$15 - $50+/hr',
+      difficulty: t('platforms.highVetting'),
+      type: t('platforms.rlhfMultimodal'),
+      link: '/platforms/outlier-ai-review-guide',
+      desc: t('platforms.outlierDesc'),
+      rotation: '0.6deg',
     },
     {
-      titleKey: 'guidelines.rule3Title',
-      descKey: 'guidelines.rule3Desc',
-      icon: Compass
-    },
-    {
-      titleKey: 'guidelines.rule4Title',
-      descKey: 'guidelines.rule4Desc',
-      icon: HelpCircle
+      name: 'Alignerr',
+      rate: '$15 - $60/hr',
+      difficulty: t('platforms.skillExams'),
+      type: t('platforms.writingMathCode'),
+      link: '/platforms/alignerr-review-guide',
+      desc: t('platforms.alignerrDesc'),
+      rotation: '-0.4deg',
     }
   ];
 
-  // Platform links — equal billing
-  const platformLinks = [
-    { name: t('platforms.discord'), href: 'https://discord.gg/56xGWJRqEQ', icon: MessageSquare, color: 'text-[#5865F2]' },
-    { name: t('platforms.reddit'), href: 'https://www.reddit.com/r/talentcollective/', icon: Users, color: 'text-[#FF4500]' },
-    { name: t('platforms.twitter'), href: '#', icon: Globe, color: 'text-foreground' },
-    { name: t('platforms.instagram'), href: '#', icon: Compass, color: 'text-[#E1306C]' },
-    { name: t('platforms.linkedin'), href: '#', icon: TrendingUp, color: 'text-[#0077B5]' },
-    { name: t('platforms.facebook'), href: '#', icon: HeartHandshake, color: 'text-[#1877F2]' },
+  const platforms = [
+    { name: t('platforms.discord'), href: 'https://discord.gg/56xGWJRqEQ', icon: MessageSquare },
+    { name: t('platforms.reddit'), href: 'https://www.reddit.com/r/talentcollective/', icon: MessageSquare },
   ];
 
   return (
     <div className="flex flex-col w-full relative grid-glow">
-      {/* 1. Hero Section — Editorial Typography */}
-      <section className="relative w-full max-w-7xl mx-auto px-4 pt-20 pb-24 sm:px-6 lg:px-8 flex flex-col items-center text-center overflow-hidden">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          className="max-w-3xl space-y-8"
-        >
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary text-xs font-semibold uppercase tracking-wider">
-            <span className="flex h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
+
+      {/* 1. Hero — Zine Collage */}
+      <section className="relative w-full max-w-7xl mx-auto px-6 pt-32 pb-16 sm:px-8 lg:px-12 flex flex-col lg:flex-row items-start lg:items-center gap-12 lg:gap-8 overflow-hidden">
+
+        {/* Left column — handwritten headline */}
+        <div className="flex-1 min-w-0 space-y-6 animate-reveal" style={{ animationDuration: '0.8s' }}>
+          <div className="inline-block px-4 py-1.5 bg-secondary/40 border border-secondary/60 text-secondary-ink text-sm font-semibold rounded-sm zine-handwritten text-lg">
             {t('hero.badgeText')}
           </div>
-          
-          <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-foreground leading-[1.1]">
+
+          <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-ink leading-[1.05] overflow-wrap-anywhere">
             {t('hero.headline')}
           </h1>
-          
-          <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+
+          <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-xl font-body italic">
             {t('hero.subheadline')}
           </p>
 
-          <div className="flex flex-wrap gap-4 justify-center pt-2">
-            <Link
-              href="#why-join"
-              className="px-6 py-3.5 text-base font-semibold rounded-xl bg-primary text-primary-foreground hover:bg-primary/90 transition-colors shadow-lg hover:shadow-primary/20 flex items-center gap-2"
-            >
-              <span>{t('hero.ctaExplore')}</span>
-              <ArrowRight className="w-5 h-5" />
-            </Link>
-            
+          <div className="flex flex-wrap gap-3 pt-2">
             <a
               href="https://discord.gg/56xGWJRqEQ"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3.5 text-base font-semibold rounded-xl border border-border bg-card hover:bg-muted/30 text-foreground transition-colors flex items-center gap-2"
+              className="btn-press px-6 py-3.5 text-sm font-bold rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors flex items-center gap-2 shadow-md"
             >
               <span>{t('hero.ctaJoin')}</span>
               <ExternalLink className="w-4 h-4" />
             </a>
+            <Link
+              href="/platforms"
+              className="btn-press px-6 py-3.5 text-sm font-bold rounded-full border-2 border-ink/20 bg-card hover:bg-secondary/20 text-foreground transition-colors flex items-center gap-2"
+            >
+              <span>{t('hero.ctaExplore')}</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+
+        {/* Right column — pinned polaroid community card */}
+        <motion.div
+          initial={{ opacity: 0, x: 24, rotate: 2 }}
+          animate={{ opacity: 1, x: 0, rotate: 0 }}
+          transition={{ duration: 0.7, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
+          className="hidden lg:flex flex-col gap-4 w-72 xl:w-80 shrink-0"
+          aria-label="Community stats"
+        >
+          {/* Pinned community card */}
+          <div className="zine-pin card-straighten bg-card border-2 border-rule p-6 space-y-5 shadow-md" style={{ transform: 'rotate(-1.2deg)' }}>
+            <div className="flex items-center gap-3">
+              <div className="h-9 w-9 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                <MessageSquare className="w-4 h-4 text-primary" />
+              </div>
+              <div>
+                <p className="text-sm font-bold text-foreground font-body">{t('heroCard.activeCommunity')}</p>
+                <p className="text-xs text-muted-foreground font-body">{t('heroCard.liveSubtitle')}</p>
+              </div>
+            </div>
+
+            <div className="space-y-3 py-1">
+              <p className="font-body text-sm text-foreground leading-relaxed">
+                <DiscordMemberCount fallback="500+" /> <span className="text-muted-foreground">{t('heroCard.members')}</span>
+              </p>
+              <p className="font-body text-xs text-muted-foreground leading-relaxed">
+                {t('heroCard.globalDesc')}
+              </p>
+            </div>
+
+            <a
+              href="https://discord.gg/56xGWJRqEQ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-between gap-2 w-full px-4 py-3 rounded-full bg-primary text-primary-foreground text-xs font-bold hover:bg-primary/90 transition-colors shadow-sm"
+            >
+              <span>{t('heroCard.joinDiscord')}</span>
+              <ExternalLink className="w-3.5 h-3.5" />
+            </a>
+          </div>
+
+          {/* Sticky note — platform previews */}
+          <div className="zine-sticky sticky-lift p-4 space-y-2" style={{ transform: 'rotate(1.5deg)' }}>
+            <p className="zine-handwritten text-base font-bold mb-2">{t('heroCard.topPlatforms')}</p>
+            {[{ name: 'Outlier AI', rate: '$15–50+/hr' }, { name: 'DataAnnotation', rate: '$20–40+/hr' }, { name: 'Alignerr', rate: '$15–60/hr' }].map((p) => (
+              <div key={p.name} className="flex items-center justify-between">
+                <span className="font-body text-xs font-semibold">{p.name}</span>
+                <span className="text-[10px] font-bold text-primary bg-primary/10 px-2 py-0.5 rounded-full">{p.rate}</span>
+              </div>
+            ))}
           </div>
         </motion.div>
       </section>
 
-      {/* 2. Community Statistics Section */}
-      <section className="border-y border-border bg-card/50 transition-colors duration-300">
-        <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div className="flex flex-col justify-center">
-              <DiscordMemberCount fallback="500+" />
-              <span className="text-sm font-medium text-muted-foreground mt-2">{t('stats.membersLabel')}</span>
-            </div>
-            <div className="flex flex-col justify-center">
-              <span className="font-heading text-4xl sm:text-5xl font-extrabold tracking-tight text-primary">{t('stats.globalVal')}</span>
-              <span className="text-sm font-medium text-muted-foreground mt-2">{t('stats.globalLabel')}</span>
-            </div>
-            <div className="flex flex-col justify-center">
-              <StatsCounter value={t('stats.discussionsVal')} />
-              <span className="text-sm font-medium text-muted-foreground mt-2">{t('stats.discussionsLabel')}</span>
-            </div>
-            <div className="flex flex-col justify-center">
-              <span className="font-heading text-4xl sm:text-5xl font-extrabold tracking-tight text-primary">{t('stats.growingVal')}</span>
-              <span className="text-sm font-medium text-muted-foreground mt-2">{t('stats.growingLabel')}</span>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* 3. Why Join Section */}
-      <section id="why-join" className="max-w-7xl mx-auto px-4 py-24 sm:px-6 lg:px-8 text-center space-y-12">
-        <div className="max-w-3xl mx-auto space-y-4">
-          <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-foreground tracking-tight">
+      {/* 2. Why Join — Handwritten letter on lined paper */}
+      <section id="why-join" className="max-w-7xl mx-auto px-6 py-20 sm:px-8 lg:px-12 space-y-12">
+        <div className="max-w-3xl space-y-4">
+          <h2 className="font-heading text-4xl sm:text-5xl text-foreground leading-tight">
             {t('whyJoin.title')}
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-muted-foreground text-base leading-relaxed font-body">
             {t('whyJoin.subtitle')}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {whyJoinCards.map((card, idx) => {
-            const Icon = card.icon;
-            return (
-              <motion.div
-                key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: idx * 0.05 }}
-                className="group border border-card-border bg-card p-6 rounded-2xl text-left shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"
-              >
-                <div className={`p-3 rounded-xl bg-muted/50 w-fit mb-5 group-hover:scale-110 transition-transform ${card.color}`}>
-                  <Icon className="w-6 h-6" />
-                </div>
-                <h3 className="text-lg font-bold text-foreground mb-2">
-                  {t(card.titleKey)}
-                </h3>
-                <p className="text-muted-foreground leading-relaxed text-sm">
-                  {t(card.descKey)}
-                </p>
-              </motion.div>
-            );
-          })}
-        </div>
-      </section>
-
-      {/* 4. Where to Find Us — Platform Strip */}
-      <section className="border-y border-border bg-card/25 transition-colors duration-300">
-        <div className="max-w-7xl mx-auto px-4 py-20 sm:px-6 lg:px-8 text-center space-y-10">
-          <div className="max-w-3xl mx-auto space-y-4">
-            <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-foreground tracking-tight">
-              {t('platforms.title')}
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              {t('platforms.subtitle')}
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 max-w-4xl mx-auto">
-            {platformLinks.map((platform) => {
-              const Icon = platform.icon;
-              return (
-                <a
-                  key={platform.name}
-                  href={platform.href}
-                  target={platform.href !== '#' ? '_blank' : undefined}
-                  rel={platform.href !== '#' ? 'noopener noreferrer' : undefined}
-                  className="group flex flex-col items-center gap-3 p-5 rounded-2xl border border-card-border bg-card hover:shadow-md hover:-translate-y-1 transition-all duration-300"
-                >
-                  <div className={`p-3 rounded-xl bg-muted/30 group-hover:scale-110 transition-transform ${platform.color}`}>
-                    <Icon className="w-6 h-6" />
-                  </div>
-                  <span className="text-sm font-semibold text-foreground">{platform.name}</span>
-                </a>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* 5. Community Voices Teaser */}
-      <section className="max-w-7xl mx-auto px-4 py-24 sm:px-6 lg:px-8 text-center space-y-8">
-        <div className="max-w-3xl mx-auto space-y-4">
-          <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-foreground tracking-tight">
-            {t('communityVoices.title')}
-          </h2>
-          <p className="text-lg text-muted-foreground">
-            {t('communityVoices.subtitle')}
-          </p>
-        </div>
-
-        <div className="max-w-2xl mx-auto">
-          <div className="border border-dashed border-border bg-card/50 rounded-2xl p-12 text-center">
-            <p className="text-muted-foreground text-base">
-              {t('communityVoices.comingSoon')}
-            </p>
-            <Link
-              href="/community-voices"
-              className="inline-flex items-center gap-1 text-primary font-semibold hover:underline mt-4 text-sm"
+        {/* Handwritten steps on lined paper */}
+        <div className="zine-lined-paper border-2 border-rule rounded-sm p-6 sm:p-10 max-w-3xl space-y-10">
+          {steps.map((step, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.6, delay: idx * 0.15, ease: [0.16, 1, 0.3, 1] }}
+              className="relative pl-12"
             >
-              <span>View Community Voices</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </Link>
-          </div>
+              {/* Handwritten number */}
+              <span className="absolute left-0 top-0 font-heading text-5xl font-bold text-primary/40 leading-none">
+                {step.num}
+              </span>
+
+              <div className="space-y-2">
+                <span className="zine-handwritten text-lg font-bold text-primary">
+                  {step.tagKey}
+                </span>
+                <h3 className="font-heading text-2xl text-foreground leading-tight">
+                  {step.title}
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed font-body pt-1">
+                  {step.desc}
+                </p>
+              </div>
+            </motion.div>
+          ))}
         </div>
       </section>
 
-      {/* 6. Resources Section Preview */}
-      <section className="border-t border-border bg-card/25 transition-colors duration-300">
-        <div className="max-w-7xl mx-auto px-4 py-24 sm:px-6 lg:px-8 space-y-12">
+      {/* 3. Vetted Platform Highlights — Pinned dossier cards on corkboard */}
+      <section className="zine-corkboard border-y-2 border-rule">
+        <div className="max-w-7xl mx-auto px-6 py-20 sm:px-8 lg:px-12 space-y-12">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
-            <div className="max-w-2xl space-y-3">
-              <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-foreground tracking-tight">
-                {t('resources.title')}
+            <div className="max-w-2xl space-y-2">
+              <span className="zine-handwritten text-xl text-primary">{t('platforms.vettedData')}</span>
+              <h2 className="font-heading text-4xl sm:text-5xl text-foreground leading-tight">
+                {t('platforms.vettedTitle')}
               </h2>
-              <p className="text-lg text-muted-foreground">
-                {t('resources.subtitle')}
+              <p className="text-muted-foreground text-sm font-body">
+                {t('platforms.vettedSubtitle')}
               </p>
             </div>
             <Link
-              href="/resources"
-              className="w-fit inline-flex items-center gap-1 text-primary font-bold hover:underline"
+              href="/platforms"
+              className="inline-flex items-center gap-1.5 text-primary text-sm font-bold hover:underline zine-handwritten text-lg"
             >
-              <span>View all guides</span>
+              <span>{t('ui.viewAllGuides')}</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {initialResources.slice(0, 2).map((res) => (
-              <div
-                key={res.id}
-                className="border border-card-border bg-card p-6 rounded-2xl flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow"
+          {/* Pinned dossier cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-4">
+            {highlightedPlatforms.map((plat, idx) => (
+              <motion.div
+                key={plat.name}
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.6, delay: idx * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                className="zine-pin zine-tape group card-straighten bg-card border-2 border-rule p-6 flex flex-col justify-between shadow-md"
+                style={{ transform: `rotate(${plat.rotation})` }}
               >
-                <div className="space-y-4">
-                  <div className="flex items-center justify-between text-xs">
-                    <span className="px-2.5 py-0.5 rounded-full font-medium bg-muted text-muted-foreground capitalize">
-                      {res.category === 'bestPractices' ? 'Best Practices' : res.category === 'starting' ? 'Getting Started' : res.category === 'resume' ? 'Resume Prep' : 'Platform Guide'}
+                <div className="space-y-4 pt-2">
+                  <div className="flex justify-between items-start">
+                    <h3 className="font-heading text-2xl text-foreground group-hover:text-primary transition-colors leading-tight">
+                      {plat.name}
+                    </h3>
+                    <span className="px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider rounded bg-primary/10 text-primary font-body">
+                      {plat.difficulty}
                     </span>
-                    <span className="text-muted-foreground">{res.readTime}</span>
                   </div>
-                  <h3 className="text-xl font-bold text-foreground">
-                    {res.title}
-                  </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {res.description}
+                  <p className="text-xs text-muted-foreground leading-relaxed font-body">
+                    {plat.desc}
                   </p>
+                  <div className="grid grid-cols-2 gap-4 pt-2 border-t-2 border-dashed border-rule text-xs font-body">
+                    <div>
+                      <span className="text-[10px] font-bold text-muted-foreground block uppercase">Est. Rate</span>
+                      <span className="font-semibold text-foreground">{plat.rate}</span>
+                    </div>
+                    <div>
+                      <span className="text-[10px] font-bold text-muted-foreground block uppercase">Project Type</span>
+                      <span className="font-semibold text-foreground">{plat.type}</span>
+                    </div>
+                  </div>
                 </div>
-                <div className="mt-6 pt-4 border-t border-border">
+                <div className="pt-6">
                   <Link
-                    href={`/resources?id=${res.id}`}
-                    className="inline-flex items-center gap-1.5 text-primary text-sm font-semibold hover:underline"
+                    href={plat.link}
+                    className="inline-flex items-center gap-1 text-xs font-bold text-primary hover:underline font-body"
                   >
-                    <span>{t('resources.readArticle')}</span>
+                    <span>Read Full Guide</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* 7. Community Guidelines Preview Section */}
-      <section className="max-w-7xl mx-auto px-4 py-24 sm:px-6 lg:px-8 space-y-12">
-        <div className="max-w-3xl mx-auto text-center space-y-4">
-          <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-foreground tracking-tight">
+      {/* 4. Where to Find Us + Community Voices — Zine scrapbook collage */}
+      <section className="max-w-7xl mx-auto px-6 py-20 sm:px-8 lg:px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          {/* Left: Where to Find Us */}
+          <div className="space-y-6">
+            <div className="space-y-2">
+              <h2 className="font-heading text-4xl sm:text-5xl text-foreground leading-tight">
+                {t('platforms.title')}
+              </h2>
+              <p className="text-muted-foreground text-sm font-body max-w-md">
+                {t('platforms.subtitle')}
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-4">
+              {platforms.map((platform, idx) => {
+                return (
+                  <a
+                    key={platform.name}
+                    href={platform.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="zine-sticky sticky-lift group flex items-center gap-3 px-5 py-3 transition-all hover:shadow-lg"
+                    style={{ transform: idx === 0 ? 'rotate(-1.5deg)' : 'rotate(1.2deg)' }}
+                  >
+                    <MessageSquare className="w-4 h-4 text-secondary-ink" />
+                    <span className="text-xs font-bold text-secondary-ink font-body">{platform.name}</span>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Right: Community Voices sticky note */}
+          <motion.div
+            initial={{ opacity: 0, y: 15, rotate: 0 }}
+            whileInView={{ opacity: 1, y: 0, rotate: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            className="zine-sticky p-6 sm:p-8 space-y-4"
+            style={{ transform: 'rotate(1.2deg)' }}
+          >
+            <h3 className="zine-handwritten text-2xl text-secondary-ink leading-tight">
+              {t('communityVoices.title')}
+            </h3>
+            <p className="font-body text-sm text-secondary-ink leading-relaxed">
+              {t('communityVoices.subtitle')}
+            </p>
+            <Link
+              href="/community-voices"
+              className="inline-flex items-center gap-1 text-xs font-bold text-primary hover:underline font-body"
+            >
+              <span>{t('communityVoices.readMore')}</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* 5. Resources Preview — Corkboard section */}
+      <section className="zine-corkboard border-y-2 border-rule">
+        <div className="max-w-7xl mx-auto px-6 py-20 sm:px-8 lg:px-12 space-y-12">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+            <div className="max-w-2xl space-y-2">
+              <span className="zine-handwritten text-xl text-primary">{t('ui.resources')}</span>
+              <h2 className="font-heading text-4xl sm:text-5xl text-foreground leading-tight">
+                {t('resources.title')}
+              </h2>
+              <p className="text-muted-foreground text-sm font-body">
+                {t('resources.subtitle')}
+              </p>
+            </div>
+            <Link
+              href="/resources"
+              className="w-fit inline-flex items-center gap-1 text-primary font-bold hover:underline text-sm zine-handwritten text-lg"
+            >
+              <span>{t('ui.viewAllGuides')}</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {initialResources.slice(0, 2).map((res, idx) => (
+              <motion.div
+                key={res.id}
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.6, delay: idx * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                className="zine-tape group border-2 border-rule bg-card p-6 flex flex-col justify-between shadow-md hover:shadow-lg transition-all"
+                style={{ transform: idx === 0 ? 'rotate(-0.5deg)' : 'rotate(0.5deg)' }}
+              >
+                <div className="space-y-4 pt-2">
+                  <div className="flex items-center justify-between text-[10px]">
+                    <span className="px-2.5 py-0.5 rounded-full font-bold bg-primary/10 text-primary font-body capitalize">
+                      {res.category === 'bestPractices' ? t('resources.bestPractices') : res.category === 'starting' ? t('resources.gettingStarted') : res.category === 'resume' ? t('resources.resumePrep') : t('resources.platformGuides')}
+                    </span>
+                    <span className="text-muted-foreground font-medium font-body">{res.readTime}</span>
+                  </div>
+                  <h3 className="font-heading text-2xl text-foreground leading-tight">
+                    {res.title}
+                  </h3>
+                  <p className="text-muted-foreground text-xs leading-relaxed font-body">
+                    {res.description}
+                  </p>
+                </div>
+                <div className="mt-6 pt-4 border-t-2 border-dashed border-rule">
+                  <Link
+                    href={`/resources?id=${res.id}`}
+                    className="inline-flex items-center gap-1.5 text-primary text-xs font-bold hover:underline font-body"
+                  >
+                    <span>{t('resources.readArticle')}</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 7. Community Guidelines — Marker rules on lined paper */}
+      <section className="max-w-7xl mx-auto px-6 py-20 sm:px-8 lg:px-12 space-y-12 border-t-2 border-rule">
+        <div className="max-w-3xl space-y-4">
+          <h2 className="font-heading text-4xl sm:text-5xl text-foreground leading-tight">
             {t('guidelines.title')}
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-muted-foreground text-sm font-body">
             {t('guidelines.subtitle')}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {guidelineRules.map((rule, idx) => {
-            const Icon = rule.icon;
-            return (
-              <div
-                key={idx}
-                className="border border-card-border bg-card p-6 rounded-2xl flex flex-col items-center text-center shadow-sm"
-              >
-                <div className="p-2.5 rounded-full bg-primary/10 text-primary mb-4">
-                  <Icon className="w-5 h-5" />
-                </div>
-                <h3 className="font-bold text-foreground mb-2">
+        <ol className="max-w-3xl divide-y-2 divide-dashed divide-rule">
+          {[
+            { titleKey: 'guidelines.rule1Title', descKey: 'guidelines.rule1Desc' },
+            { titleKey: 'guidelines.rule2Title', descKey: 'guidelines.rule2Desc' },
+            { titleKey: 'guidelines.rule3Title', descKey: 'guidelines.rule3Desc' },
+            { titleKey: 'guidelines.rule4Title', descKey: 'guidelines.rule4Desc' }
+          ].map((rule, idx) => (
+            <motion.li
+              key={idx}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.5, delay: idx * 0.08, ease: [0.16, 1, 0.3, 1] }}
+              className="flex gap-5 py-6 first:pt-0 last:pb-0"
+            >
+              <span className="font-heading text-4xl font-bold text-primary/30 shrink-0 w-12 leading-none">
+                {String(idx + 1).padStart(2, '0')}
+              </span>
+              <div className="space-y-1.5">
+                <h3 className="font-heading text-xl text-foreground leading-tight">
                   {t(rule.titleKey)}
                 </h3>
-                <p className="text-muted-foreground text-xs leading-relaxed">
+                <p className="text-muted-foreground text-sm leading-relaxed font-body">
                   {t(rule.descKey)}
                 </p>
               </div>
-            );
-          })}
+            </motion.li>
+          ))}
+        </ol>
+      </section>
+
+      {/* 8. Final CTA — Handwritten sign-off */}
+      <section className="border-t-2 border-rule bg-secondary/10 py-20">
+        <div className="max-w-3xl mx-auto px-6 space-y-6 text-center">
+          <h2 className="font-heading text-5xl text-foreground leading-tight">
+            {t('ui.connectEvaluators')}
+          </h2>
+          <p className="text-muted-foreground text-sm max-w-md mx-auto font-body italic">
+            {t('ui.connectSubtitle')}
+          </p>
+          <div className="pt-2">
+            <a
+              href="https://discord.gg/56xGWJRqEQ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-press inline-flex items-center gap-2 px-8 py-4 rounded-full bg-primary text-primary-foreground font-bold hover:bg-primary/90 shadow-md transition-colors text-sm"
+            >
+              <span>{t('ui.joinDiscordCrew')}</span>
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
         </div>
       </section>
+
     </div>
   );
 }

@@ -40,6 +40,15 @@ export interface TranslationDict {
     card5Desc: string;
     card6Title: string;
     card6Desc: string;
+    step1Tag: string;
+    step1Title: string;
+    step1Desc: string;
+    step2Tag: string;
+    step2Title: string;
+    step2Desc: string;
+    step3Tag: string;
+    step3Title: string;
+    step3Desc: string;
   };
   platforms: {
     title: string;
@@ -50,6 +59,18 @@ export interface TranslationDict {
     instagram: string;
     linkedin: string;
     facebook: string;
+    vettedData: string;
+    vettedTitle: string;
+    vettedSubtitle: string;
+    dataannotationDesc: string;
+    outlierDesc: string;
+    alignerrDesc: string;
+    chatCodingSearch: string;
+    rlhfMultimodal: string;
+    writingMathCode: string;
+    mediumHigh: string;
+    highVetting: string;
+    skillExams: string;
   };
   communityVoices: {
     title: string;
@@ -86,6 +107,54 @@ export interface TranslationDict {
     quickLinks: string;
     contact: string;
     rights: string;
+  };
+heroCard: {
+    activeCommunity: string;
+    liveSubtitle: string;
+    members: string;
+    discussions: string;
+    globalDesc: string;
+    joinDiscord: string;
+    topPlatforms: string;
+  };
+  ui: {
+    viewAllGuides: string;
+    readGuide: string;
+    joinCommunity: string;
+    questionsPlatform: string;
+    discordSubtitle: string;
+    remote: string;
+    locationRequired: string;
+    payRange: string;
+    interview: string;
+    interviewType: string;
+    readingTime: string;
+    lastReviewed: string;
+    tags: string;
+    quickOverview: string;
+    contents: string;
+    relatedContent: string;
+    careerGuides: string;
+    comparisons: string;
+    resources: string;
+    independentDatabase: string;
+    platformsReviewed: string;
+    editorialStandard: string;
+    payApproximate: string;
+    independentNode: string;
+    noCorporateBS: string;
+    vettedData: string;
+    vettedPlatformTitle: string;
+    vettedPlatformSubtitle: string;
+    connectEvaluators: string;
+    connectSubtitle: string;
+    joinDiscordCrew: string;
+    low: string;
+    medium: string;
+    high: string;
+    resumeVetting: string;
+    aiEvaluationPlatform: string;
+    varies: string;
   };
 }
 
@@ -129,7 +198,16 @@ export const translations: Record<Language, TranslationDict> = {
       card5Title: 'Industry Discussions',
       card5Desc: 'Analyze AI model trends, prompt engineering, guidelines updates, and freelancing shifts.',
       card6Title: 'Language Channels',
-      card6Desc: 'Access regional channels and localized discussion rooms for non-English evaluators.'
+      card6Desc: 'Access regional channels and localized discussion rooms for non-English evaluators.',
+      step1Tag: 'Prep & Materials',
+      step1Title: 'Preparation & Vetted Access',
+      step1Desc: 'Access rigorous guidelines, practice tests, and evaluation rubrics designed to help you pass entry assessments on Outlier, Alignerr, and DataAnnotation.',
+      step2Tag: 'Community Hub',
+      step2Title: 'Peer Support & Referrals',
+      step2Desc: 'Connect with a global network of remote professionals. Discover active job opportunities, receive vetted referral codes, and share localization support.',
+      step3Tag: 'Professional Growth',
+      step3Title: 'Market Intelligence',
+      step3Desc: 'Discuss payment models, hourly rate variations, guideline changes, and tax considerations with seasoned contributors who have been doing this for years.'
     },
     platforms: {
       title: 'Where to Find Us',
@@ -139,7 +217,19 @@ export const translations: Record<Language, TranslationDict> = {
       twitter: 'Twitter / X',
       instagram: 'Instagram',
       linkedin: 'LinkedIn',
-      facebook: 'Facebook'
+      facebook: 'Facebook',
+      vettedData: 'Vetted Data',
+      vettedTitle: 'Vetted platform intelligence.',
+      vettedSubtitle: 'Compare pay scales, assessment difficulties, and project types before applying. Vetted by active community members.',
+      dataannotationDesc: 'High-quality prompt/response rating projects with flexible scheduling.',
+      outlierDesc: 'Massive scale platform owned by Scale AI. High pay but rigorous quality checks.',
+      alignerrDesc: 'Specialized evaluation platform focusing on high-accuracy domain data.',
+      chatCodingSearch: 'Chat, Coding, Search',
+      rlhfMultimodal: 'RLHF, Multimodal',
+      writingMathCode: 'Writing, Math, Code',
+      mediumHigh: 'Medium-High',
+      highVetting: 'High Vetting',
+      skillExams: 'Skill Exams'
     },
     communityVoices: {
       title: 'Community Voices',
@@ -176,6 +266,54 @@ export const translations: Record<Language, TranslationDict> = {
       quickLinks: 'Quick Links',
       contact: 'Contact',
       rights: 'All rights reserved.'
+    },
+    heroCard: {
+      activeCommunity: 'Active Community',
+      liveSubtitle: 'Live • Global • Growing',
+      members: 'Members',
+      discussions: 'Discussions',
+      globalDesc: '🌏 Global — AI Evaluators · RLHF · Remote Pros',
+      joinDiscord: 'Join the Discord',
+      topPlatforms: 'Top Platforms'
+    },
+    ui: {
+      viewAllGuides: 'View all guides',
+      readGuide: 'Read Guide',
+      joinCommunity: 'Join the Community',
+      questionsPlatform: 'Questions about this platform?',
+      discordSubtitle: 'Join our community to get answers from people actively working there.',
+      remote: 'Remote',
+      locationRequired: 'Location Required',
+      payRange: 'Pay Range',
+      interview: 'Interview',
+      interviewType: 'Interview Type',
+      readingTime: 'Reading Time',
+      lastReviewed: 'Last Reviewed',
+      tags: 'Tags',
+      quickOverview: 'Quick Overview',
+      contents: 'Contents',
+      relatedContent: 'Related Content',
+      careerGuides: 'Career Guides',
+      comparisons: 'Comparisons',
+      resources: 'Resources',
+      independentDatabase: 'Independent Database',
+      platformsReviewed: 'platforms reviewed & updated regularly',
+      editorialStandard: 'All guides follow the Talent Collective editorial standard. Every claim is labelled with its confidence source: Official, Verified, Supported by Community, or Unknown.',
+      payApproximate: 'Pay ranges are approximate, based on active member reports, and subject to change. No data is fabricated.',
+      independentNode: 'Independent & Non-Aligned Node',
+      noCorporateBS: 'Your crew in AI freelancing. No corporate BS.',
+      vettedData: 'Vetted Data',
+      vettedPlatformTitle: 'Vetted platform intelligence.',
+      vettedPlatformSubtitle: 'Compare pay scales, assessment difficulties, and project types before applying. Vetted by active community members.',
+      connectEvaluators: 'Connect with AI Evaluators.',
+      connectSubtitle: 'Get instant support, compare projects, and stay ahead of empty queues with our global community.',
+      joinDiscordCrew: 'Join the Discord Crew',
+      low: 'Low',
+      medium: 'Medium',
+      high: 'High',
+      resumeVetting: 'Resume Vetting',
+      aiEvaluationPlatform: 'AI Evaluation Platform',
+      varies: 'Varies'
     }
   },
   es: {
@@ -217,7 +355,16 @@ export const translations: Record<Language, TranslationDict> = {
       card5Title: 'Debates de la Industria',
       card5Desc: 'Analiza tendencias de modelos de IA, ingeniería de prompts, actualizaciones de directrices y cambios en el trabajo autónomo.',
       card6Title: 'Canales por Idioma',
-      card6Desc: 'Accede a canales regionales y salas de discusión localizadas para evaluadores no angloparlantes.'
+      card6Desc: 'Accede a canales regionales y salas de discusión localizadas para evaluadores no angloparlantes.',
+      step1Tag: 'Preparación y Materiales',
+      step1Title: 'Preparación y Acceso Verificado',
+      step1Desc: 'Accede a pautas rigurosas, exámenes de práctica y rúbricas de evaluación diseñadas para ayudarte a aprobar las evaluaciones de ingreso en Outlier, Alignerr y DataAnnotation.',
+      step2Tag: 'Centro Comunitario',
+      step2Title: 'Soporte entre Pares y Recomendaciones',
+      step2Desc: 'Conéctate con una red global de profesionales remotos. Descubre oportunidades de trabajo activas, recibe códigos de recomendación verificados y comparte soporte de localización.',
+      step3Tag: 'Crecimiento Profesional',
+      step3Title: 'Inteligencia de Mercado',
+      step3Desc: 'Analiza modelos de pago, variaciones de tarifas por hora, cambios en las directrices y consideraciones fiscales con colaboradores experimentados que llevan años en esto.'
     },
     platforms: {
       title: 'Dónde Encontrarnos',
@@ -227,7 +374,19 @@ export const translations: Record<Language, TranslationDict> = {
       twitter: 'Twitter / X',
       instagram: 'Instagram',
       linkedin: 'LinkedIn',
-      facebook: 'Facebook'
+      facebook: 'Facebook',
+      vettedData: 'Datos Verificados',
+      vettedTitle: 'Inteligencia de plataforma verificada.',
+      vettedSubtitle: 'Compara escalas salariales, dificultades de evaluación y tipos de proyectos antes de postularte. Verificado por miembros activos de la comunidad.',
+      dataannotationDesc: 'Proyectos de calificación de prompts/respuestas de alta calidad con horarios flexibles.',
+      outlierDesc: 'Plataforma de gran escala propiedad de Scale AI. Alta remuneración pero estrictos controles de calidad.',
+      alignerrDesc: 'Plataforma de evaluación especializada centrada en datos de dominio de alta precisión.',
+      chatCodingSearch: 'Chat, Codificación, Búsqueda',
+      rlhfMultimodal: 'RLHF, Multimodal',
+      writingMathCode: 'Escritura, Matemáticas, Código',
+      mediumHigh: 'Media-Alta',
+      highVetting: 'Alto Filtro',
+      skillExams: 'Exámenes de Habilidad'
     },
     communityVoices: {
       title: 'Voces de la Comunidad',
@@ -264,6 +423,54 @@ export const translations: Record<Language, TranslationDict> = {
       quickLinks: 'Enlaces Rápidos',
       contact: 'Contacto',
       rights: 'Todos los derechos reservados.'
+    },
+    heroCard: {
+      activeCommunity: 'Comunidad Activa',
+      liveSubtitle: 'En vivo • Global • Creciendo',
+      members: 'Miembros',
+      discussions: 'Conversaciones',
+      globalDesc: '🌏 Global — Evaluadores de IA · RLHF · Profesionales Remotos',
+      joinDiscord: 'Unirse al Discord',
+      topPlatforms: 'Principales Plataformas'
+    },
+    ui: {
+      viewAllGuides: 'Ver todas las guías',
+      readGuide: 'Leer Guía',
+      joinCommunity: 'Unirse a la Comunidad',
+      questionsPlatform: '¿Preguntas sobre esta plataforma?',
+      discordSubtitle: 'Únete a nuestra comunidad para obtener respuestas de personas que trabajan allí activamente.',
+      remote: 'Remoto',
+      locationRequired: 'Ubicación Requerida',
+      payRange: 'Rango de Pago',
+      interview: 'Entrevista',
+      interviewType: 'Tipo de Entrevista',
+      readingTime: 'Tiempo de Lectura',
+      lastReviewed: 'Última Revisión',
+      tags: 'Etiquetas',
+      quickOverview: 'Resumen Rápido',
+      contents: 'Contenidos',
+      relatedContent: 'Contenido Relacionado',
+      careerGuides: 'Guías de Carrera',
+      comparisons: 'Comparaciones',
+      resources: 'Recursos',
+      independentDatabase: 'Base de Datos Independiente',
+      platformsReviewed: 'plataformas revisadas y actualizadas regularmente',
+      editorialStandard: 'Todas las guías siguen el estándar editorial de Talent Collective. Cada afirmación está etiquetada con su fuente de confianza: Oficial, Verificada, Respaldada por la Comunidad o Desconocida.',
+      payApproximate: 'Los rangos de pago son aproximados, basados en informes de miembros activos y sujetos a cambios. No se fabrican datos.',
+      independentNode: 'Nodo Independiente y No Alineado',
+      noCorporateBS: 'Tu equipo en el trabajo independiente de IA. Sin tonterías corporativas.',
+      vettedData: 'Datos Verificados',
+      vettedPlatformTitle: 'Inteligencia de plataforma verificada.',
+      vettedPlatformSubtitle: 'Compara escalas salariales, dificultades de evaluación y tipos de proyectos antes de postularte. Verificado por miembros activos de la comunidad.',
+      connectEvaluators: 'Conéctate con Evaluadores de IA.',
+      connectSubtitle: 'Obtén soporte instantáneo, compara proyectos y anticípate a las colas vacías con nuestra comunidad global.',
+      joinDiscordCrew: 'Unirse al Equipo de Discord',
+      low: 'Bajo',
+      medium: 'Medio',
+      high: 'Alto',
+      resumeVetting: 'Filtro de Currículum',
+      aiEvaluationPlatform: 'Plataforma de Evaluación de IA',
+      varies: 'Varía'
     }
   },
   fr: {
@@ -305,7 +512,16 @@ export const translations: Record<Language, TranslationDict> = {
       card5Title: 'Discussions Sectorielles',
       card5Desc: 'Analysez les tendances des modèles d\'IA, l\'ingénierie des prompts, les mises à jour des règles et les évolutions du freelancing.',
       card6Title: 'Canaux Multilingues',
-      card6Desc: 'Accédez à des canaux régionaux et des salons de discussion locaux pour les évaluateurs non anglophones.'
+      card6Desc: 'Accédez à des canaux régionaux et des salons de discussion locaux pour les évaluateurs non anglophones.',
+      step1Tag: 'Préparation et Matériel',
+      step1Title: 'Préparation et Accès Validé',
+      step1Desc: 'Accédez à des directives rigoureuses, des tests d\'entraînement et des grilles d\'évaluation conçus pour vous aider à réussir les examens d\'entrée sur Outlier, Alignerr et DataAnnotation.',
+      step2Tag: 'Pôle Communautaire',
+      step2Title: 'Soutien et Recommandations',
+      step2Desc: 'Connectez-vous avec un réseau mondial de professionnels à distance. Découvrez des offres d\'emploi actives, obtenez des codes de parrainage validés et partagez une assistance locale.',
+      step3Tag: 'Évolution Professionnelle',
+      step3Title: 'Analyses de Marché',
+      step3Desc: 'Discutez des modèles de rémunération, des variations de taux horaires, des changements de directives et des questions fiscales avec des contributeurs chevronnés qui font cela depuis des années.'
     },
     platforms: {
       title: 'Où Nous Trouver',
@@ -315,7 +531,19 @@ export const translations: Record<Language, TranslationDict> = {
       twitter: 'Twitter / X',
       instagram: 'Instagram',
       linkedin: 'LinkedIn',
-      facebook: 'Facebook'
+      facebook: 'Facebook',
+      vettedData: 'Données Vérifiées',
+      vettedTitle: 'Analyses de plateformes vérifiées.',
+      vettedSubtitle: 'Comparez les grilles de salaire, les difficultés d\'évaluation et les types de projets avant de postuler. Validé par les membres actifs de la communauté.',
+      dataannotationDesc: 'Projets d\'évaluation de prompts/réponses de haute qualité avec horaires flexibles.',
+      outlierDesc: 'Plateforme à grande échelle détenue par Scale AI. Rémunération élevée mais contrôles de qualité rigoureux.',
+      alignerrDesc: 'Plateforme d\'évaluation spécialisée axée sur des données de domaine de haute précision.',
+      chatCodingSearch: 'Chat, Code, Recherche',
+      rlhfMultimodal: 'RLHF, Multimodal',
+      writingMathCode: 'Écriture, Maths, Code',
+      mediumHigh: 'Moyenne-Haute',
+      highVetting: 'Sélection Stricte',
+      skillExams: 'Tests de Compétences'
     },
     communityVoices: {
       title: 'Voix de la Communauté',
@@ -352,6 +580,54 @@ export const translations: Record<Language, TranslationDict> = {
       quickLinks: 'Liens Rapides',
       contact: 'Contact',
       rights: 'Tous droits réservés.'
+    },
+    heroCard: {
+      activeCommunity: 'Communauté Active',
+      liveSubtitle: 'En direct • Global • En croissance',
+      members: 'Membres',
+      discussions: 'Discussions',
+      globalDesc: '🌏 Global — Évaluateurs IA · RLHF · Pros à Distance',
+      joinDiscord: 'Rejoindre le Discord',
+      topPlatforms: 'Meilleures Plateformes'
+    },
+    ui: {
+      viewAllGuides: 'Voir tous les guides',
+      readGuide: 'Lire le Guide',
+      joinCommunity: 'Rejoindre la Communauté',
+      questionsPlatform: 'Des questions sur cette plateforme ?',
+      discordSubtitle: 'Rejoignez notre communauté pour obtenir des réponses de personnes qui y travaillent activement.',
+      remote: 'À distance',
+      locationRequired: 'Présence requise',
+      payRange: 'Fourchette de salaire',
+      interview: 'Entretien',
+      interviewType: 'Type d\'entretien',
+      readingTime: 'Temps de lecture',
+      lastReviewed: 'Dernière révision',
+      tags: 'Mots-clés',
+      quickOverview: 'Aperçu rapide',
+      contents: 'Sommaire',
+      relatedContent: 'Contenu Connexe',
+      careerGuides: 'Guides de Carrière',
+      comparisons: 'Comparatifs',
+      resources: 'Ressources',
+      independentDatabase: 'Base de Données Indépendante',
+      platformsReviewed: 'plateformes révisées et mises à jour régulièrement',
+      editorialStandard: 'Tous les guides suivent la charte éditoriale de Talent Collective. Chaque affirmation est étiquetée selon sa source de confiance : Officielle, Vérifiée, Soutenue par la communauté, ou Inconnue.',
+      payApproximate: 'Les fourchettes de rémunération sont approximatives, basées sur les rapports des membres actifs, et sujettes à modification. Aucune donnée n\'est inventée.',
+      independentNode: 'Nœud Indépendant et Non Alignée',
+      noCorporateBS: 'Votre équipe dans le freelancing IA. Pas de jargon corporatif.',
+      vettedData: 'Données Vérifiées',
+      vettedPlatformTitle: 'Analyses de plateformes vérifiées.',
+      vettedPlatformSubtitle: 'Comparez les grilles de salaire, les difficultés d\'évaluation et les types de projets avant de postuler. Validé par les membres actifs de la communauté.',
+      connectEvaluators: 'Connectez-vous avec les évaluateurs IA.',
+      connectSubtitle: 'Obtenez une assistance instantanée, comparez les projets et évitez les files d\'attente grâce à notre communauté.',
+      joinDiscordCrew: 'Rejoindre l\'équipe Discord',
+      low: 'Faible',
+      medium: 'Moyen',
+      high: 'Élevé',
+      resumeVetting: 'Sélection sur CV',
+      aiEvaluationPlatform: 'Plateforme d\'Évaluation IA',
+      varies: 'Varie'
     }
   },
   ja: {
@@ -393,7 +669,16 @@ export const translations: Record<Language, TranslationDict> = {
       card5Title: '業界ディスカッション',
       card5Desc: 'AIモデルのトレンド、プロンプトエンジニアリング、ガイドラインの変更、フリーランスの動向を分析します。',
       card6Title: '多言語チャンネル',
-      card6Desc: '英語以外のエバリュエーター向けに、地域ごとのチャンネルやローカライズされたディスカッションルームを用意しています。'
+      card6Desc: '英語以外のエバリュエーター向けに、地域ごとのチャンネルやローカライズされたディスカッションルームを用意しています。',
+      step1Tag: '対策と資料',
+      step1Title: '試験対策と検証済みアクセス',
+      step1Desc: 'Outlier、Alignerr、DataAnnotationの登録試験に合格するために設計された、厳格なガイドライン、練習テスト、評価基準にアクセスできます。',
+      step2Tag: 'コミュニティハブ',
+      step2Title: 'ピアサポートと紹介',
+      step2Desc: 'リモート専門家のグローバルネットワークと繋がります。アクティブな求人情報の発見、検証済み紹介コードの取得、ローカライズサポートの共有が可能です。',
+      step3Tag: 'プロとしての成長',
+      step3Title: '市場インテリジェンス',
+      step3Desc: '長年この仕事をしている熟練のコントリビューターと、報酬モデル、時間単価の変動、ガイドラインの変更、税務上の考慮事項について議論できます。'
     },
     platforms: {
       title: '活動場所',
@@ -403,7 +688,19 @@ export const translations: Record<Language, TranslationDict> = {
       twitter: 'Twitter / X',
       instagram: 'Instagram',
       linkedin: 'LinkedIn',
-      facebook: 'Facebook'
+      facebook: 'Facebook',
+      vettedData: '検証データ',
+      vettedTitle: '検証済みのプラットフォーム情報。',
+      vettedSubtitle: '応募する前に、給与体系、試験の難易度、プロジェクトの種類を比較できます。アクティブなコミュニティメンバーによって検証されています。',
+      dataannotationDesc: '柔軟なスケジュールで提供される、高品質なプロンプト/回答評価プロジェクト。',
+      outlierDesc: 'Scale AI傘下の最大規模プラットフォーム。報酬は高いが、厳格な品質管理が行われる。',
+      alignerrDesc: '高精度な専門分野データに焦点を当てた、特化型評価プラットフォーム。',
+      chatCodingSearch: 'チャット, コーディング, 検索',
+      rlhfMultimodal: 'RLHF, マルチモーダル',
+      writingMathCode: 'ライティング, 数学, コード',
+      mediumHigh: '中〜高',
+      highVetting: '厳格な審査',
+      skillExams: '専門試験あり'
     },
     communityVoices: {
       title: 'コミュニティの声',
@@ -440,6 +737,54 @@ export const translations: Record<Language, TranslationDict> = {
       quickLinks: 'クイックリンク',
       contact: 'お問い合わせ',
       rights: 'All rights reserved.'
+    },
+    heroCard: {
+      activeCommunity: 'アクティブコミュニティ',
+      liveSubtitle: 'ライブ • グローバル • 成長中',
+      members: 'メンバー',
+      discussions: 'ディスカッション',
+      globalDesc: '🌏 グローバル — AI エバリュエーター · RLHF · リモートプロ',
+      joinDiscord: 'Discordに参加する',
+      topPlatforms: '主要プラットフォーム'
+    },
+    ui: {
+      viewAllGuides: 'すべてのガイドを見る',
+      readGuide: 'ガイドを読む',
+      joinCommunity: 'コミュニティに参加する',
+      questionsPlatform: 'このプラットフォームについて質問がありますか？',
+      discordSubtitle: 'コミュニティに参加して、実際に働いているメンバーから回答を得ましょう。',
+      remote: 'リモート',
+      locationRequired: '出社が必要',
+      payRange: '給与範囲',
+      interview: '面接・試験',
+      interviewType: '試験タイプ',
+      readingTime: '読了時間',
+      lastReviewed: '最終確認日',
+      tags: 'タグ',
+      quickOverview: '概要',
+      contents: '目次',
+      relatedContent: '関連コンテンツ',
+      careerGuides: 'キャリアガイド',
+      comparisons: 'プラットフォーム比較',
+      resources: 'リソース',
+      independentDatabase: '独立データベース',
+      platformsReviewed: 'のプラットフォームが定期的にレビューおよび更新されています',
+      editorialStandard: 'すべてのガイドはTalent Collectiveの編集基準に従っています。すべての主張は、信頼性の高い情報源（公式、検証済み、コミュニティ支持、または不明）に分類されています。定義済みの基準に従います。',
+      payApproximate: '給与範囲は目安であり、アクティブメンバーの報告に基づいており、変更される場合があります。データの捏造は一切ありません。',
+      independentNode: '独立非加盟ノード',
+      noCorporateBS: 'AIフリーランスのクルー。企業的な無駄話はなし。',
+      vettedData: '検証データ',
+      vettedPlatformTitle: '検証済みのプラットフォーム情報。',
+      vettedPlatformSubtitle: '応募する前に、給与体系、試験の難易度、プロジェクトの種類を比較できます。アクティブなコミュニティメンバーによって検証されています。',
+      connectEvaluators: 'AIエバリュエーターと繋がる。',
+      connectSubtitle: 'グローバルなコミュニティで、即時のサポートを受け、プロジェクトを比較し、案件枯渇を防ぎましょう。',
+      joinDiscordCrew: 'Discordクルーに参加する',
+      low: '低',
+      medium: '中',
+      high: '高',
+      resumeVetting: '履歴書審査',
+      aiEvaluationPlatform: 'AI評価プラットフォーム',
+      varies: '可変'
     }
   },
   it: {
@@ -481,7 +826,16 @@ export const translations: Record<Language, TranslationDict> = {
       card5Title: 'Discussioni di Settore',
       card5Desc: 'Analizza le tendenze dei modelli IA, prompt engineering, aggiornamenti alle linee guida e cambiamenti nel freelancing.',
       card6Title: 'Canali Linguistici',
-      card6Desc: 'Accedi a canali regionali e sale di discussione localizzate per valutatori non anglofoni.'
+      card6Desc: 'Accedi a canali regionali e sale di discussione localizzate per valutatori non anglofoni.',
+      step1Tag: 'Prep e Materiali',
+      step1Title: 'Preparazione e Accesso Verificato',
+      step1Desc: 'Accedi a linee guida rigorose, test pratici e rubriche di valutazione progettate per aiutarti a superare i test d\'ingresso su Outlier, Alignerr e DataAnnotation.',
+      step2Tag: 'Hub della Comunità',
+      step2Title: 'Supporto tra Pari e Referral',
+      step2Desc: 'Connettiti con una rete globale de professionisti da remoto. Scopri opportunità di lavoro attive, ricevi codici referral verificati e condividi il supporto alla localizzazione.',
+      step3Tag: 'Crescita Professionale',
+      step3Title: 'Intelligenza di Mercato',
+      step3Desc: 'Discuti modelli di pagamento, variazioni delle tariffe orarie, modifiche alle linee guida e considerazioni fiscali con collaboratori esperti che lo fanno da anni.'
     },
     platforms: {
       title: 'Dove Trovarci',
@@ -491,7 +845,19 @@ export const translations: Record<Language, TranslationDict> = {
       twitter: 'Twitter / X',
       instagram: 'Instagram',
       linkedin: 'LinkedIn',
-      facebook: 'Facebook'
+      facebook: 'Facebook',
+      vettedData: 'Dati Verificati',
+      vettedTitle: 'Informazioni verificate sulle piattaforme.',
+      vettedSubtitle: 'Confronta tariffe, difficoltà dei test e tipi di progetti prima di candidarti. Verificato dai membri attivi della comunità.',
+      dataannotationDesc: 'Progetti di valutazione prompt/risposta di alta qualità con orari flessibili.',
+      outlierDesc: 'Piattaforma su larga scala di proprietà di Scale AI. Pagamento alto ma rigidi controlli di qualità.',
+      alignerrDesc: 'Piattaforma di valutazione specializzata focalizzata su dati di dominio ad alta precisione.',
+      chatCodingSearch: 'Chat, Codice, Ricerca',
+      rlhfMultimodal: 'RLHF, Multimodale',
+      writingMathCode: 'Scrittura, Matematica, Codice',
+      mediumHigh: 'Medio-Alta',
+      highVetting: 'Alta Selezione',
+      skillExams: 'Esami di Abilità'
     },
     communityVoices: {
       title: 'Voci della Comunità',
@@ -528,6 +894,54 @@ export const translations: Record<Language, TranslationDict> = {
       quickLinks: 'Link Rapidi',
       contact: 'Contatti',
       rights: 'Tutti i diritti riservati.'
+    },
+    heroCard: {
+      activeCommunity: 'Comunità Attiva',
+      liveSubtitle: 'Dal vivo • Globale • In crescita',
+      members: 'Membri',
+      discussions: 'Discussioni',
+      globalDesc: '🌏 Globale — Valutatori IA · RLHF · Professionisti da Remoto',
+      joinDiscord: 'Unisciti al Discord',
+      topPlatforms: 'Principali Piattaforme'
+    },
+    ui: {
+      viewAllGuides: 'Vedi tutte le guide',
+      readGuide: 'Leggi la Guida',
+      joinCommunity: 'Unisciti alla Comunità',
+      questionsPlatform: 'Domande su questa piattaforma?',
+      discordSubtitle: 'Unisciti alla nostra comunità per ottenere risposte da chi ci lavora attivamente.',
+      remote: 'Da remoto',
+      locationRequired: 'Sede richiesta',
+      payRange: 'Tariffe di Pagamento',
+      interview: 'Colloquio',
+      interviewType: 'Tipo di Colloquio',
+      readingTime: 'Tempo di Lettura',
+      lastReviewed: 'Ultima Revisione',
+      tags: 'Tag',
+      quickOverview: 'Panoramica Rapida',
+      contents: 'Indice',
+      relatedContent: 'Contenuti Correlati',
+      careerGuides: 'Guide di Carriera',
+      comparisons: 'Confronti',
+      resources: 'Risorse',
+      independentDatabase: 'Database Indipendente',
+      platformsReviewed: 'piattaforme recensite e aggiornate regolarmente',
+      editorialStandard: 'Tutte le guide seguono lo standard editoriale di Talent Collective. Ogni informazione è contrassegnata dalla sua fonte di attendibilità: Ufficiale, Verificata, Supportata dalla Comunità o Sconosciuta.',
+      payApproximate: 'Le fasce di pagamento sono approssimative, basate sui rapporti dei membri attivi e soggette a modifiche. Nessun dato è inventato.',
+      independentNode: 'Nodo Indipendente e Non Allineato',
+      noCorporateBS: 'Il tuo team nel freelancing dell\'IA. Niente formalità aziendali.',
+      vettedData: 'Dati Verificati',
+      vettedPlatformTitle: 'Informazioni verificate sulle piattaforme.',
+      vettedPlatformSubtitle: 'Confronta tariffe, difficoltà dei test e tipi di progetti prima di candidarti. Verificato dai membri attivi della comunità.',
+      connectEvaluators: 'Connettiti con i Valutatori IA.',
+      connectSubtitle: 'Ricevi supporto immediato, confronta i progetti e previeni le code vuote con la nostra comunità globale.',
+      joinDiscordCrew: 'Unisciti alla ciurma di Discord',
+      low: 'Basso',
+      medium: 'Medio',
+      high: 'Alto',
+      resumeVetting: 'Selezione CV',
+      aiEvaluationPlatform: 'Piattaforma di Valutazione IA',
+      varies: 'Varia'
     }
   },
   de: {
@@ -569,7 +983,16 @@ export const translations: Record<Language, TranslationDict> = {
       card5Title: 'Branchendiskussionen',
       card5Desc: 'Analysiere KI-Modell-Trends, Prompt Engineering, Richtlinien-Updates und Freelancing-Veränderungen.',
       card6Title: 'Sprachkanäle',
-      card6Desc: 'Nutze regionale Kanäle und lokalisierte Diskussionsräume für nicht-englischsprachige Bewerter.'
+      card6Desc: 'Nutze regionale Kanäle und lokalisierte Diskussionsräume für nicht-englischsprachige Bewerter.',
+      step1Tag: 'Vorbereitung & Materialien',
+      step1Title: 'Vorbereitung & Geprüfter Zugang',
+      step1Desc: 'Greife auf strenge Richtlinien, Übungstests und Bewertungsrubriken zu, die dir helfen sollen, Eignungstests bei Outlier, Alignerr und DataAnnotation zu bestehen.',
+      step2Tag: 'Community-Knotenpunkt',
+      step2Title: 'Peer-Support & Empfehlungen',
+      step2Desc: 'Vernetze dich mit einem globalen Netzwerk von Remote-Profis. Entdecke aktive Jobangebote, erhalte geprüfte Empfehlungscodes und teile Lokalisierungshilfe.',
+      step3Tag: 'Berufliches Wachstum',
+      step3Title: 'Marktanalysen',
+      step3Desc: 'Diskutiere Vergütungsmodelle, Abweichungen bei Stundensätzen, Richtlinienänderungen und steuerliche Aspekte mit erfahrenen Mitwirkenden, die dies seit Jahren tun.'
     },
     platforms: {
       title: 'Wo du uns findest',
@@ -579,7 +1002,19 @@ export const translations: Record<Language, TranslationDict> = {
       twitter: 'Twitter / X',
       instagram: 'Instagram',
       linkedin: 'LinkedIn',
-      facebook: 'Facebook'
+      facebook: 'Facebook',
+      vettedData: 'Geprüfte Daten',
+      vettedTitle: 'Geprüfte Plattform-Analysen.',
+      vettedSubtitle: 'Vergleiche Gehaltsskalen, Testschwierigkeiten und Projekttypen vor deiner Bewerbung. Von aktiven Community-Mitgliedern geprüft.',
+      dataannotationDesc: 'Hochwertige Prompt/Response-Bewertungsprojekte bei flexibler Zeiteinteilung.',
+      outlierDesc: 'Große Plattform im Besitz von Scale AI. Hohe Vergütung, aber strenge Qualitätsprüfungen.',
+      alignerrDesc: 'Spezialisierte Bewertungsplattform mit Fokus auf hochpräzise Fachdaten.',
+      chatCodingSearch: 'Chat, Coding, Suche',
+      rlhfMultimodal: 'RLHF, Multimodal',
+      writingMathCode: 'Schreiben, Mathe, Code',
+      mediumHigh: 'Mittelschwer-Schwer',
+      highVetting: 'Strenge Auswahl',
+      skillExams: 'Fachprüfungen'
     },
     communityVoices: {
       title: 'Stimmen der Community',
@@ -616,6 +1051,54 @@ export const translations: Record<Language, TranslationDict> = {
       quickLinks: 'Schnelllinks',
       contact: 'Kontakt',
       rights: 'Alle Rechte vorbehalten.'
+    },
+    heroCard: {
+      activeCommunity: 'Aktive Community',
+      liveSubtitle: 'Live • Global • Wachsend',
+      members: 'Mitglieder',
+      discussions: 'Diskussionen',
+      globalDesc: '🌏 Global — KI-Bewerter · RLHF · Remote-Profis',
+      joinDiscord: 'Discord beitreten',
+      topPlatforms: 'Top-Plattformen'
+    },
+    ui: {
+      viewAllGuides: 'Alle Guides anzeigen',
+      readGuide: 'Guide lesen',
+      joinCommunity: 'Community beitreten',
+      questionsPlatform: 'Fragen zu dieser Plattform?',
+      discordSubtitle: 'Tritt unserer Community bei, um Antworten von aktiven Mitarbeitern zu erhalten.',
+      remote: 'Remote',
+      locationRequired: 'Präsenz erforderlich',
+      payRange: 'Vergütungsbereich',
+      interview: 'Test / Interview',
+      interviewType: 'Art des Tests',
+      readingTime: 'Lesezeit',
+      lastReviewed: 'Zuletzt überprüft',
+      tags: 'Tags',
+      quickOverview: 'Schnellübersicht',
+      contents: 'Inhalt',
+      relatedContent: 'Ähnliche Inhalte',
+      careerGuides: 'Karriere-Guides',
+      comparisons: 'Vergleiche',
+      resources: 'Ressourcen',
+      independentDatabase: 'Unabhängige Datenbank',
+      platformsReviewed: 'Plattformen regelmäßig überprüft & aktualisiert',
+      editorialStandard: 'Alle Leitfäden folgen dem redaktionellen Standard von Talent Collective. Jede Behauptung wird mit ihrer Glaubwürdigkeitsquelle gekennzeichnet: Offiziell, Verifiziert, Community-gestützt oder Unbekannt.',
+      payApproximate: 'Die Gehaltsspannen sind Richtwerte, basieren auf Berichten aktiver Mitglieder und können sich ändern. Es werden keine Daten erfunden.',
+      independentNode: 'Unabhängiger & eigenständiger Knotenpunkt',
+      noCorporateBS: 'Deine Crew im KI-Freelancing. Kein Konzern-Blödsinn.',
+      vettedData: 'Geprüfte Daten',
+      vettedPlatformTitle: 'Geprüfte Plattform-Analysen.',
+      vettedPlatformSubtitle: 'Vergleiche Gehaltsskalen, Testschwierigkeiten und Projekttypen vor deiner Bewerbung. Von aktiven Community-Mitgliedern geprüft.',
+      connectEvaluators: 'Vernetze dich mit KI-Bewertern.',
+      connectSubtitle: 'Erhalte sofortigen Support, vergleiche Projekte und vermeide leere Warteschlangen mit unserer globalen Community.',
+      joinDiscordCrew: 'Tritt der Discord-Crew bei',
+      low: 'Niedrig',
+      medium: 'Mittel',
+      high: 'Hoch',
+      resumeVetting: 'Lebenslauf-Prüfung',
+      aiEvaluationPlatform: 'KI-Bewertungsplattform',
+      varies: 'Variiert'
     }
   },
   pt: {
@@ -657,7 +1140,16 @@ export const translations: Record<Language, TranslationDict> = {
       card5Title: 'Discussões do Setor',
       card5Desc: 'Analise tendências de modelos de IA, engenharia de prompts, atualizações de diretrizes e mudanças no freelancing.',
       card6Title: 'Canais por Idioma',
-      card6Desc: 'Acesse canais regionais e salas de discussão localizadas para avaliadores não falantes de inglês.'
+      card6Desc: 'Acesse canais regionais e salas de discussão localizadas para avaliadores não falantes de inglês.',
+      step1Tag: 'Prep e Materiais',
+      step1Title: 'Preparação e Acesso Verificado',
+      step1Desc: 'Acesse diretrizes rigorosas, testes práticos e rubricas de avaliação projetadas para ajudar você a passar nas avaliações de entrada no Outlier, Alignerr e DataAnnotation.',
+      step2Tag: 'Centro Comunitário',
+      step2Title: 'Suporte entre Pares e Indicações',
+      step2Desc: 'Conecte-se com uma rede global de profissionais remotos. Descubra oportunidades de trabalho ativas, receba códigos de indicação verificados e compartilhe suporte de localização.',
+      step3Tag: 'Crescimento Profissional',
+      step3Title: 'Inteligência de Mercado',
+      step3Desc: 'Discuta modelos de pagamento, variações de taxas horárias, mudanças de diretrizes e considerações fiscais com colaboradores experientes que fazem isso há anos.'
     },
     platforms: {
       title: 'Onde Nos Encontrar',
@@ -667,7 +1159,19 @@ export const translations: Record<Language, TranslationDict> = {
       twitter: 'Twitter / X',
       instagram: 'Instagram',
       linkedin: 'LinkedIn',
-      facebook: 'Facebook'
+      facebook: 'Facebook',
+      vettedData: 'Dados Verificados',
+      vettedTitle: 'Informações verificadas de plataformas.',
+      vettedSubtitle: 'Compare faixas de pagamento, dificuldades de avaliação e tipos de projeto antes de se candidatar. Verificado por membros ativos da comunidade.',
+      dataannotationDesc: 'Projetos de avaliação de prompts/respostas de alta qualidade com horários flexíveis.',
+      outlierDesc: 'Plataforma de grande escala de propriedade da Scale AI. Alta remuneração, mas rigorosos controles de qualidade.',
+      alignerrDesc: 'Plataforma de avaliação especializada focada em dados de domínio de alta eficiência.',
+      chatCodingSearch: 'Chat, Código, Busca',
+      rlhfMultimodal: 'RLHF, Multimodal',
+      writingMathCode: 'Escrita, Matemática, Código',
+      mediumHigh: 'Média-Alta',
+      highVetting: 'Filtro Rigoroso',
+      skillExams: 'Exames de Habilidade'
     },
     communityVoices: {
       title: 'Vozes da Comunidade',
@@ -704,6 +1208,54 @@ export const translations: Record<Language, TranslationDict> = {
       quickLinks: 'Links Rápidos',
       contact: 'Contato',
       rights: 'Todos os direitos reservados.'
+    },
+    heroCard: {
+      activeCommunity: 'Comunidade Ativa',
+      liveSubtitle: 'Ao vivo • Global • Crescendo',
+      members: 'Membros',
+      discussions: 'Discussões',
+      globalDesc: 'Avaliadores de IA · RLHF · Profissionais Remotos',
+      joinDiscord: 'Entrar no Discord',
+      topPlatforms: 'Principais Plataformas'
+    },
+    ui: {
+      viewAllGuides: 'Ver todos os guias',
+      readGuide: 'Ler Guia',
+      joinCommunity: 'Juntar-se à Comunidade',
+      questionsPlatform: 'Dúvidas sobre esta plataforma?',
+      discordSubtitle: 'Participe de nossa comunidade para obter respostas de pessoas que trabalham ativamente lá.',
+      remote: 'Remoto',
+      locationRequired: 'Presencial Requerido',
+      payRange: 'Faixa de Pagamento',
+      interview: 'Entrevista',
+      interviewType: 'Tipo de Entrevista',
+      readingTime: 'Tempo de Leitura',
+      lastReviewed: 'Última Revisão',
+      tags: 'Tags',
+      quickOverview: 'Visão Geral Rápida',
+      contents: 'Conteúdo',
+      relatedContent: 'Conteúdo Relacionado',
+      careerGuides: 'Guias de Carreira',
+      comparisons: 'Comparações',
+      resources: 'Recursos',
+      independentDatabase: 'Banco de Dados Independente',
+      platformsReviewed: 'plataformas revisadas e atualizadas regularmente',
+      editorialStandard: 'Todos os guias seguem o padrão editorial da Talent Collective. Cada declaração é identificada com sua fonte de confiança: Oficial, Verificada, Apoiada pela Comunidade ou Desconhecida.',
+      payApproximate: 'As faixas salariais são aproximadas, baseadas em relatórios de membros ativos e sujeitas a alterações. Nenhum dado é inventado.',
+      independentNode: 'Nó Independente e Não Alinhado',
+      noCorporateBS: 'Sua equipe em freelancing de IA. Sem burocracia corporativa.',
+      vettedData: 'Dados Verificados',
+      vettedPlatformTitle: 'Informações verificadas de plataformas.',
+      vettedPlatformSubtitle: 'Compare faixas de pagamento, dificuldades de avaliação e tipos de projeto antes de se candidatar. Verificado por membros ativos da comunidade.',
+      connectEvaluators: 'Conecte-se com Avaliadores de IA.',
+      connectSubtitle: 'Obtenha suporte instantâneo, compare projetos e fique à frente das filas vazias com nossa comunidade global.',
+      joinDiscordCrew: 'Junte-se à Equipe do Discord',
+      low: 'Baixo',
+      medium: 'Médio',
+      high: 'Alto',
+      resumeVetting: 'Filtro de Currículo',
+      aiEvaluationPlatform: 'Plataforma de Avaliação de IA',
+      varies: 'Varia'
     }
   }
 };

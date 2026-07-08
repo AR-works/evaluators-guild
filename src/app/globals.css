@@ -1,167 +1,407 @@
 @import "tailwindcss";
+@import "./tokens.css";
+
+/* Hallmark · macrostructure: Collage / Zine · genre: playful · theme: custom (pink zine)
+ * vibe: "crew-first, handmade, honest, marker-on-paper"
+ * pre-emit critique: P4 H4 E5 S5 R4 V5
+ */
 
 :root {
-  --background: #fdfafb;
-  --foreground: #1b131c;
-  --card: #ffffff;
-  --card-foreground: #1b131c;
-  --border: #e8dce2;
-  --primary: #e05fa7;
-  --primary-foreground: #ffffff;
-  --muted: #8b7d85;
-  --muted-foreground: #6c5d66;
-  --accent: #f9f2e5;
-  --accent-foreground: #1b131c;
-  
-  --card-border: #e8dce2;
-  --navy-deep: #1b131c;
-  --glow-color: rgba(224, 95, 167, 0.08);
+  /* Backwards compatibility mappings for older prose & components */
+  --background: var(--color-paper);
+  --foreground: var(--color-ink);
+  --card: var(--color-paper-2);
+  --card-foreground: var(--color-ink);
+  --border: var(--color-rule);
+  --primary: var(--color-accent);
+  --primary-foreground: var(--color-accent-ink);
+  --muted: var(--color-ink-2);
+  --muted-foreground: var(--color-ink-2);
+  --accent: var(--color-accent);
+  --accent-foreground: var(--color-accent-ink);
+  --card-border: var(--color-rule);
+  --navy-deep: var(--color-paper);
+  --glow-color: oklch(0.62 0.22 345 / 0.06);
 }
 
 .dark {
-  --background: #140f17;
-  --foreground: #f9f2e5;
-  --card: #1d1822;
-  --card-foreground: #f9f2e5;
-  --border: #322638;
-  --primary: #e05fa7;
-  --primary-foreground: #140f17;
-  --muted: #a2949e;
-  --muted-foreground: #cbbec7;
-  --accent: #f9f2e5;
-  --accent-foreground: #140f17;
-  
-  --card-border: #322638;
-  --navy-deep: #140f17;
-  --glow-color: rgba(224, 95, 167, 0.12);
+  --color-paper: oklch(0.16 0.02 40);
+  --color-paper-2: oklch(0.20 0.025 40);
+  --color-paper-3: oklch(0.24 0.03 40);
+  --color-ink: oklch(0.93 0.008 55);
+  --color-ink-2: oklch(0.70 0.015 40);
+  --color-rule: oklch(0.30 0.02 40);
+  --color-accent: oklch(0.68 0.20 345);
+  --color-accent-ink: oklch(0.16 0.02 40);
+  --color-focus: oklch(0.68 0.20 345);
+  --color-secondary: oklch(0.72 0.12 90);
+  --color-secondary-ink: oklch(0.16 0.02 40);
+
+  --glow-color: oklch(0.68 0.20 345 / 0.10);
 }
 
 @theme {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-border: var(--border);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-card-border: var(--card-border);
-  --color-navy-deep: var(--navy-deep);
-  --color-glow: var(--glow-color);
+  --color-background: var(--color-paper);
+  --color-foreground: var(--color-ink);
+  --color-card: var(--color-paper-2);
+  --color-card-foreground: var(--color-ink);
+  --color-border: var(--color-rule);
+  --color-primary: var(--color-accent);
+  --color-primary-foreground: var(--color-accent-ink);
+  --color-muted: var(--color-ink-2);
+  --color-muted-foreground: var(--color-ink-2);
+  --color-accent: var(--color-accent);
+  --color-accent-foreground: var(--color-accent-ink);
+  --color-card-border: var(--color-rule);
+  --color-navy-deep: var(--color-paper);
+
+  --font-heading: var(--font-display);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-mono);
+
+  --radius-card: var(--radius-card);
+  --radius-pill: var(--radius-pill);
+  --radius-input: var(--radius-input);
+
+  --ease-out: var(--ease-out);
+  --ease-in: var(--ease-in);
+  --ease-in-out: var(--ease-in-out);
 }
 
 body {
-  background-color: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-  overflow-x: hidden;
+  background-color: var(--color-paper) !important;
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  transition: background-color 0.3s var(--ease-out), color 0.3s var(--ease-out), border-color 0.3s var(--ease-out);
+  overflow-x: clip;
 }
 
-/* Custom transitions and scrollbar */
+html {
+  background-color: var(--color-paper) !important;
+  overflow-x: clip;
+}
+
+/* Custom scrollbar matching OKLCH system */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--background);
+  background: var(--color-paper);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--border);
-  border-radius: 5px;
+  background: var(--color-rule);
+  border-radius: var(--radius-pill);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--muted);
+  background: var(--color-ink-2);
 }
 
-/* Hero gradient grid overlay — warm plum/pink glow */
+/* Hero gradient — warm pink glow */
 .grid-glow {
-  background-image: 
+  background-image:
     radial-gradient(at 0% 0%, var(--glow-color) 0px, transparent 50%),
-    radial-gradient(at 100% 0%, rgba(224, 95, 167, 0.05) 0px, transparent 50%);
+    radial-gradient(at 100% 0%, oklch(0.62 0.22 345 / 0.04) 0px, transparent 50%);
 }
 
-.glassmorphism {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+/* ─── Zine utilities ─────────────────────────────────────────── */
+
+/* Slight rotation — deliberate imperfection */
+.rotate-zine-left { transform: rotate(-1.2deg); }
+.rotate-zine-right { transform: rotate(1.2deg); }
+.rotate-zine-sm-left { transform: rotate(-0.6deg); }
+.rotate-zine-sm-right { transform: rotate(0.6deg); }
+
+/* Pin — a pushpin at the top center of a card */
+.zine-pin {
+  position: relative;
+}
+.zine-pin::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  box-shadow:
+    0 1px 2px oklch(0% 0 0 / 0.3),
+    inset -2px -2px 0 oklch(0% 0 0 / 0.15),
+    inset 1px 1px 0 oklch(100% 0 0 / 0.2);
+  z-index: 2;
 }
 
-.dark .glassmorphism {
-  background: rgba(29, 24, 34, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+/* Washi tape — semi-transparent pink strip at the top of a card */
+.zine-tape {
+  position: relative;
+}
+.zine-tape::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 60px;
+  height: 18px;
+  background: oklch(0.62 0.22 345 / 0.35);
+  border-radius: 1px;
+  z-index: 2;
 }
 
-/* -----------------------------------------------------------------------
-   Prose — Markdown guide content renderer
-   Applied to .prose wrapper around dangerouslySetInnerHTML output.
-   ----------------------------------------------------------------------- */
+/* Sticky note — mustard yellow paper with lifting shadow */
+.zine-sticky {
+  background: var(--color-secondary);
+  color: var(--color-secondary-ink);
+  box-shadow:
+    0 1px 1px oklch(0% 0 0 / 0.08),
+    0 4px 8px oklch(0% 0 0 / 0.06);
+}
+
+/* Marker border — hand-drawn dashed feel */
+.zine-marker-border {
+  border: 2px dashed var(--color-ink-2);
+}
+
+/* Handwritten text utility */
+.zine-handwritten {
+  font-family: var(--font-display);
+}
+
+/* Lined paper background — for the "handwritten letter" section */
+.zine-lined-paper {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 27px,
+    oklch(0.62 0.22 345 / 0.12) 27px,
+    oklch(0.62 0.22 345 / 0.12) 28px
+  );
+}
+
+/* Corkboard texture — subtle warm noise for pinned sections */
+.zine-corkboard {
+  background-color: var(--color-paper-2);
+  background-image:
+    radial-gradient(circle at 20% 30%, oklch(0.80 0.02 50 / 0.15) 1px, transparent 2px),
+    radial-gradient(circle at 70% 60%, oklch(0.80 0.02 50 / 0.1) 1px, transparent 2px),
+    radial-gradient(circle at 40% 80%, oklch(0.80 0.02 50 / 0.12) 1px, transparent 2px);
+  background-size: 30px 30px, 25px 25px, 35px 35px;
+}
+
+/* Reveal animation */
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-reveal {
+  opacity: 0;
+  animation: reveal 0.6s var(--ease-out) forwards;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  opacity: 0;
+  animation: slide-up 0.4s var(--ease-out) forwards;
+}
+
+/* ─── Motion primitives ─────────────────────────────────────── */
+
+/* Press feedback — all interactive elements */
+.btn-press {
+  transition: transform 100ms var(--ease-out);
+}
+.btn-press:active {
+  transform: scale(0.97);
+}
+
+/* Card hover — straighten rotation + lift shadow */
+.card-straighten {
+  transition: transform var(--dur-short) var(--ease-out), box-shadow var(--dur-short) var(--ease-out);
+}
+.card-straighten:hover {
+  transform: rotate(0deg) !important;
+  box-shadow: 0 8px 32px oklch(0% 0 0 / 0.12);
+}
+
+/* Sticky note hover — gentle lift */
+.sticky-lift {
+  transition: transform var(--dur-short) var(--ease-out), box-shadow var(--dur-short) var(--ease-out);
+}
+.sticky-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px oklch(0% 0 0 / 0.10);
+}
+
+/* Link hover underline — slide-in from left */
+.link-underline {
+  position: relative;
+}
+.link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: var(--color-accent);
+  transition: width 200ms var(--ease-out);
+}
+.link-underline:hover::after {
+  width: 100%;
+}
+
+/* Progress bar shimmer */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, var(--color-rule) 25%, var(--color-paper-2) 50%, var(--color-rule) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+}
+
+/* ─── Focus visibility ───────────────────────────────────────── */
+
+:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ─── Reduced motion ─────────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-reveal,
+  .animate-slide-up {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+
+  .card-straighten:hover,
+  .sticky-lift:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  .link-underline::after {
+    display: none;
+  }
+
+  .animate-shimmer {
+    animation: none !important;
+  }
+}
+
+/* ─── Prose — Markdown guide content renderer ────────────────── */
 
 .prose {
-  color: var(--foreground);
+  color: var(--color-ink);
   line-height: 1.75;
-  font-size: 1rem;
-  max-width: 75ch;
+  font-size: 1.0625rem;
+  max-width: 70ch;
+  font-family: var(--font-body);
 }
 
 .prose h1 {
-  font-size: 2rem;
-  font-weight: 900;
-  letter-spacing: -0.03em;
-  color: var(--foreground);
+  font-family: var(--font-display);
+  font-size: 2.75rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: var(--color-ink);
   margin-top: 0;
-  margin-bottom: 1.25rem;
-  line-height: 1.15;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
 }
 
 .prose h2 {
-  font-size: 1.375rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  color: var(--foreground);
-  margin-top: 2.5rem;
-  margin-bottom: 0.75rem;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: var(--color-ink);
+  margin-top: 3rem;
+  margin-bottom: 1rem;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid var(--border);
-  line-height: 1.25;
-  scroll-margin-top: 5rem;
+  border-bottom: 2px solid var(--color-accent);
+  line-height: 1.2;
+  scroll-margin-top: 6rem;
 }
 
 .prose h3 {
-  font-size: 1.125rem;
-  font-weight: 700;
-  color: var(--foreground);
-  margin-top: 1.75rem;
-  margin-bottom: 0.5rem;
-  scroll-margin-top: 5rem;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-ink);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  scroll-margin-top: 6rem;
 }
 
 .prose p {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  color: var(--muted-foreground);
+  color: var(--color-ink-2);
 }
 
 .prose strong {
-  color: var(--foreground);
+  color: var(--color-ink);
   font-weight: 700;
 }
 
 .prose em {
-  color: var(--muted-foreground);
+  color: var(--color-ink-2);
   font-style: italic;
 }
 
 .prose ul,
 .prose ol {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   padding-left: 1.5rem;
 }
 
@@ -174,81 +414,80 @@ body {
 }
 
 .prose li {
-  color: var(--muted-foreground);
-  margin-top: 0.375rem;
-  margin-bottom: 0.375rem;
+  color: var(--color-ink-2);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .prose li strong {
-  color: var(--foreground);
+  color: var(--color-ink);
 }
 
 .prose a {
-  color: var(--primary);
+  color: var(--color-accent);
   text-decoration: underline;
-  text-underline-offset: 3px;
-  transition: opacity 0.15s;
+  text-underline-offset: 4px;
+  transition: opacity var(--dur-short) var(--ease-out);
+  font-weight: 600;
 }
 
 .prose a:hover {
   opacity: 0.8;
 }
 
-/* GFM Tables — key for Quick Facts, Compensation, Pros/Cons */
 .prose table {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.875rem;
-  margin-top: 1.25rem;
-  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
   overflow-x: auto;
   display: block;
 }
 
 .prose thead tr {
-  background-color: color-mix(in srgb, var(--primary) 8%, transparent);
+  background-color: oklch(from var(--color-accent) l c h / 0.08);
 }
 
 .prose th {
   text-align: left;
   font-weight: 700;
-  color: var(--foreground);
-  padding: 0.625rem 0.875rem;
-  border: 1px solid var(--border);
+  color: var(--color-ink);
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-rule);
   white-space: nowrap;
 }
 
 .prose td {
-  padding: 0.5rem 0.875rem;
-  color: var(--muted-foreground);
-  border: 1px solid var(--border);
+  padding: 0.75rem 1rem;
+  color: var(--color-ink-2);
+  border: 1px solid var(--color-rule);
   vertical-align: top;
 }
 
 .prose tbody tr:hover {
-  background-color: color-mix(in srgb, var(--primary) 4%, transparent);
+  background-color: oklch(from var(--color-accent) l c h / 0.04);
 }
 
 .prose blockquote {
-  border-left: 3px solid var(--primary);
-  padding-left: 1rem;
+  border-left: 3px solid var(--color-accent);
+  padding-left: 1.25rem;
   margin-left: 0;
-  color: var(--muted-foreground);
+  color: var(--color-ink-2);
   font-style: italic;
 }
 
 .prose code {
-  font-family: var(--font-geist-mono), monospace;
+  font-family: var(--font-mono);
   font-size: 0.875em;
-  background-color: color-mix(in srgb, var(--border) 60%, transparent);
-  padding: 0.125em 0.375em;
+  background-color: oklch(from var(--color-rule) l c h / 0.4);
+  padding: 0.2em 0.4em;
   border-radius: 4px;
-  color: var(--primary);
+  color: var(--color-accent);
 }
 
 .prose hr {
   border: none;
-  border-top: 1px solid var(--border);
-  margin: 2rem 0;
+  border-top: 2px dashed var(--color-rule);
+  margin: 2.5rem 0;
 }
-
