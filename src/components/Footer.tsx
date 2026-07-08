@@ -5,36 +5,38 @@ import { useLanguage } from './LanguageProvider';
 import { Mail, Globe } from 'lucide-react';
 import Logo from './Logo';
 
-/* Hallmark · footer: Ft5 · genre: playful · theme: custom · knobs: sentence-width=38ch, wordmark=under-sentence, rule-above-meta=hairline */
+/* Hallmark · footer: Ft5 · genre: playful · theme: custom (pink zine)
+ * knobs: handwritten sign-off, warm directory columns, hairline rule above meta
+ */
 
 export default function Footer() {
   const { t } = useLanguage();
 
   return (
-    <footer className="border-t border-border bg-card transition-colors duration-300">
+    <footer className="border-t-2 border-rule bg-card transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6 py-16 sm:px-8 lg:px-12 flex flex-col gap-12">
-        
-        {/* Foot Statement Closing Line */}
+
+        {/* Handwritten sign-off */}
         <div className="space-y-4">
-          <p className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground max-w-2xl leading-none">
+          <p className="font-heading text-4xl sm:text-5xl lg:text-6xl text-foreground max-w-2xl leading-none">
             {t('ui.noCorporateBS')}
           </p>
-          <p className="text-muted-foreground text-sm max-w-md">
+          <p className="text-muted-foreground text-sm max-w-md font-body italic">
             {t('footer.desc')}
           </p>
         </div>
 
         {/* Info & Directory Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 pt-8 border-t border-border/60">
-          
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 pt-8 border-t-2 border-dashed border-rule">
+
           {/* Brand Col */}
           <div className="md:col-span-2 space-y-4">
             <Link href="/" className="flex items-center">
               <Logo variant="horizontal" size={32} />
             </Link>
-            <div className="flex items-center gap-2 text-xs text-muted-foreground">
+            <div className="flex items-center gap-2 text-xs text-muted-foreground font-body">
               <Mail className="w-3.5 h-3.5 text-primary" />
-              <a href="mailto:contact@evaluatorsguild.org" className="hover:text-foreground transition-colors">
+              <a href="mailto:contact@evaluatorsguild.org" className="hover:text-primary transition-colors">
                 contact@evaluatorsguild.org
               </a>
             </div>
@@ -42,10 +44,10 @@ export default function Footer() {
 
           {/* Directory column: Community */}
           <div>
-            <h4 className="text-[10px] font-bold text-foreground uppercase tracking-widest mb-3">
+            <h4 className="zine-handwritten text-lg text-foreground mb-3">
               {t('footer.community')}
             </h4>
-            <ul className="space-y-2 text-xs text-muted-foreground font-medium">
+            <ul className="space-y-2 text-xs text-muted-foreground font-body">
               <li>
                 <a
                   href="https://discord.gg/56xGWJRqEQ"
@@ -71,10 +73,10 @@ export default function Footer() {
 
           {/* Directory column: Quick links */}
           <div>
-            <h4 className="text-[10px] font-bold text-foreground uppercase tracking-widest mb-3">
+            <h4 className="zine-handwritten text-lg text-foreground mb-3">
               {t('footer.quickLinks')}
             </h4>
-            <ul className="space-y-2 text-xs text-muted-foreground font-medium">
+            <ul className="space-y-2 text-xs text-muted-foreground font-body">
               <li>
                 <Link href="/" className="hover:text-primary transition-colors">
                   {t('nav.home')}
@@ -101,7 +103,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Metadata band */}
-        <div className="pt-6 border-t border-border/40 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-muted-foreground">
+        <div className="pt-6 border-t-2 border-dashed border-rule flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-muted-foreground font-body">
           <p>
             &copy; {new Date().getFullYear()} Talent Collective. {t('footer.rights')}
           </p>

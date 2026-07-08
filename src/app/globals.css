@@ -1,7 +1,10 @@
 @import "tailwindcss";
 @import "./tokens.css";
 
-/* Hallmark · genre: playful · theme: custom · vibe: "crew-first, neutral, helpful, honest" */
+/* Hallmark · macrostructure: Collage / Zine · genre: playful · theme: custom (pink zine)
+ * vibe: "crew-first, handmade, honest, marker-on-paper"
+ * pre-emit critique: P4 H4 E5 S5 R4 V5
+ */
 
 :root {
   /* Backwards compatibility mappings for older prose & components */
@@ -18,20 +21,23 @@
   --accent-foreground: var(--color-accent-ink);
   --card-border: var(--color-rule);
   --navy-deep: var(--color-paper);
-  --glow-color: oklch(0.62 0.22 345 / 0.08);
+  --glow-color: oklch(0.62 0.22 345 / 0.06);
 }
 
 .dark {
-  --color-paper: oklch(0.15 0.025 320);
-  --color-paper-2: oklch(0.20 0.03 320);
-  --color-ink: oklch(0.93 0.01 340);
-  --color-ink-2: oklch(0.72 0.02 320);
-  --color-rule: oklch(0.28 0.03 320);
+  --color-paper: oklch(0.16 0.02 40);
+  --color-paper-2: oklch(0.20 0.025 40);
+  --color-paper-3: oklch(0.24 0.03 40);
+  --color-ink: oklch(0.93 0.008 55);
+  --color-ink-2: oklch(0.70 0.015 40);
+  --color-rule: oklch(0.30 0.02 40);
   --color-accent: oklch(0.68 0.20 345);
-  --color-accent-ink: oklch(0.15 0.025 320);
+  --color-accent-ink: oklch(0.16 0.02 40);
   --color-focus: oklch(0.68 0.20 345);
+  --color-secondary: oklch(0.72 0.12 90);
+  --color-secondary-ink: oklch(0.16 0.02 40);
 
-  --glow-color: oklch(0.68 0.20 345 / 0.12);
+  --glow-color: oklch(0.68 0.20 345 / 0.10);
 }
 
 @theme {
@@ -48,7 +54,7 @@
   --color-accent-foreground: var(--color-accent-ink);
   --color-card-border: var(--color-rule);
   --color-navy-deep: var(--color-paper);
-  
+
   --font-heading: var(--font-display);
   --font-sans: var(--font-body);
   --font-mono: var(--font-mono);
@@ -77,7 +83,7 @@ html {
 
 /* Custom scrollbar matching OKLCH system */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -93,30 +99,100 @@ html {
   background: var(--color-ink-2);
 }
 
-/* Hero gradient grid overlay — warm plum/pink glow */
+/* Hero gradient — warm pink glow */
 .grid-glow {
-  background-image: 
+  background-image:
     radial-gradient(at 0% 0%, var(--glow-color) 0px, transparent 50%),
-    radial-gradient(at 100% 0%, oklch(0.62 0.22 345 / 0.05) 0px, transparent 50%);
+    radial-gradient(at 100% 0%, oklch(0.62 0.22 345 / 0.04) 0px, transparent 50%);
 }
 
-.glassmorphism {
-  background: oklch(0.97 0.008 340 / 0.7);
-  backdrop-filter: blur(12px) saturate(120%);
-  -webkit-backdrop-filter: blur(12px) saturate(120%);
-  border: 1px solid var(--color-rule);
+/* ─── Zine utilities ─────────────────────────────────────────── */
+
+/* Slight rotation — deliberate imperfection */
+.rotate-zine-left { transform: rotate(-1.2deg); }
+.rotate-zine-right { transform: rotate(1.2deg); }
+.rotate-zine-sm-left { transform: rotate(-0.6deg); }
+.rotate-zine-sm-right { transform: rotate(0.6deg); }
+
+/* Pin — a pushpin at the top center of a card */
+.zine-pin {
+  position: relative;
+}
+.zine-pin::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  box-shadow:
+    0 1px 2px oklch(0% 0 0 / 0.3),
+    inset -2px -2px 0 oklch(0% 0 0 / 0.15),
+    inset 1px 1px 0 oklch(100% 0 0 / 0.2);
+  z-index: 2;
 }
 
-.dark .glassmorphism {
-  background: oklch(0.20 0.03 320 / 0.7);
-  border: 1px solid var(--color-rule);
+/* Washi tape — semi-transparent pink strip at the top of a card */
+.zine-tape {
+  position: relative;
+}
+.zine-tape::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 60px;
+  height: 18px;
+  background: oklch(0.62 0.22 345 / 0.35);
+  border-radius: 1px;
+  z-index: 2;
 }
 
-/* Micro-interaction transitions */
-.transition-standard {
-  transition: all var(--dur-short) var(--ease-out);
+/* Sticky note — mustard yellow paper with lifting shadow */
+.zine-sticky {
+  background: var(--color-secondary);
+  color: var(--color-secondary-ink);
+  box-shadow:
+    0 1px 1px oklch(0% 0 0 / 0.08),
+    0 4px 8px oklch(0% 0 0 / 0.06);
 }
 
+/* Marker border — hand-drawn dashed feel */
+.zine-marker-border {
+  border: 2px dashed var(--color-ink-2);
+}
+
+/* Handwritten text utility */
+.zine-handwritten {
+  font-family: var(--font-display);
+}
+
+/* Lined paper background — for the "handwritten letter" section */
+.zine-lined-paper {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 27px,
+    oklch(0.62 0.22 345 / 0.12) 27px,
+    oklch(0.62 0.22 345 / 0.12) 28px
+  );
+}
+
+/* Corkboard texture — subtle warm noise for pinned sections */
+.zine-corkboard {
+  background-color: var(--color-paper-2);
+  background-image:
+    radial-gradient(circle at 20% 30%, oklch(0.80 0.02 50 / 0.15) 1px, transparent 2px),
+    radial-gradient(circle at 70% 60%, oklch(0.80 0.02 50 / 0.1) 1px, transparent 2px),
+    radial-gradient(circle at 40% 80%, oklch(0.80 0.02 50 / 0.12) 1px, transparent 2px);
+  background-size: 30px 30px, 25px 25px, 35px 35px;
+}
+
+/* Reveal animation */
 @keyframes reveal {
   from {
     opacity: 0;
@@ -133,10 +209,10 @@ html {
   animation: reveal 0.6s var(--ease-out) forwards;
 }
 
-@keyframes letter-reveal {
+@keyframes slide-up {
   from {
     opacity: 0;
-    transform: translateY(3px);
+    transform: translateY(24px);
   }
   to {
     opacity: 1;
@@ -144,36 +220,138 @@ html {
   }
 }
 
-.animate-letter-reveal {
+.animate-slide-up {
   opacity: 0;
-  animation: letter-reveal 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: slide-up 0.4s var(--ease-out) forwards;
 }
 
-.animation-delay-100 {
-  animation-delay: 100ms;
+/* ─── Motion primitives ─────────────────────────────────────── */
+
+/* Press feedback — all interactive elements */
+.btn-press {
+  transition: transform 100ms var(--ease-out);
+}
+.btn-press:active {
+  transform: scale(0.97);
 }
 
-.animation-delay-200 {
-  animation-delay: 200ms;
+/* Card hover — straighten rotation + lift shadow */
+.card-straighten {
+  transition: transform var(--dur-short) var(--ease-out), box-shadow var(--dur-short) var(--ease-out);
+}
+.card-straighten:hover {
+  transform: rotate(0deg) !important;
+  box-shadow: 0 8px 32px oklch(0% 0 0 / 0.12);
 }
 
-/* -----------------------------------------------------------------------
-   Prose — Markdown guide content renderer
-   Applied to .prose wrapper around dangerouslySetInnerHTML output.
-   ----------------------------------------------------------------------- */
+/* Sticky note hover — gentle lift */
+.sticky-lift {
+  transition: transform var(--dur-short) var(--ease-out), box-shadow var(--dur-short) var(--ease-out);
+}
+.sticky-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px oklch(0% 0 0 / 0.10);
+}
+
+/* Link hover underline — slide-in from left */
+.link-underline {
+  position: relative;
+}
+.link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: var(--color-accent);
+  transition: width 200ms var(--ease-out);
+}
+.link-underline:hover::after {
+  width: 100%;
+}
+
+/* Progress bar shimmer */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, var(--color-rule) 25%, var(--color-paper-2) 50%, var(--color-rule) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+}
+
+/* ─── Focus visibility ───────────────────────────────────────── */
+
+:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ─── Reduced motion ─────────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-reveal,
+  .animate-slide-up {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+
+  .card-straighten:hover,
+  .sticky-lift:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  .link-underline::after {
+    display: none;
+  }
+
+  .animate-shimmer {
+    animation: none !important;
+  }
+}
+
+/* ─── Prose — Markdown guide content renderer ────────────────── */
 
 .prose {
   color: var(--color-ink);
   line-height: 1.75;
-  font-size: 1rem;
+  font-size: 1.0625rem;
   max-width: 70ch;
+  font-family: var(--font-body);
 }
 
 .prose h1 {
   font-family: var(--font-display);
-  font-size: 2.25rem;
+  font-size: 2.75rem;
   font-weight: 700;
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
   color: var(--color-ink);
   margin-top: 0;
   margin-bottom: 1.5rem;
@@ -182,22 +360,22 @@ html {
 
 .prose h2 {
   font-family: var(--font-display);
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
   color: var(--color-ink);
   margin-top: 3rem;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid var(--color-rule);
+  border-bottom: 2px solid var(--color-accent);
   line-height: 1.2;
   scroll-margin-top: 6rem;
 }
 
 .prose h3 {
   font-family: var(--font-display);
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 600;
   color: var(--color-ink);
   margin-top: 2rem;
   margin-bottom: 0.75rem;
@@ -250,13 +428,13 @@ html {
   text-decoration: underline;
   text-underline-offset: 4px;
   transition: opacity var(--dur-short) var(--ease-out);
+  font-weight: 600;
 }
 
 .prose a:hover {
   opacity: 0.8;
 }
 
-/* GFM Tables — key for Quick Facts, Compensation, Pros/Cons */
 .prose table {
   width: 100%;
   border-collapse: collapse;
@@ -310,6 +488,6 @@ html {
 
 .prose hr {
   border: none;
-  border-top: 1px solid var(--color-rule);
+  border-top: 2px dashed var(--color-rule);
   margin: 2.5rem 0;
 }

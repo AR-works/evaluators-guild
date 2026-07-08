@@ -10,8 +10,8 @@ import Logo from './Logo';
 import { Menu, X, Sun, Moon } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-/* Hallmark · nav: N5 · genre: playful · theme: custom
- * knobs: content-sized pill, clean tripartite layout, floating utilities
+/* Hallmark · nav: N5 · genre: playful · theme: custom (pink zine)
+ * knobs: content-sized pill, warm paper, floating utilities
  * pre-emit critique: P5 H5 E5 S5 R5 V5
  */
 
@@ -47,12 +47,12 @@ export default function Navbar() {
         <LanguageToggle />
         <button
           onClick={toggleTheme}
-          className="flex h-8 w-8 items-center justify-center rounded-full border border-border/60 bg-card/80 backdrop-blur-sm text-foreground hover:bg-muted/20 hover:border-border transition-all duration-200"
+          className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-border bg-card text-foreground hover:bg-secondary/20 transition-all duration-200"
           aria-label="Toggle theme"
         >
           {theme === 'dark'
-            ? <Sun className="w-3.5 h-3.5 text-amber-400" />
-            : <Moon className="w-3.5 h-3.5 text-slate-500" />
+            ? <Sun className="w-4 h-4 text-amber-500" />
+            : <Moon className="w-4 h-4 text-ink-2" />
           }
         </button>
       </div>
@@ -68,16 +68,14 @@ export default function Navbar() {
         <div
           className={`relative flex items-center gap-0 rounded-full transition-all duration-300 ${
             scrolled
-              ? 'shadow-2xl shadow-black/10 dark:shadow-black/30'
-              : 'shadow-lg shadow-black/8 dark:shadow-black/20'
+              ? 'shadow-lg shadow-black/10 dark:shadow-black/30'
+              : 'shadow-md shadow-black/8 dark:shadow-black/20'
           }`}
           style={{
-            background: scrolled
-              ? 'oklch(from var(--color-paper) l c h / 0.92)'
-              : 'oklch(from var(--color-paper) l c h / 0.80)',
+            background: 'oklch(from var(--color-paper) l c h / 0.92)',
             backdropFilter: 'blur(16px) saturate(130%)',
             WebkitBackdropFilter: 'blur(16px) saturate(130%)',
-            border: `1px solid oklch(from var(--color-rule) l c h / ${scrolled ? '0.7' : '0.5'})`,
+            border: '2px solid var(--color-rule)',
             borderRadius: '999px',
             padding: '5px 6px 5px 14px',
           }}
@@ -102,7 +100,7 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`relative px-4 py-2 text-xs font-semibold rounded-full whitespace-nowrap transition-colors duration-150 ${
+                  className={`relative px-4 py-2.5 text-xs font-semibold rounded-full whitespace-nowrap transition-colors duration-150 ${
                     isActive
                       ? 'text-primary-foreground'
                       : 'text-muted-foreground hover:text-foreground'
@@ -129,7 +127,7 @@ export default function Navbar() {
             href="https://discord.gg/56xGWJRqEQ"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden md:inline-flex items-center gap-1.5 px-4 py-2 text-xs font-bold rounded-full bg-primary text-primary-foreground hover:bg-primary/90 active:scale-95 transition-all duration-150 shadow-sm shrink-0"
+            className="hidden md:inline-flex items-center gap-1.5 px-4 py-2.5 text-xs font-bold rounded-full bg-primary text-primary-foreground hover:bg-primary/90 btn-press transition-colors duration-150 shadow-sm shrink-0"
           >
             {t('nav.joinCommunity')}
           </a>
@@ -139,21 +137,21 @@ export default function Navbar() {
             <LanguageToggle />
             <button
               onClick={toggleTheme}
-              className="flex h-8 w-8 items-center justify-center rounded-full border border-border/60 bg-card/60 text-foreground"
+              className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-border bg-card text-foreground"
               aria-label="Toggle theme"
             >
               {theme === 'dark'
-                ? <Sun className="w-3.5 h-3.5 text-amber-400" />
-                : <Moon className="w-3.5 h-3.5 text-slate-500" />
+                ? <Sun className="w-4 h-4 text-amber-500" />
+                : <Moon className="w-4 h-4 text-ink-2" />
               }
             </button>
             <button
               onClick={toggleMobileMenu}
-              className="inline-flex h-8 w-8 items-center justify-center rounded-full text-muted-foreground hover:bg-muted/40 hover:text-foreground border border-border/60 bg-card/60 transition-colors"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full text-muted-foreground hover:bg-secondary/20 hover:text-foreground border-2 border-border bg-card transition-colors"
               aria-expanded={mobileMenuOpen}
               aria-label="Toggle mobile menu"
             >
-              {mobileMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+              {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
           </div>
         </div>
@@ -171,8 +169,8 @@ export default function Navbar() {
                 background: 'oklch(from var(--color-paper) l c h / 0.95)',
                 backdropFilter: 'blur(20px) saturate(140%)',
                 WebkitBackdropFilter: 'blur(20px) saturate(140%)',
-                border: '1px solid var(--color-rule)',
-                borderRadius: '20px',
+                border: '2px solid var(--color-rule)',
+                borderRadius: '16px',
                 padding: '8px',
                 boxShadow: '0 16px 48px -8px oklch(0% 0 0 / 0.18)',
               }}

@@ -38,7 +38,7 @@ export default function LanguageToggle() {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium rounded-lg border border-border bg-card text-foreground hover:bg-muted/30 transition-colors"
+        className="flex items-center gap-1.5 px-3.5 py-2 text-sm font-medium rounded-lg border border-border bg-card text-foreground hover:bg-muted/30 transition-colors min-h-[44px]"
         aria-label="Select Language"
         aria-haspopup="true"
         aria-expanded={isOpen}
@@ -64,7 +64,7 @@ export default function LanguageToggle() {
                   changeLanguage(lang.code);
                   setIsOpen(false);
                 }}
-                className={`w-full flex items-center justify-between px-3 py-2 text-sm rounded-lg transition-colors text-left ${
+                className={`w-full flex items-center justify-between px-3 py-2.5 text-sm rounded-lg transition-colors text-left ${
                   language === lang.code
                     ? 'bg-primary/10 text-primary font-medium'
                     : 'text-foreground hover:bg-muted/50'

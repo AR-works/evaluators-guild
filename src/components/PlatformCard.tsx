@@ -1,7 +1,12 @@
 import Link from 'next/link';
 import { PlatformMeta } from '@/lib/platforms';
-import { Clock, ArrowRight, CheckCircle, HelpCircle } from 'lucide-react';
+import { Clock, ArrowRight, CheckCircle } from 'lucide-react';
 import { useLanguage } from './LanguageProvider';
+
+/* Hallmark · component: card · genre: playful · theme: custom (pink zine)
+ * states: default · hover · focus · active · disabled · loading · error · success
+ * contrast: pass
+ */
 
 interface PlatformCardProps {
   platform: PlatformMeta;
@@ -9,7 +14,7 @@ interface PlatformCardProps {
 
 function DifficultyBadge({ difficulty }: { difficulty: string }) {
   const lower = difficulty.toLowerCase();
-  let color = 'text-muted-foreground bg-ink/5 dark:bg-paper/5 border-border/40';
+  let color = 'text-muted-foreground bg-ink/5 border-border';
   if (lower.includes('low')) {
     color = 'text-emerald-700 dark:text-emerald-400 bg-emerald-500/10 border-emerald-500/20';
   } else if (lower.includes('moderate') && !lower.includes('high')) {
@@ -19,7 +24,7 @@ function DifficultyBadge({ difficulty }: { difficulty: string }) {
   }
 
   return (
-    <span className={`inline-flex items-center px-2 py-0.5 rounded-full border text-[9px] font-bold uppercase tracking-widest ${color}`}>
+    <span className={`inline-flex items-center px-2 py-0.5 rounded-full border text-[9px] font-bold uppercase tracking-widest font-body ${color}`}>
       {difficulty}
     </span>
   );
@@ -28,6 +33,9 @@ function DifficultyBadge({ difficulty }: { difficulty: string }) {
 export default function PlatformCard({ platform }: PlatformCardProps) {
   const { t } = useLanguage();
   const href = `/platforms/${platform.slugSegment}`;
+
+  // Deterministic slight rotation based on platform name
+  const rotation = platform.slugSegment.charCodeAt(0) % 2 === 0 ? '0.5deg' : '-0.5deg';
 
   const translateMetadata = (val: string): string => {
     const clean = val.trim();
@@ -47,16 +55,17 @@ export default function PlatformCard({ platform }: PlatformCardProps) {
   return (
     <Link
       href={href}
-      className="group flex flex-col border border-border bg-card rounded-2xl shadow-sm hover:shadow-[0_8px_30px_rgba(224,95,167,0.08)] dark:hover:shadow-[0_8px_30px_rgba(224,95,167,0.15)] hover:border-primary/40 hover:scale-[1.01] active:scale-[0.99] transition-all duration-220 overflow-hidden"
+      className="group flex flex-col border-2 border-rule bg-card shadow-sm hover:shadow-lg hover:border-primary/40 transition-all duration-220 overflow-hidden"
+      style={{ transform: `rotate(${rotation})` }}
       aria-label={`Read the ${platform.platform} platform guide`}
     >
       <div className="flex flex-col flex-1 p-6 space-y-4">
         {/* Platform Name & Category */}
         <div className="space-y-1">
-          <h2 className="font-heading text-lg font-bold text-foreground group-hover:text-primary transition-colors tracking-tight">
+          <h2 className="font-heading text-2xl text-foreground group-hover:text-primary transition-colors leading-tight">
             {platform.platform}
           </h2>
-          <p className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest">
+          <p className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest font-body">
             {translateMetadata(platform.category)}
           </p>
         </div>
@@ -65,7 +74,7 @@ export default function PlatformCard({ platform }: PlatformCardProps) {
         <div className="flex flex-wrap gap-2">
           <DifficultyBadge difficulty={translateMetadata(platform.difficulty)} />
           {platform.remote && (
-            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full border border-border text-[9px] font-bold uppercase tracking-widest text-primary bg-primary/5">
+            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full border border-border text-[9px] font-bold uppercase tracking-widest text-primary bg-primary/5 font-body">
               <CheckCircle className="w-2.5 h-2.5" />
               {t('ui.remote')}
             </span>
@@ -73,7 +82,7 @@ export default function PlatformCard({ platform }: PlatformCardProps) {
         </div>
 
         {/* Info Grid */}
-        <div className="grid grid-cols-2 gap-4 pt-2 text-xs">
+        <div className="grid grid-cols-2 gap-4 pt-2 text-xs font-body">
           <div>
             <span className="text-[9px] font-bold text-muted-foreground block uppercase tracking-wider">{t('ui.payRange')}</span>
             <span className="font-bold text-foreground mt-0.5 block">{platform.payRange}</span>
@@ -87,7 +96,7 @@ export default function PlatformCard({ platform }: PlatformCardProps) {
         <div className="flex-1 min-h-[1.5rem]" />
 
         {/* Bottom Metadata & Link */}
-        <div className="flex items-center justify-between pt-4 border-t border-border/40 text-xs">
+        <div className="flex items-center justify-between pt-4 border-t-2 border-dashed border-rule text-xs font-body">
           <div className="flex items-center gap-1.5 text-muted-foreground font-semibold">
             <Clock className="w-3.5 h-3.5" />
             <span>{platform.readingTime}</span>

@@ -1,24 +1,27 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono, Space_Grotesk } from 'next/font/google';
+import { Geist_Mono, Caveat, Newsreader } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { LanguageProvider } from '@/components/LanguageProvider';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
-
 const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
   subsets: ['latin'],
 });
 
-const spaceGrotesk = Space_Grotesk({
-  variable: '--font-space-grotesk',
+const caveat = Caveat({
+  variable: '--font-caveat',
   subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+});
+
+const newsreader = Newsreader({
+  variable: '--font-newsreader',
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  style: ['normal', 'italic'],
 });
 
 export const metadata: Metadata = {
@@ -116,7 +119,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} h-full antialiased`} suppressHydrationWarning>
+    <html lang="en" className={`${geistMono.variable} ${caveat.variable} ${newsreader.variable} h-full antialiased`} suppressHydrationWarning>
       <body className="min-h-full flex flex-col transition-colors duration-300">
         {/* Inject JSON-LD inside body to prevent hydration conflicts with Next.js metadata */}
         <script

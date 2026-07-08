@@ -5,10 +5,12 @@ import { useSearchParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { useLanguage } from '@/components/LanguageProvider';
 import { initialResources, ResourceItem } from '@/data/initialData';
-import { Search, Clock, Calendar, ArrowLeft, ArrowRight, BookMarked, ArrowUpRight, ChevronRight } from 'lucide-react';
+import { Search, Clock, Calendar, ArrowLeft, ArrowRight, ArrowUpRight, ChevronRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-/* Hallmark · genre: playful · macrostructure: Bento / Grid · design-system: design.md · designed-as-app */
+/* Hallmark · genre: playful · macrostructure: Bento / Grid · theme: custom (pink zine)
+ * designed-as-app · zine card layout
+ */
 
 // Simple Markdown parser for resource contents
 function parseMarkdown(md: string) {
@@ -20,21 +22,21 @@ function parseMarkdown(md: string) {
       return <h4 key={idx} className="font-heading text-lg font-bold text-foreground mt-6 mb-2 tracking-tight">{line.replace('#### ', '')}</h4>;
     }
     if (line.startsWith('- ')) {
-      return <li key={idx} className="ml-6 list-disc text-muted-foreground my-1.5 text-sm leading-relaxed">{line.replace('- ', '')}</li>;
+      return <li key={idx} className="ml-6 list-disc text-muted-foreground my-1.5 text-sm leading-relaxed font-body">{line.replace('- ', '')}</li>;
     }
     if (line.match(/^\d+\.\s/)) {
-      return <li key={idx} className="ml-6 list-decimal text-muted-foreground my-1.5 text-sm leading-relaxed">{line.replace(/^\d+\.\s/, '')}</li>;
+      return <li key={idx} className="ml-6 list-decimal text-muted-foreground my-1.5 text-sm leading-relaxed font-body">{line.replace(/^\d+\.\s/, '')}</li>;
     }
     if (line.trim() === '') {
       return <div key={idx} className="h-3" />;
     }
-    
+
     // Bold replacement
     const boldRegex = /\*\*(.*?)\*\*/g;
     let match;
     const elements: React.ReactNode[] = [];
     let lastIndex = 0;
-    
+
     while ((match = boldRegex.exec(line)) !== null) {
       if (match.index > lastIndex) {
         elements.push(line.substring(lastIndex, match.index));
@@ -46,7 +48,7 @@ function parseMarkdown(md: string) {
       elements.push(line.substring(lastIndex));
     }
 
-    return <p key={idx} className="text-muted-foreground leading-relaxed my-3 text-sm">{elements.length > 0 ? elements : line}</p>;
+    return <p key={idx} className="text-muted-foreground leading-relaxed my-3 text-sm font-body">{elements.length > 0 ? elements : line}</p>;
   });
 }
 
@@ -54,7 +56,7 @@ function ResourcesHubContent() {
   const { t } = useLanguage();
   const searchParams = useSearchParams();
   const router = useRouter();
-  
+
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [selectedResource, setSelectedResource] = useState<ResourceItem | null>(null);
@@ -132,13 +134,13 @@ function ResourcesHubContent() {
   };
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-6 pt-32 pb-12 sm:px-8 lg:px-12 flex-grow flex flex-col gap-8">
+    <div className="w-full max-w-7xl mx-auto px-6 pt-32 pb-24 sm:px-8 lg:px-12 flex-grow flex flex-col gap-8">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
       {/* Breadcrumbs (SEO Best Practice) */}
-      <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs font-semibold text-muted-foreground">
+      <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs font-semibold text-muted-foreground font-body">
         <Link href="/" className="hover:text-primary transition-colors">Home</Link>
         <ChevronRight className="w-3.5 h-3.5" />
         {selectedResource ? (
@@ -166,21 +168,21 @@ function ResourcesHubContent() {
             {/* Back Button */}
             <button
               onClick={() => selectResource(null)}
-              className="inline-flex items-center gap-2 text-xs font-bold text-primary hover:underline group"
+              className="inline-flex items-center gap-2 text-xs font-bold text-primary hover:underline group font-body"
             >
               <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-0.5" />
               <span>Back to all resources</span>
             </button>
 
             {/* Header info */}
-            <div className="space-y-4 border-b border-border/40 pb-6">
-              <span className="px-3 py-1 rounded-full text-[9px] font-bold uppercase tracking-widest bg-primary/10 text-primary">
+            <div className="space-y-4 border-b-2 border-dashed border-rule pb-6">
+              <span className="px-3 py-1 rounded-full text-[9px] font-bold uppercase tracking-widest bg-primary/10 text-primary font-body">
                 {selectedResource.category === 'bestPractices' ? 'Best Practices' : selectedResource.category === 'starting' ? 'Getting Started' : selectedResource.category === 'resume' ? 'Resume Prep' : 'Platform Guide'}
               </span>
-              <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground tracking-tight leading-tight">
+              <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground tracking-tight leading-tight">
                 {selectedResource.title}
               </h1>
-              <div className="flex flex-wrap items-center gap-4 text-[10px] text-muted-foreground font-semibold">
+              <div className="flex flex-wrap items-center gap-4 text-[10px] text-muted-foreground font-semibold font-body">
                 <span className="flex items-center gap-1">
                   <Clock className="w-3.5 h-3.5" />
                   {selectedResource.readTime}
@@ -208,26 +210,26 @@ function ResourcesHubContent() {
           >
             {/* Page Header */}
             <div className="space-y-4">
-              <h1 className="font-heading text-4xl sm:text-5xl font-bold text-foreground tracking-tight">
+              <h1 className="font-heading text-5xl sm:text-6xl font-bold text-foreground tracking-tight leading-tight">
                 {t('resources.title')}
               </h1>
-              <p className="text-sm sm:text-base text-muted-foreground max-w-2xl leading-relaxed">
+              <p className="text-sm sm:text-base text-muted-foreground max-w-2xl leading-relaxed font-body italic">
                 {t('resources.subtitle')}
               </p>
             </div>
 
             {/* Filter Bar */}
-            <div className="flex flex-col lg:flex-row gap-4 items-center justify-between border-b border-border/40 pb-6">
+            <div className="flex flex-col lg:flex-row gap-4 items-center justify-between border-b-2 border-dashed border-rule pb-6">
               {/* Categories */}
               <div className="flex flex-wrap gap-2 w-full lg:w-auto justify-start">
                 {categories.map((cat) => (
                   <button
                     key={cat.id}
                     onClick={() => setSelectedCategory(cat.id)}
-                    className={`px-4 py-2 rounded-full text-xs font-bold transition-all ${
+                    className={`px-4 py-2.5 rounded-full text-xs font-bold transition-all min-h-[44px] font-body ${
                       selectedCategory === cat.id
                         ? 'bg-primary text-primary-foreground shadow-sm'
-                        : 'bg-card text-muted-foreground border border-border hover:bg-muted/10 hover:text-foreground'
+                        : 'bg-card text-muted-foreground border-2 border-rule hover:bg-secondary/20 hover:text-foreground'
                     }`}
                   >
                     {cat.label}
@@ -243,44 +245,45 @@ function ResourcesHubContent() {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder={t('resources.searchPlaceholder')}
-                  className="w-full pl-9 pr-4 py-2.5 rounded-full border border-border bg-card text-foreground focus:ring-2 focus:ring-primary focus:border-transparent outline-none text-xs font-medium"
+                  className="w-full pl-9 pr-4 py-3 rounded-full border-2 border-rule bg-card text-foreground focus:ring-2 focus:ring-primary focus:border-transparent outline-none text-base font-body"
                 />
               </div>
             </div>
 
             {/* Grid List */}
             {filteredResources.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 flex-grow">
-                {filteredResources.map((res) => (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 flex-grow">
+                {filteredResources.map((res, idx) => (
                   <div
                     key={res.id}
-                    className="border border-border bg-card p-6 rounded-2xl flex flex-col justify-between shadow-sm hover:shadow-[0_8px_30px_rgba(224,95,167,0.08)] dark:hover:shadow-[0_8px_30px_rgba(224,95,167,0.15)] hover:border-primary/40 hover:scale-[1.01] transition-all duration-220"
+                    className="card-straighten border-2 border-rule bg-card p-6 flex flex-col justify-between shadow-md transition-all duration-220"
+                    style={{ transform: idx % 2 === 0 ? 'rotate(-0.4deg)' : 'rotate(0.4deg)' }}
                   >
                     <div className="space-y-4">
                       <div className="flex items-center justify-between text-[10px]">
-                        <span className="px-2.5 py-0.5 rounded-full font-bold bg-primary/10 text-primary capitalize">
+                        <span className="px-2.5 py-0.5 rounded-full font-bold bg-primary/10 text-primary capitalize font-body">
                           {res.category === 'bestPractices' ? 'Best Practices' : res.category === 'starting' ? 'Getting Started' : res.category === 'resume' ? 'Resume Prep' : 'Platform Guide'}
                         </span>
-                        <span className="text-muted-foreground font-semibold">{res.readTime}</span>
+                        <span className="text-muted-foreground font-semibold font-body">{res.readTime}</span>
                       </div>
-                      <h3 
-                        className="text-lg font-bold text-foreground hover:text-primary cursor-pointer transition-colors tracking-tight" 
+                      <h3
+                        className="font-heading text-2xl text-foreground hover:text-primary cursor-pointer transition-colors leading-tight"
                         onClick={() => selectResource(res)}
                       >
                         {res.title}
                       </h3>
-                      <p className="text-muted-foreground text-xs leading-relaxed">
+                      <p className="text-muted-foreground text-xs leading-relaxed font-body">
                         {res.description}
                       </p>
                     </div>
-                    <div className="mt-6 pt-4 border-t border-border/40 flex items-center justify-between">
-                      <span className="text-[10px] text-muted-foreground flex items-center gap-1 font-semibold">
+                    <div className="mt-6 pt-4 border-t-2 border-dashed border-rule flex items-center justify-between">
+                      <span className="text-[10px] text-muted-foreground flex items-center gap-1 font-semibold font-body">
                         <Calendar className="w-3.5 h-3.5" />
                         {res.date}
                       </span>
                       <button
                         onClick={() => selectResource(res)}
-                        className="inline-flex items-center gap-1 text-xs font-bold text-primary hover:underline"
+                        className="inline-flex items-center gap-1 text-xs font-bold text-primary hover:underline font-body"
                       >
                         <span>{t('resources.readArticle')}</span>
                         <ArrowRight className="w-3.5 h-3.5" />
@@ -290,10 +293,9 @@ function ResourcesHubContent() {
                 ))}
               </div>
             ) : (
-              <div className="text-center py-24 bg-card rounded-2xl border border-dashed border-border flex flex-col items-center justify-center gap-4">
-                <BookMarked className="w-10 h-10 text-muted" />
-                <h3 className="font-bold text-base text-foreground">No resources found</h3>
-                <p className="text-muted-foreground text-xs max-w-sm">
+              <div className="py-16 bg-card border-2 border-dashed border-rule flex flex-col items-start justify-center gap-3 px-8">
+                <h3 className="font-bold text-base text-foreground font-body">No resources found</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed max-w-sm font-body">
                   We couldn&apos;t find any resources matching your search terms or category selection. Try using different keywords.
                 </p>
               </div>
@@ -308,9 +310,9 @@ function ResourcesHubContent() {
 export default function ResourcesPage() {
   return (
     <>
-      {/* Migration notice — this page is being superseded by Platform Guides */}
-      <div className="w-full border-b border-primary/20 bg-primary/5 py-3 px-6">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs">
+      {/* Migration notice — sticky bottom bar */}
+      <div className="fixed bottom-0 left-0 right-0 z-40 border-t-2 border-primary/20 bg-card/95 backdrop-blur-md py-3 px-6 shadow-lg animate-slide-up">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs font-body">
           <p className="text-muted-foreground font-medium">
             <strong className="text-foreground font-bold">Looking for platform reviews?</strong>{' '}
             This section is being replaced by our new, in-depth Platform Guides.
