@@ -1,6 +1,6 @@
-# Evaluators Guild
+# Talent Collective
 
-Evaluators Guild is a Next.js app for Talent Collective's AI evaluation platform guides, community pages, and resource content.
+Talent Collective is a Next.js app for AI evaluation platform guides, community pages, and resource content.
 
 ## Tech Stack
 
