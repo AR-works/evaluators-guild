@@ -188,11 +188,6 @@ Not confirmed in this version (Unknown).
 - Micro1 Review Guide
 - Outlier AI Review Guide
 - Alignerr Review Guide
-- AI Evaluator Career Guide
-- Resume Guide for AI Training Roles
-- AI Interview Preparation Guide
-- AI Evaluator Salary Guide
-- AI Evaluation Platforms Comparison
 
 ## Conclusion
 

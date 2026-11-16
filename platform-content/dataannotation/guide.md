@@ -26,7 +26,7 @@ Every claim in this guide carries a confidence label:
 
 ## Overview
 
-DataAnnotation.tech is one of the fastest-growing platforms for AI conversation rating, offering on-demand annotation, evaluation, and feedback tasks with a low barrier to entry. It pays weekly via PayPal and doesn't require a degree, though writing quality is tested during onboarding. It's best suited to beginners looking for a straightforward entry point into paid AI evaluation work, rather than specialists seeking the highest possible pay ceiling.
+DataAnnotation.tech offers on-demand annotation, evaluation, and feedback tasks with a low barrier to entry. It pays weekly via PayPal and doesn't require a degree, though writing quality is tested during onboarding.
 
 ## Quick Facts
 
@@ -41,12 +41,11 @@ DataAnnotation.tech is one of the fastest-growing platforms for AI conversation 
 | Interview Type | Onboarding writing quality assessment; no advanced technical assessment documented | Official |
 | Payment Model | Weekly, via PayPal | Official |
 | Typical Skills | Writing quality, reading comprehension, general annotation ability | Official |
-| Estimated Difficulty | Low - accessible entry point, best for beginners | Community |
-| Best For | Beginners seeking a simple, low-barrier entry into AI annotation work | - |
+| Estimated Difficulty | Low - accessible entry point | Community |
 
 ## What Is DataAnnotation?
 
-DataAnnotation is one of the fastest growing platforms for AI conversation rating, offering on-demand tasks starting at $20+/hr (Official). It provides consistent task availability and pays weekly via PayPal (Official). Compared with premium platforms requiring domain credentials or rigorous screening, DataAnnotation.tech offers accessible entry points with simple annotation, evaluation, or feedback tasks and lower barriers, making it best for beginners (Community).
+DataAnnotation offers on-demand AI conversation rating tasks (Official). It provides consistent task availability and pays weekly via PayPal (Official).
 
 **Who hires through DataAnnotation:** Not specified in available research beyond general AI conversation and model training use cases.
 
@@ -86,20 +85,13 @@ Specific step-by-step onboarding details were not fully documented in available 
 
 **Documented assessment:** A writing quality check during onboarding (Official).
 
-**Not documented:** No advanced technical assessment is described in available research, and specific question types, скорinг rubrics, or pass/fail thresholds were not specified (Unknown).
+**Not documented:** No advanced technical assessment is described in available research, and specific question types, scoring rubrics, or pass/fail thresholds were not specified (Unknown).
 
 ## Compensation
 
-| Role Type | Reported Rate | Source |
-|---|---|---|
-| General annotation/evaluation | $15-$23/hr | Official |
-| On-demand tasks | $20+/hr | Official |
-
-**Realistic beginner income:** A beginner working 20 hours per week can realistically earn $240-$400/week (Community).
+Pay varies by task. Check the rate shown on each task on DataAnnotation's own site.
 
 **Payment method:** Weekly via PayPal (Official).
-
-*Note: The $15-$23/hr and $20+/hr figures come from different parts of the available research and may reflect different task types or time periods - treat both as approximate.*
 
 ## Geographic Availability
 
@@ -120,35 +112,10 @@ Not itemized by country in available research. The platform is described as offe
 
 - Consistent task availability is a frequently cited positive (Community).
 - Weekly PayPal payments are valued by contributors (Community).
-- Seen as a good entry point for building an AI evaluation portfolio before moving to higher-paying platforms (Community).
-
-### Common Complaints
-
-- Lower pay ceiling compared with premium platforms like Outlier AI, Alignerr, or Mercor (Community).
-
-## Who Should Consider DataAnnotation?
-
-Beginners with no prior AI evaluation experience who want a straightforward, low-barrier way to start earning from annotation and evaluation work, and who value consistent task availability and predictable weekly PayPal payments over a high pay ceiling.
-
-## Who Should Skip This Platform?
-
-- Specialists in medicine, law, finance, or advanced coding who could earn substantially more on premium platforms like Outlier AI, Alignerr, or Mercor (Community).
-- Anyone seeking a pay ceiling above roughly $23/hr, based on currently available research (Official).
-
-## Pros and Cons
-
-| Pros | Cons |
-|---|---|
-| No degree required | Lower pay ceiling than premium platforms |
-| Consistent task availability (community-reported) | Detailed hiring process and role responsibilities not fully documented |
-| Weekly payment via PayPal | Limited information on interview/screening beyond a writing check |
-| Low barrier to entry - good for beginners | Country availability and language requirements not specified |
-| Good starting point for building an AI evaluation portfolio | Geographic and eligibility details are largely unknown from current research |
 
 ## Interview Tips
 
 - **Focus on writing quality.** The onboarding process specifically tests writing, so proofread carefully before submitting any samples.
-- **Treat it as a portfolio-builder.** Community feedback frames DataAnnotation as a good starting point before moving to higher-paying, more specialized platforms.
 - **Confirm current details directly with the platform.** Several process details (application steps, timeline, country eligibility) were not available in this research and may have changed.
 
 ## Frequently Asked Questions
@@ -165,34 +132,17 @@ AI conversation rater, data annotator, AI response evaluator, and general entry-
 **How do I apply to DataAnnotation.tech?**
 Specific application steps were not detailed in available research; contributors should check the platform directly for current instructions.
 
-**How much does DataAnnotation pay per hour?**
-Reported figures range from $15-$23/hr for general work, with on-demand tasks starting at $20+/hr.
-
 **Does DataAnnotation pay weekly?**
 Yes, payments are processed weekly via PayPal.
-
-**Is DataAnnotation.tech legit?**
-Available research describes it as a fast-growing, established platform for AI conversation rating with consistent task availability and reliable weekly payment, though independent verification of company details (founding date, funding) was not available.
 
 **Do I need a degree for DataAnnotation?**
 No, a degree is not required, though writing quality is tested during onboarding.
 
 **What is the difference between DataAnnotation and Outlier AI?**
-DataAnnotation has a lower barrier to entry and lower pay ceiling ($15-$23/hr); Outlier AI has a more rigorous screening process (an 80%+ reasoning test) and a higher ceiling for specialists.
-
-**What is the difference between DataAnnotation and Appen?**
-Both are described as accessible platforms; Appen is one of the oldest and largest AI data companies globally, offering projects like search rating (Raterhub), with pay in a similar $14-$20/hr range. Specific structural differences beyond pay were not detailed in available research.
+DataAnnotation documents only a writing quality check at onboarding; Outlier AI uses a General Reasoning Screening that requires 80% or more.
 
 ## Related Topics
 
 - Outlier AI Review Guide
 - Micro1 Review Guide
 - Alignerr Review Guide
-- AI Evaluator Career Guide
-- Resume Guide for AI Training Roles
-- AI Evaluator Salary Guide
-- Best AI Evaluation Platforms Comparison
-
-## Conclusion
-
-DataAnnotation.tech is best suited to beginners who want a simple, low-barrier way to start earning from AI conversation rating and annotation work, without needing a degree or specialized domain credentials. Reported pay is modest compared with premium platforms - roughly $15-$23/hr, or $240-$400/week for a beginner working 20 hours weekly - making it a reasonable starting point rather than a long-term high-earning destination. Several process details, including the full application flow and geographic eligibility, were not available in current research and should be confirmed directly with the platform.

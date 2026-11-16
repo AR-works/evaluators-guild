@@ -26,7 +26,7 @@ Every claim in this guide carries a confidence label:
 
 ## Overview
 
-Alignerr pays contributors to evaluate and improve AI content, and recruits domain experts to design expert-level tasks that challenge advanced AI agents. It is powered by Labelbox, a major AI data infrastructure company, and positions itself as a premium network for AI trainers and evaluators with academic or professional backgrounds. It's best suited to people who want a quick, low-friction entry point (for generalist roles) or a high pay ceiling (for coding, accounting, or language specialist roles) - and who are comfortable with a hiring process that is described as entirely AI-led with limited transparency around timelines and data use.
+Alignerr pays contributors to evaluate and improve AI content, and recruits domain experts to design expert-level tasks that challenge advanced AI agents. It is powered by Labelbox, a major AI data infrastructure company, and positions itself as a premium network for AI trainers and evaluators with academic or professional backgrounds.
 
 ## Quick Facts
 
@@ -42,13 +42,12 @@ Alignerr pays contributors to evaluate and improve AI content, and recruits doma
 | Payment Model | Contract-based; Stripe Connect or PayPal depending on location | Official |
 | Typical Skills | Attention to detail, written English communication, web browsing/search evaluation, or technical skills for engineering roles | Official |
 | Estimated Difficulty | Mixed - entry-level roles rated easiest, AI Evaluator and Software Engineer roles rated hardest (2.88/5 average difficulty) | Community |
-| Best For | Entry-level applicants wanting quick onboarding, and specialists (coding, accounting, language) wanting a high pay ceiling | - |
 
 ## What Is Alignerr?
 
 Alignerr pays contributors to shape the future of AI by evaluating and improving AI content from anywhere, and recruits domain experts to design expert-level tasks that challenge advanced AI agents (Official). It is powered by Labelbox, a major AI data infrastructure company, and candidates are sent an onboarding email to join the Labelbox platform as part of the process (Official).
 
-Alignerr is described as a newer entrant that emerged in 2025, recruiting AI trainers and evaluators with academic or professional backgrounds and positioning itself as a premium network (Official). It advertises pay up to $150/hr for aligning AI models with a contributor's expertise (Official).
+Alignerr is described as a newer entrant that emerged in 2025, recruiting AI trainers and evaluators with academic or professional backgrounds and positioning itself as a premium network (Official).
 
 **Who hires through Alignerr:** AI labs and enterprises working with Labelbox's data infrastructure to train and evaluate AI models and agents.
 
@@ -108,17 +107,9 @@ Designs expert-level reconciliation tasks that challenge advanced AI agents, tra
 
 ## Compensation
 
-| Role Type | Reported Rate | Source |
-|---|---|---|
-| Advertised ceiling | Up to $150/hr | Official |
-| Search Quality Evaluator | $40-$120/hr | Official |
-| Community-reported general range (Labelbox/Alignerr) | $15-$60/hr | Community |
-| WorldSim evaluation | $100 pass bonus, leading to ~$90/hr long-term work | Community |
-| Subject-matter experts (coding, healthcare, law) | $25-$45/hr | Community |
+Pay varies by role. Check the rate shown on each listing on Alignerr's own site.
 
 **Payment methods:** Stripe Connect and PayPal, chosen based on location (Official).
-
-*Note: The gap between the advertised $150/hr ceiling and community-reported general rates ($15-$60/hr) suggests the top-end figure applies to a narrow set of specialist/expert tasks rather than typical contributor work. Treat headline figures as a ceiling, not an average.*
 
 ## Geographic Availability
 
@@ -140,8 +131,6 @@ Alignerr accepts international applicants (Official/Verified). Payment method de
 ### Positive Feedback
 
 - Quick application process for entry-level roles, around 10-15 minutes (Community).
-- Access to Labelbox, a well-established data infrastructure platform, lends credibility (Community).
-- Competitive pay ceiling advertised for expert-level roles (Official).
 
 ### Common Complaints
 
@@ -149,34 +138,12 @@ Alignerr accepts international applicants (Official/Verified). Payment method de
 - Reports of silent account deletions, with workers sitting idle for months without explanation (Community).
 - Only about 25% of Glassdoor reviewers rated the interview experience as positive, with a difficulty rating of 2.88 out of 5 (Community).
 
-## Who Should Consider Alignerr?
-
-Entry-level applicants wanting a fast, low-friction way into AI evaluation work (Search Quality Evaluator, AI Training Specialist), and specialists in coding, accounting, or language who want access to the platform's higher pay ceiling.
-
-## Who Should Skip This Platform?
-
-- Anyone who wants full transparency into an AI-led hiring process upfront - the process being entirely AI-driven is not clearly disclosed in Alignerr's public announcements (Community).
-- Contributors who need consistent, predictable ongoing work - reports of silent account deletions and long idle periods suggest inconsistent project continuity (Community).
-- Applicants uncomfortable with their interview/interaction data potentially being used to train AI models (Community).
-- Anyone expecting the advertised $150/hr ceiling as a typical rate - community-reported general rates run closer to $15-$60/hr (Community).
-
-## Pros and Cons
-
-| Pros | Cons |
-|---|---|
-| Fast application process for entry-level roles (10-15 minutes) | Hiring process is entirely AI-led with limited upfront disclosure |
-| Backed by Labelbox, an established data infrastructure company | Community reports of silent account deletions and long idle periods |
-| High advertised pay ceiling for specialists (up to $150/hr) | Only ~25% of Glassdoor reviewers rated interviews positively |
-| No technical background required for generalist/search roles | Community-reported general pay ($15-$60/hr) is well below the advertised ceiling |
-| Flexible payment via Stripe Connect or PayPal | Concerns about how interview data is used for AI training |
-
 ## Interview Tips
 
 - **Tailor your resume to the role.** For Search Quality Evaluator, emphasize web browsing, critical thinking, and written communication.
 - **Move quickly through the application.** Alignerr reviews applications daily, so completing every step promptly matters.
 - **Prepare for assessments harder than the resume screen suggests.** Community feedback notes later stages can be tougher than the initial steps imply.
 - **For engineering roles, brush up on React, TypeScript, and Python fundamentals.** These are explicitly tested in automated interviews.
-- **Go in with realistic pay expectations.** Treat the $150/hr ceiling as reserved for a narrow set of specialist work, not a typical rate.
 
 ## Frequently Asked Questions
 
@@ -210,9 +177,6 @@ Not for generalist or Search Quality Evaluator roles; Software Engineer/AI Code 
 **What is the Alignerr Search Quality Evaluator role?**
 A role assessing and rating search engine results, AI-generated answers, and recommendations, requiring no technical background.
 
-**How much does Alignerr pay per hour?**
-Advertised up to $150/hr; Search Quality Evaluator pays $40-$120/hr; community-reported general rates run $15-$60/hr.
-
 **What payment methods does Alignerr use?**
 Stripe Connect and PayPal, depending on location.
 
@@ -229,7 +193,7 @@ TypeScript, Ruby, Java, and C++ for the Code Evaluator role; React, TypeScript, 
 Glassdoor reviewers rated interview difficulty at 2.88 out of 5 on average, with AI Evaluator and Software Engineer roles rated hardest.
 
 **What do community members say about Alignerr?**
-Feedback is mixed - positives include fast onboarding and Labelbox's credibility; complaints include limited transparency about the AI-led process and reports of silent account deletions.
+Feedback is mixed - positives include fast onboarding; complaints include limited transparency about the AI-led process and reports of silent account deletions.
 
 **Does Alignerr have silent account deletions?**
 Community reports describe silent account deletions and workers sitting idle for months without explanation.
@@ -244,7 +208,7 @@ Community reports indicate Alignerr's AI chatbot has confirmed that user data is
 Yes.
 
 **What is the difference between Alignerr and Outlier AI?**
-Alignerr is powered by Labelbox and advertises a higher pay ceiling; Outlier AI is operated by Scale AI and gates entry with a General Reasoning Screening.
+Alignerr is powered by Labelbox; Outlier AI is operated by Scale AI and gates entry with a General Reasoning Screening.
 
 **What is the difference between Alignerr and Micro1?**
 Both use AI-led interviews, but Alignerr is powered by Labelbox with a documented 28-day average hiring timeline, while Micro1 uses its "Zara" interview plus a proctored desktop-share technical assessment and states ~top-1% selectivity.
@@ -254,9 +218,6 @@ Not explicitly restricted in available research; the platform is described as fl
 
 **Does Alignerr have minimum hour requirements?**
 Not specified in available research.
-
-**What is the WorldSim evaluation at Alignerr?**
-A specific evaluation task reported to pay $100 for passing, leading to roughly $90/hr in long-term work, according to community sources.
 
 **How do I improve my chances of getting accepted at Alignerr?**
 Complete the application quickly (reviews happen daily), keep your profile accurate, and tailor your resume to the specific role's skill requirements.
@@ -275,12 +236,3 @@ Not clearly specified; community reports of silent account deletions and idle pe
 - Micro1 Review Guide
 - Outlier AI Review Guide
 - Mercor Review Guide
-- AI Evaluator Career Guide
-- Resume Guide for AI Training Roles
-- AI Interview Preparation Guide
-- AI Evaluator Salary Guide
-- Best AI Evaluation Platforms Comparison
-
-## Conclusion
-
-Alignerr suits two fairly different audiences: entry-level applicants who want a fast, low-friction way into AI evaluation work, and specialists in coding, accounting, or language who want access to its higher pay ceiling. Its backing by Labelbox adds credibility, but community reports about limited transparency around the AI-led process, silent account deletions, and how interview data is used are worth weighing before applying. Reported pay ranges widely, from around $15/hr in typical community-reported work up to $150/hr for select specialist tasks, and figures should be treated as approximate.

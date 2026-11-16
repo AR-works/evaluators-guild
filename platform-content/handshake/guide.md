@@ -28,7 +28,7 @@ Every claim in this guide carries a confidence label:
 
 ## Overview
 
-Handshake AI offers paid remote work for experts and generalists, with tasks spanning prompt engineering, evaluating outputs, and assessing domain-specific reasoning. It is positioned - alongside Alignerr - as one of the highest-paying evaluation platforms for expert-level work, and is described as accessible to students due to its emphasis on academic depth over prior AI experience. Available research is limited, so treat pay and process claims here as directional rather than confirmed.
+Handshake AI offers paid remote work for experts and generalists, with tasks spanning prompt engineering, evaluating outputs, and assessing domain-specific reasoning. It is described as accessible to students due to its emphasis on academic depth over prior AI experience. Available research is limited, so treat process claims here as directional rather than confirmed.
 
 ## Quick Facts
 
@@ -44,17 +44,14 @@ Handshake AI offers paid remote work for experts and generalists, with tasks spa
 | Payment Model | Not publicly specified | Unknown |
 | Typical Skills | STEM background, coding skills, expertise in law, medicine, or finance | Community |
 | Estimated Difficulty | Not publicly specified | Unknown |
-| Best For | Students and domain experts seeking high-end pay for expert-level evaluation work | - |
 
 ## What Is Handshake AI?
 
 Handshake AI offers paid remote work for experts and generalists (Community). Tasks on the platform involve prompt engineering, evaluating outputs, and assessing domain-specific reasoning (Community). It's described as valuing academic depth regardless of prior AI experience, which makes it accessible for students specifically (Community).
 
-Handshake AI is positioned - alongside Alignerr - as one of the highest-paying evaluation platforms for expert-level work (Community). Available secondary sources cite it among a small group of platforms (including Alignerr) offering the highest ceiling for domain experts (Community).
-
 **Who hires through Handshake AI:** Not specified in available research.
 
-**Who should apply:** Students and professionals with strong academic backgrounds, particularly in STEM, coding, law, medicine, or finance, based on the pay-driver skills cited in research.
+**Who should apply:** Students and professionals with strong academic backgrounds, particularly in STEM, coding, law, medicine, or finance, based on the skills cited in research.
 
 ## Roles Offered
 
@@ -76,11 +73,7 @@ Not documented in available research. No information on assessment format, quest
 
 ## Compensation
 
-| Role Type | Reported Rate | Source |
-|---|---|---|
-| High-end evaluation work (general) | Often cited in the $50-$300+/hr range shared with other top-tier platforms | Community |
-
-*This figure is drawn from a cross-platform compensation benchmark that groups Handshake AI with other high-paying platforms rather than from Handshake-specific pay data. Treat it as directional only, not a confirmed platform-specific rate.*
+No Handshake-specific pay data was available in current research. Check the rate shown on each listing on Handshake AI's own site.
 
 ## Geographic Availability
 
@@ -97,23 +90,6 @@ Not documented in available research beyond a general "remote" description (Unkn
 
 Specific positive or negative community reports for Handshake AI were not available in current research (Unknown). This is a gap for dedicated future research rather than an indication of an absence of sentiment.
 
-## Who Should Consider Handshake AI?
-
-Students and professionals with strong academic credentials, particularly in STEM, coding, law, medicine, or finance, who are exploring high-paying AI evaluation platforms - with the understanding that much of the specific process detail remains unverified pending further research.
-
-## Who Should Skip This Platform?
-
-Not enough information is available in current research to make a specific "who should skip" determination beyond noting that anyone requiring documented, verified process details before applying should wait for a more complete Handshake AI research pass (Unknown).
-
-## Pros and Cons
-
-| Pros | Cons |
-|---|---|
-| Positioned among the highest-paying evaluation platforms | Very limited independently sourced research available |
-| Reportedly accessible to students due to academic-depth focus | Hiring process, interview format, and timeline are undocumented |
-| Values academic credentials over prior AI experience | Specific role titles and responsibilities are undocumented |
-| Covers prompt engineering and domain-reasoning tasks | Company details (founding, headquarters, funding) are unknown |
-
 ## Interview Tips
 
 Not enough documented information is available to provide platform-specific interview tips. General AI-evaluation-platform preparation - building a strong academic/professional profile and being ready to demonstrate domain reasoning - is a reasonable starting point pending direct research.
@@ -122,9 +98,6 @@ Not enough documented information is available to provide platform-specific inte
 
 **What is Handshake AI?**
 A platform offering paid remote work for experts and generalists, with tasks in prompt engineering, output evaluation, and domain-specific reasoning assessment.
-
-**Handshake AI pay rate?**
-Cross-platform research groups Handshake AI with other high-paying platforms in a $50-$300+/hr range for STEM, coding, legal, medical, or finance expertise, though this figure is not confirmed as Handshake-specific.
 
 **Handshake AI vs Outlier AI?**
 Both offer paid AI evaluation work; Outlier AI is operated by Scale AI with documented pay compression and a General Reasoning Screening, while detailed process information for Handshake AI was not available in current research.
@@ -140,10 +113,7 @@ Prompt engineering is cited as one of the task types available on Handshake AI, 
 - Alignerr Review Guide
 - Mercor Review Guide
 - Outlier AI Review Guide
-- AI Evaluator Career Guide
-- AI Evaluator Salary Guide
-- Best AI Evaluation Platforms Comparison
 
 ## Conclusion
 
-Handshake AI is positioned as one of the higher-paying platforms for expert-level AI evaluation work and is described as accessible to students due to its emphasis on academic depth. However, available research on this platform is notably thinner than for Micro1, Outlier AI, Alignerr, or Mercor - specific hiring process, assessment format, and verified compensation details are not yet documented. This guide should be treated as a starting point pending a dedicated research pass, rather than a complete picture.
+Handshake AI is described as accessible to students due to its emphasis on academic depth. However, available research on this platform is notably thinner than for Micro1, Outlier AI, Alignerr, or Mercor - specific hiring process, assessment format, and compensation details are not yet documented. This guide should be treated as a starting point pending a dedicated research pass, rather than a complete picture.

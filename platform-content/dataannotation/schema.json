@@ -33,14 +33,6 @@
       },
       {
         "@type": "Question",
-        "name": "How much does DataAnnotation pay per hour?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Reported figures range from $15-$23/hr for general work, with on-demand tasks starting at $20+/hr."
-        }
-      },
-      {
-        "@type": "Question",
         "name": "Does DataAnnotation pay weekly?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -60,7 +52,7 @@
         "name": "What is the difference between DataAnnotation and Outlier AI?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "DataAnnotation has a lower barrier to entry and lower pay ceiling ($15-$23/hr); Outlier AI has a more rigorous screening process and a higher ceiling for specialists."
+          "text": "DataAnnotation documents only a writing quality check at onboarding; Outlier AI uses a General Reasoning Screening that requires 80% or more."
         }
       }
     ]
@@ -69,9 +61,21 @@
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home" },
-      { "@type": "ListItem", "position": 2, "name": "AI Evaluator Platforms" },
-      { "@type": "ListItem", "position": 3, "name": "DataAnnotation Review" }
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "AI Evaluator Platforms"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "DataAnnotation Review"
+      }
     ]
   }
 ]

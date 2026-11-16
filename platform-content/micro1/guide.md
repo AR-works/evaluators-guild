@@ -26,7 +26,7 @@ Every claim in this guide carries a confidence label:
 
 ## Overview
 
-Micro1 connects professionals with real-world expertise to companies building frontier AI models. Instead of a standard job board, it uses an AI recruiter named "Zara" to screen candidates through recorded interviews and skills assessments, then certifies top performers into a talent pool that AI labs and enterprises hire from directly. It's best suited to professionals with genuine domain knowledge - in fields from engineering and healthcare to finance and linguistics - who want flexible, remote AI evaluation work and are comfortable with a proctored screening process, rather than people seeking a low-friction side gig with minimal vetting.
+Micro1 connects professionals with real-world expertise to companies building frontier AI models. Instead of a standard job board, it uses an AI recruiter named "Zara" to screen candidates through recorded interviews and skills assessments, then certifies top performers into a talent pool that AI labs and enterprises hire from directly.
 
 ## Quick Facts
 
@@ -42,7 +42,6 @@ Micro1 connects professionals with real-world expertise to companies building fr
 | Payment Model | Self-set hourly rate; hourly, monthly retainer, or fixed-project depending on contract | Official |
 | Typical Skills | Domain expertise, critical thinking, written/verbal English, rubric-based evaluation | Official |
 | Estimated Difficulty | Moderate-High (platform states ~top 1% acceptance) | Official |
-| Best For | Domain experts seeking flexible remote AI evaluation work | - |
 
 ## What Is Micro1?
 
@@ -84,7 +83,7 @@ Micro1 combines automated, skill-based assessments with human recruiter review; 
 4. **Anti-Cheat & Technical Assessment** - Requires full desktop screen-sharing (not a single window); the assessment cannot proceed without it (Official). The session is video-first - audio and video are recorded to assess communication style and eye contact (Official).
 5. **AI-Generated Assessment Report** - After voice-based Q&A and, for relevant roles, live coding, candidates receive an automated report scoring performance by skill area (Official).
 6. **Certification** - Approved candidates become "Micro1 Certified" and enter the talent pool for client matching or direct application (Official).
-7. **ID Verification** - Government ID upload is required. Legitimate Micro1 emails come only from @micro1.ai, @micro1.io, or @micro1.co (Official).
+7. **ID Verification** - Government ID upload is required. Official Micro1 emails come only from @micro1.ai, @micro1.io, or @micro1.co (Official).
 
 **Timeline:** Screening (application through technical assessment) typically takes 1-2 weeks; matching afterward can take a few days to several weeks depending on demand, specialization, and timezone (Official).
 
@@ -114,19 +113,11 @@ Micro1 combines automated, skill-based assessments with human recruiter review; 
 
 ## Compensation
 
-| Role Type | Reported Rate | Source |
-|---|---|---|
-| AI Trainer / Annotator | $20-$40/hr | Official |
-| AI Evaluator | $20-$65/hr | Official |
-| Engineering roles | $50-$150/hr | Official |
-
 **How pay is set:** Candidates set their own billing rate during registration - a distinguishing feature versus fixed-tier platforms (Official). Actual pay still varies by role, with some positions billed hourly and others structured as monthly retainers or fixed project fees (Official).
 
-**What affects earnings:** Your set rate, role type (engineering/game-dev pays substantially more than evaluation or annotation), placement consistency, and regional factors (Official).
+**What affects earnings:** Your set rate, role type, placement consistency, and regional factors (Official).
 
 **Payment processing:** Runs through the Micro1 platform itself, noted as an added layer of security versus direct freelance arrangements (Official).
-
-*Figures reflect Micro1's own materials as of this dossier's July 2026 research date - treat as approximate and expect variation by project and location.*
 
 ## Geographic Availability
 
@@ -136,7 +127,7 @@ Micro1 accepts global applicants across engineering, finance, healthcare/medical
 
 **Timezone expectations:** Not rigidly fixed, though timezone compatibility can affect matching speed after certification (Official).
 
-**Verification note:** Legitimate communication only comes from @micro1.ai, @micro1.io, or @micro1.co - useful for spotting phishing attempts (Official).
+**Verification note:** Official communication only comes from @micro1.ai, @micro1.io, or @micro1.co - useful for spotting phishing attempts (Official).
 
 ## Skills Required
 
@@ -159,7 +150,6 @@ Micro1 accepts global applicants across engineering, finance, healthcare/medical
 
 - The Zara AI interview is frequently described as surprisingly conversational for an AI-led process (Community).
 - Rejected candidates can request detailed, constructive feedback - a feature noted as uncommon among comparable platforms (Official).
-- The "Micro1 Certified" credential is seen by some as a career signal, given the platform's selective vetting (Community).
 
 ### Common Complaints
 
@@ -167,27 +157,6 @@ Micro1 accepts global applicants across engineering, finance, healthcare/medical
 - Payment structure (hourly vs. retainer vs. fixed-project) varies by contract, which some contributors find less predictable than a flat hourly model (Community).
 
 **A note on source depth:** Independently sourced, large-scale community reviews specifically about Micro1 were limited in available research. Much of the sentiment above comes from media coverage and preparation guides rather than high-volume community forums - treat it as directionally useful rather than exhaustive (Unknown).
-
-## Who Should Consider Micro1?
-
-Domain experts - engineers, clinicians, finance professionals, linguists, legal professionals, and similar - who want remote, flexible AI evaluation work and are comfortable setting their own rate and going through a proctored, video-recorded assessment (Official). Also a fit for candidates who value structured post-rejection feedback over a black-box "no."
-
-## Who Should Skip This Platform?
-
-- Anyone unwilling to share their full desktop during the technical assessment - this is a hard requirement, not optional (Official).
-- Applicants without demonstrable domain expertise, given Micro1's stated ~top-1% acceptance rate (Official).
-- Contributors who need predictable, fixed hourly pay - Micro1's mixed hourly/retainer/project structure and self-set rates mean income can vary by contract (Official/Community).
-- Non-US/UK-based applicants seeking rate parity, given community-reported pay disparities by location (Community).
-
-## Pros and Cons
-
-| Pros | Cons |
-|---|---|
-| Self-set billing rate at registration | Reported pay gaps by geography |
-| Feedback offered to rejected candidates | Full desktop screen-share required for the technical assessment |
-| Wide domain coverage (engineering to linguistics to medicine) | High selectivity (~top 1%) may mean a longer path in |
-| Certification acts as a reusable credential across client matches | Payment structure (hourly/retainer/project) varies and isn't always predictable upfront |
-| AI-led interview removes reviewer mood/fatigue bias | Matching timeline after certification can take days to several weeks |
 
 ## Interview Tips
 
@@ -220,9 +189,6 @@ The credential given to candidates who pass Micro1's screening and assessment, p
 
 **Does Micro1 accept applicants from outside the US?**
 Yes - the platform accepts global applicants across many domains.
-
-**How much does Micro1 pay for AI evaluator roles?**
-Reported ranges are roughly $20-$65/hr for evaluator roles, $20-$40/hr for trainer/annotator roles, and $50-$150/hr for engineering roles, though candidates set their own rate at registration.
 
 **How do I set my billing rate on Micro1?**
 You set your own rate during registration - a distinguishing feature versus platforms with fixed pay tiers.
@@ -260,9 +226,6 @@ Part of an anti-cheat protocol during the technical assessment - candidates shar
 **How does Micro1 pay contractors - hourly, monthly, or per-project?**
 Depends on the specific contract; some roles are hourly, others are monthly retainers or fixed project fees.
 
-**Is Micro1 legitimate or a scam?**
-Micro1 has raised over $40M in funding and reports over 1 million AI-led interviews conducted (company-reported figures). Always verify communications come from an official @micro1.ai, @micro1.io, or @micro1.co address.
-
 **What is "Zara" at Micro1?**
 Micro1's AI interviewer/recruiter, conducting asynchronous technical and scenario-based interviews.
 
@@ -292,12 +255,3 @@ Independent, large-scale community review data specifically for Micro1 was limit
 - Outlier AI Review Guide
 - Alignerr Review Guide
 - Mercor Review Guide
-- AI Evaluator Career Guide
-- Resume Guide for AI Training Roles
-- AI Interview Preparation Guide
-- AI Evaluator Salary Guide
-- Best AI Evaluation Platforms Comparison
-
-## Conclusion
-
-Micro1 suits professionals with genuine, verifiable domain expertise who want flexible, remote AI evaluation work and are comfortable with a proctored, AI-led screening process that includes full desktop sharing. Its self-set billing rate and post-rejection feedback option are notable differentiators. Reported pay spans widely - from around $20/hr for annotation-style work up to $150/hr for engineering roles - with actual earnings depending heavily on role type, rate negotiation, and project consistency. As with any AI evaluation platform, individual experiences vary, and compensation figures should be treated as approximate and subject to change.

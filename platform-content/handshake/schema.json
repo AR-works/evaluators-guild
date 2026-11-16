@@ -33,14 +33,6 @@
       },
       {
         "@type": "Question",
-        "name": "Handshake AI pay rate?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Cross-platform research groups Handshake AI with other high-paying platforms in a $50-$300+/hr range for STEM, coding, legal, medical, or finance expertise, though this figure is not confirmed as Handshake-specific."
-        }
-      },
-      {
-        "@type": "Question",
         "name": "Handshake AI application process?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -53,9 +45,21 @@
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home" },
-      { "@type": "ListItem", "position": 2, "name": "AI Evaluator Platforms" },
-      { "@type": "ListItem", "position": 3, "name": "Handshake AI Review" }
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "AI Evaluator Platforms"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Handshake AI Review"
+      }
     ]
   }
 ]

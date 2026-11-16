@@ -65,14 +65,6 @@
       },
       {
         "@type": "Question",
-        "name": "How much does Micro1 pay for AI evaluator roles?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Reported ranges are roughly $20-$65/hr for evaluator roles, $20-$40/hr for trainer/annotator roles, and $50-$150/hr for engineering roles, though candidates set their own rate at registration."
-        }
-      },
-      {
-        "@type": "Question",
         "name": "What happens if I fail the Micro1 assessment?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -85,14 +77,6 @@
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Micro1 states it accepts roughly the top 1% of applicants (company-reported figure)."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is Micro1 legitimate or a scam?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Micro1 has raised over $40M in funding and reports over 1 million AI-led interviews conducted (company-reported figures). Always verify communications come from an official @micro1.ai, @micro1.io, or @micro1.co address."
         }
       },
       {

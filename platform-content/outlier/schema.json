@@ -49,34 +49,10 @@
       },
       {
         "@type": "Question",
-        "name": "How much does Outlier AI pay per hour?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Advertised rates run $15-$50/hr; community-reported effective rates are closer to $12-$35/hr, with new workers typically at $12-$18/hr initially."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Has Outlier AI cut pay in 2025/2026?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Rate compression since December 2025 is documented - some projects paying $28-$35/hr in early 2025 were restructured to $18-$22/hr by Q1 2026."
-        }
-      },
-      {
-        "@type": "Question",
         "name": "What is Oracle status on Outlier AI?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Outlier's top-tier quality designation, giving access to higher-paying projects and somewhat more queue stability, though it doesn't prevent account removal when a project ends."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is Outlier AI a scam?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No - it is operated by Scale AI, a well-funded, established company; the pay and tasks are described as real, though rates have compressed over time."
         }
       },
       {
@@ -109,9 +85,21 @@
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home" },
-      { "@type": "ListItem", "position": 2, "name": "AI Evaluator Platforms" },
-      { "@type": "ListItem", "position": 3, "name": "Outlier AI Review" }
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "AI Evaluator Platforms"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Outlier AI Review"
+      }
     ]
   }
 ]

@@ -28,7 +28,7 @@ Every claim in this guide carries a confidence label:
 
 ## Overview
 
-OpenTrain AI functions primarily as a job aggregator and talent marketplace rather than a direct employer or platform - it pulls together jobs from 20+ platforms and, for hirers, provides access to 100,000+ vetted trainers and labelers with shortlisting. For individual contributors, it's best understood as a discovery layer for finding AI training and labeling work across many underlying platforms, rather than a distinct employer with its own hiring pipeline, pay structure, or assessments.
+OpenTrain AI functions primarily as a job aggregator and talent marketplace rather than a direct employer or platform - it pulls together jobs from 20+ platforms and, for hirers, provides access to 100,000+ vetted trainers and labelers with shortlisting. For individual contributors, it works as a discovery layer for finding AI training and labeling work across many underlying platforms, rather than a distinct employer with its own hiring pipeline, pay structure, or assessments.
 
 ## Quick Facts
 
@@ -43,12 +43,11 @@ OpenTrain AI functions primarily as a job aggregator and talent marketplace rath
 | Interview Type | Not publicly specified - likely varies by underlying platform | Unknown |
 | Payment Model | Varies by underlying platform | Community |
 | Typical Skills | Varies by underlying platform and role | Unknown |
-| Estimated Difficulty | Low barrier to entry, described as accessible for beginners | Community |
-| Best For | Beginners wanting a single place to discover annotation, evaluation, and feedback opportunities across many platforms | - |
+| Estimated Difficulty | Described as a low barrier to entry | Community |
 
 ## What Is OpenTrain AI?
 
-OpenTrain AI aggregates jobs from 20+ platforms; for hirers, it allows them to post jobs to access 100,000+ vetted trainers and labelers and receive shortlists (Community). It's positioned as offering accessible entry points with annotation, evaluation, or feedback tasks and lower barriers, making it best suited for beginners (Community). Functionally, OpenTrain AI works primarily as a job aggregator and talent marketplace rather than a direct employer or platform, connecting AI labelers and trainers with companies across the broader ecosystem (Community).
+OpenTrain AI aggregates jobs from 20+ platforms; for hirers, it allows them to post jobs to access 100,000+ vetted trainers and labelers and receive shortlists (Community). Functionally, OpenTrain AI works primarily as a job aggregator and talent marketplace rather than a direct employer or platform, connecting AI labelers and trainers with companies across the broader ecosystem (Community).
 
 **Who hires through OpenTrain AI:** Companies posting jobs to access OpenTrain's pool of 100,000+ vetted trainers and labelers (Community).
 
@@ -82,23 +81,6 @@ Not documented at the OpenTrain AI level in available research; requirements wou
 
 Specific positive or negative community reports for OpenTrain AI were not available in current research (Unknown). This is a gap for dedicated future research.
 
-## Who Should Consider OpenTrain AI?
-
-Beginners or generalists who want a single starting point to discover AI training, labeling, and evaluation opportunities across many platforms at once, without needing to research each underlying platform individually from scratch.
-
-## Who Should Skip This Platform?
-
-Anyone who wants a direct, single-employer relationship with clear, documented pay and process details should look at a specific platform (such as Micro1, Outlier AI, Alignerr, or Mercor) rather than an aggregator, since OpenTrain AI's actual terms depend on whichever underlying platform a contributor ends up matched to (Community).
-
-## Pros and Cons
-
-| Pros | Cons |
-|---|---|
-| Aggregates opportunities from 20+ platforms in one place | No distinct pay structure, assessment, or hiring process of its own documented |
-| Useful discovery layer for beginners exploring the space | Actual terms depend on whichever underlying platform you're matched to |
-| Access to a large pool (100,000+) of vetted trainers/labelers for hiring companies | Very limited independently sourced research available for individual contributors |
-| Lower barrier to entry, described as accessible for beginners | Role details, compensation, and process are largely unknown at the OpenTrain level |
-
 ## Interview Tips
 
 Not enough documented information is available to provide OpenTrain AI-specific interview tips, since the actual interview and assessment process would depend on the underlying platform a contributor is matched to. General preparation for the AI evaluation and annotation space - a clear resume and readiness to demonstrate relevant skills - is a reasonable starting point.
@@ -122,9 +104,7 @@ Outlier AI is a direct platform (operated by Scale AI) with its own documented h
 - Outlier AI Review Guide
 - DataAnnotation Review Guide
 - Micro1 Review Guide
-- AI Evaluator Career Guide
-- Best AI Evaluation Platforms Comparison
 
 ## Conclusion
 
-OpenTrain AI is best understood as a discovery layer rather than a direct employer - it aggregates opportunities from more than 20 underlying platforms and helps hiring companies access a large pool of vetted trainers and labelers. For individual contributors, this guide's usefulness is inherently limited: pay, hiring process, and role requirements all depend on whichever underlying platform a contributor is ultimately matched to, and none of these specifics are documented for OpenTrain AI itself in available research. Contributors seeking clear, verifiable terms may be better served starting directly with a specific platform like Micro1, Outlier AI, Alignerr, or Mercor.
+OpenTrain AI works as a discovery layer rather than a direct employer - it aggregates opportunities from more than 20 underlying platforms and helps hiring companies access a large pool of vetted trainers and labelers. For individual contributors, this guide's usefulness is inherently limited: pay, hiring process, and role requirements all depend on whichever underlying platform a contributor is ultimately matched to, and none of these specifics are documented for OpenTrain AI itself in available research.

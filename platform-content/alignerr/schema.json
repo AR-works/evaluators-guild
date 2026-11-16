@@ -41,14 +41,6 @@
       },
       {
         "@type": "Question",
-        "name": "How much does Alignerr pay per hour?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Advertised up to $150/hr; Search Quality Evaluator pays $40-$120/hr; community-reported general rates run $15-$60/hr."
-        }
-      },
-      {
-        "@type": "Question",
         "name": "How long does Alignerr's hiring process take?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -109,9 +101,21 @@
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home" },
-      { "@type": "ListItem", "position": 2, "name": "AI Evaluator Platforms" },
-      { "@type": "ListItem", "position": 3, "name": "Alignerr Review" }
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "AI Evaluator Platforms"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Alignerr Review"
+      }
     ]
   }
 ]
