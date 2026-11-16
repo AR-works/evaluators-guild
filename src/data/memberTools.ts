@@ -14,7 +14,6 @@ export interface MemberTool {
 }
 
 export const memberTools: MemberTool[] = [
-  // TODO(owner): confirm the maker's permission before publishing.
   {
     name: 'The Work Ledger',
     description:

@@ -3,15 +3,12 @@
  * everywhere on the site.
  */
 
-// TODO(owner): CONFIRM THIS ADDRESS BEFORE PUBLISHING.
-// This is a placeholder. Set up this mailbox (or forwarding rule) on the
-// talent-collective.org domain, send a test email to it, and only then deploy.
-// If you choose a different address, change it here.
-export const CONTACT_EMAIL = 'hello@talent-collective.org';
+// Contact address shown on the About, Contact and Editorial policy pages.
+export const CONTACT_EMAIL = 'talentcollective.org@gmail.com';
 
 // Discord invite code (the part after discord.gg/). Replace it here when you
 // create a new permanent invite from the welcome channel.
-export const DISCORD_INVITE_CODE = '56xGWJRqEQ';
+export const DISCORD_INVITE_CODE = 'RKqVtGJ8z';
 export const DISCORD_INVITE_URL = `https://discord.gg/${DISCORD_INVITE_CODE}`;
 
 // Shown until the live Discord count loads, or if Discord cannot be reached.

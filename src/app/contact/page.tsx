@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import InfoPage from '@/components/InfoPage';
+import { CONTACT_EMAIL } from '@/lib/siteConfig';
 
 export const metadata: Metadata = {
   title: 'Contact',
@@ -14,7 +15,7 @@ export default function ContactPage() {
   return (
     <InfoPage title="Contact">
       <p>
-        Send all messages to [CONTACT EMAIL]. Put the topic in the subject line so we can sort it quickly.
+        Send all messages to <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Put the topic in the subject line so we can sort it quickly.
       </p>
       <ul>
         <li>

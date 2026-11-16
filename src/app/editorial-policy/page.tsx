@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import InfoPage from '@/components/InfoPage';
+import { CONTACT_EMAIL } from '@/lib/siteConfig';
 
 export const metadata: Metadata = {
   title: 'Editorial and Disclosure Policy',
@@ -85,7 +86,7 @@ export default function EditorialPolicyPage() {
 
       <h2>Corrections</h2>
       <p>
-        If you find a mistake, email [CONTACT EMAIL] with the page, the claim and a source. We check it against the
+        If you find a mistake, email <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> with the page, the claim and a source. We check it against the
         source. If we were wrong, we fix the page and add a note with the date of the change.
       </p>
     </InfoPage>
