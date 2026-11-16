@@ -146,3 +146,7 @@ DataAnnotation documents only a writing quality check at onboarding; Outlier AI 
 - Outlier AI Review Guide
 - Micro1 Review Guide
 - Alignerr Review Guide
+
+## Conclusion
+
+Roles, requirements and payment terms change often, so check DataAnnotation's own pages for the current details before you apply. For experiences shared by other contributors, join the Talent Collective community on Discord.

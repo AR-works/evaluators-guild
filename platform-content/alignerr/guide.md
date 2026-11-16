@@ -236,3 +236,7 @@ Not clearly specified; community reports of silent account deletions and idle pe
 - Micro1 Review Guide
 - Outlier AI Review Guide
 - Mercor Review Guide
+
+## Conclusion
+
+Roles, requirements and payment terms change often, so check Alignerr's own pages for the current details before you apply. For experiences shared by other contributors, join the Talent Collective community on Discord.

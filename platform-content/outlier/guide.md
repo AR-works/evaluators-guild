@@ -234,3 +234,7 @@ Community sentiment referenced in this research draws on sources discussing pay 
 - Micro1 Review Guide
 - Alignerr Review Guide
 - Mercor Review Guide
+
+## Conclusion
+
+Roles, requirements and payment terms change often, so check Outlier AI's own pages for the current details before you apply. For experiences shared by other contributors, join the Talent Collective community on Discord.

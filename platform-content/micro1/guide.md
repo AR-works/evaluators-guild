@@ -255,3 +255,7 @@ Independent, large-scale community review data specifically for Micro1 was limit
 - Outlier AI Review Guide
 - Alignerr Review Guide
 - Mercor Review Guide
+
+## Conclusion
+
+Roles, requirements and payment terms change often, so check Micro1's own pages for the current details before you apply. For experiences shared by other contributors, join the Talent Collective community on Discord.
