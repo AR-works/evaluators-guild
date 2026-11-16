@@ -1,267 +1,187 @@
 ---
 title: "Mercor Review: Jobs, Pay & Application Process (2026)"
-metaDescription: "Mercor review covering roles, pay ranges, the AI interview process, and community-reported experiences from this AI talent platform."
+metaDescription: "Mercor guide covering roles, listed pay, the AI interview, the 2026 security incident and lawsuits, with a source link for every claim."
 slug: "/mercor-review-guide"
-ogDescription: "A complete, research-backed guide to Mercor - roles, pay, the AI interview, and what experts say about working there."
-lastReviewed: "2026-07-01"
-readingTime: "13 min read"
+ogDescription: "A sourced guide to Mercor: roles, listed pay, the AI interview, the 2026 security incident and what has been reported about the lawsuits."
+lastReviewed: "2026-11-16"
+readingTime: "10 min read"
 platform: "Mercor"
 category: "AI Evaluation Platform"
 ---
 
 # Mercor Review: Jobs, Pay & Application Process (2026)
 
-**Last Reviewed:** July 1, 2026 · **Reading Time:** 13 min
+**Last Reviewed:** November 16, 2026 · **Reading Time:** 10 min
 
 ## How to Read This Guide
 
-Every claim in this guide carries a confidence label:
+Every claim in this guide has a confidence label and a link to the page that supports it. All pages were opened on 16 November 2026. Talent Collective is independent. This guide does not say whether you should apply.
 
 | Label | Meaning |
 |---|---|
 | Official | Stated by the company itself - not independently verified |
-| Verified | Confirmed by an independent, named source |
-| Community | From worker reviews, forums, or user-generated sources |
-| Unknown | Not available in current research |
+| Verified | Reported by an independent, named news source |
+| Community | From worker reviews, forums, or user-generated sources (none are used in this version) |
+| Unknown | Not confirmed in our research |
 
 ## Overview
 
-Mercor organizes human intelligence to power the AI economy, connecting domain experts - software engineers, doctors, lawyers, and finance professionals - with AI labs and enterprises that need structured human judgment at scale. It raised a $100M Series B at a $2B valuation in February 2025 and counts high-profile investors including Benchmark, General Catalyst, Peter Thiel, and Jack Dorsey. It's best suited to professionals with strong domain credentials who want an efficient, "apply once" AI interview process and are comfortable with a short (roughly 20-minute) AI-led screening rather than a traditional multi-round hiring process.
+Mercor says it has more than five million experts in its network "getting paid to train frontier AI models" ([Mercor Series D post](https://www.mercor.com/blog/series-d/), Official). On 10 November 2026 it announced a $750 million Series D round at a $20 billion valuation, with investors including Benchmark, General Catalyst, NVIDIA and others listed in the post ([Mercor Series D post](https://www.mercor.com/blog/series-d/), Official). In March 2026 Mercor was hit by a security incident that it has confirmed, and contractors have filed lawsuits about it. See the "2026 Security Incident and Lawsuits" section below.
 
 ## Quick Facts
 
 | Field | Details | Source |
 |---|---|---|
-| Company | Mercor | Official |
-| Founded | Not publicly specified | Unknown |
-| Headquarters | San Francisco, California | Verified |
-| Funding | $100M Series B at $2B valuation (February 2025, per TechCrunch) | Verified |
-| Primary Roles | AI Trainer, Data Annotation Specialist, Generalist Expert, domain experts (legal, medical, finance, physics, sales) | Official |
-| Remote Availability | Fully remote, international applicants accepted | Official |
-| Interview Type | ~20-minute AI-generated interview based on resume and job description; retakable up to 3 times | Official |
-| Payment Model | Hourly contractor rate, paid weekly via Stripe Connect | Official |
-| Typical Skills | Domain expertise, LLM output evaluation, rubric-based scoring, data annotation | Official |
-| Estimated Difficulty | Moderate - undergraduate-level expertise minimum, often requiring years of experience or an advanced degree | Official |
-| Best For | Domain experts (software engineering, medicine, law, finance) wanting an efficient, reusable AI-screened application process | - |
+| Company | Mercor (the court filings name Mercor.io Corporation) | [HR Dive](https://www.hrdive.com/news/ai-industry-recruiting-platform-faces-multiple-lawsuits-data-breach/817319/) - Verified |
+| Offices | Mercor's newsroom lists 700+ employees across San Francisco, New York and London | [Mercor newsroom](https://www.mercor.com/newsroom/) - Official |
+| Founded | Not confirmed | Unknown |
+| Funding | $750M Series D at a $20B valuation, 10 November 2026 | [Mercor Series D post](https://www.mercor.com/blog/series-d/) - Official |
+| Earlier funding | $350M Series C at a $10B valuation, October 2025 | [TechCrunch](https://techcrunch.com/2026/04/09/after-data-breach-10b-valued-startup-mercor-is-having-a-month) - Verified |
+| Roles | Listings on work.mercor.com included software, finance, HR, economics, medical and film roles (see Roles Offered) | [Mercor Explore page](https://work.mercor.com/explore) - Official |
+| Interview type | AI interview, usually about 20 minutes; up to three retakes | [Mercor AI interview help page](https://talent.docs.mercor.com/support/ai-interview.md) - Official |
+| Payment | Paid weekly through Stripe or Wise, depending on your region | [Mercor payments help page](https://talent.docs.mercor.com/how-to/payments.md) - Official |
+| Time tracking | Insightful desktop app on Windows 10+, macOS 11+ (Linux beta only) | [Mercor Getting Started page](https://talent.docs.mercor.com/working.md) - Official |
 
 ## What Is Mercor?
 
-Mercor organizes human intelligence to power the AI economy, powering frontier research, RLHF data, and AI agent training at scale for top AI labs and enterprises (Official). Platforms like Mercor connect domain experts - including software engineers, doctors, lawyers, and finance professionals - with AI labs and enterprises that need this kind of human judgment (Verified).
+Mercor is a platform that connects domain experts with companies that need human input for AI. Its listings are on [work.mercor.com](https://work.mercor.com/explore) (Official). Its newsroom says about $5 million is paid to its expert network every day ([Mercor newsroom](https://www.mercor.com/newsroom/), Official). We could not check that figure independently.
 
-In 2025, Mercor raised a $100M Series B at a $2B valuation, according to TechCrunch's coverage of the round (Verified). The company is headquartered in San Francisco, with investors including Benchmark, General Catalyst, Peter Thiel, Adam D'Angelo, Larry Summers, and Jack Dorsey (Verified). Its broader vision centers on "build the AI that builds teams," progressing from hiring people to train AI toward predicting on-the-job performance at scale (Official).
-
-**Who hires through Mercor:** AI labs and enterprises needing domain expertise for AI training, RLHF data, and agent development.
-
-**Who should apply:** Software engineers, doctors, lawyers, finance professionals, physicists, and generalists wanting to apply domain expertise to AI training work, typically requiring undergraduate-level expertise or higher.
+Mercor's own Series D post describes the company as organizing "human intelligence" for the economy and says it is spending on research and acquisitions ([Mercor Series D post](https://www.mercor.com/blog/series-d/), Official).
 
 ## Roles Offered
 
-### AI Trainer
+Roles change often. On 16 November 2026 the [Mercor Explore page](https://work.mercor.com/explore) showed 15 listings, including (Official):
 
-Provides structured feedback to improve AI models through tasks like evaluating responses, preparing data, and labeling datasets (Official). Described as one of the fastest on-ramps into the AI industry for professionals with deep domain expertise and no machine learning background required (Official).
+- Software roles, such as Senior Software Engineer (Backend) and MLOps Engineer
+- Finance and business roles, such as FP&A Expert, Investment Banking Expert, Accounting Expert, HR Expert, Enterprise Sales Expert and Economics Research Expert
+- Medical roles, such as Ophthalmologist and Otolaryngologist
+- Film and video, trading, and some one-off task listings
 
-### Domain Expert Roles
-
-Includes Legal Expert (Transactional/Corporate), Radiology Expert, Hedge Fund Expert, Generalist Expert, Sales Consultant, and Physics PhD Experts, connecting specialized professionals with AI labs and enterprises (Official).
-
-### Data Annotation Specialist
-
-Reviews, evaluates, and annotates AI outputs with extreme attention to detail, following complex guidelines precisely, identifying subtle errors and edge cases, and providing structured feedback to improve downstream training quality (Official). Requires a detail-oriented, quality-obsessed mindset and prior experience as a rater/reviewer in human data or AI training pipelines (Official).
-
-### Generalist Expert
-
-One of the most common freelance roles - covers basic data annotation, image tagging, and generalized RLHF rankings (Official).
-
-### LLM / AI Review Work
-
-Contributors evaluate, improve, and guide large language models, reviewing outputs related to their area of expertise and creating examples that teach models how experts think (Official).
+This is a snapshot, not a full list. The page showed only part of what Mercor offers. We have not described roles from older sources because we could not re-check them.
 
 ## Hiring Process
 
-1. **Apply** - Share your background and expertise; if it's a fit, the Mercor team follows up and connects you to aligned projects. No prior AI experience is needed (Official).
-2. **AI Interview** - Mercor's AI interviewer generates questions based on your résumé and the job description, transcribes responses, and evaluates performance alongside publicly available profile data such as GitHub (Official). Takes about 20 minutes and can be retaken up to 3 times from your dashboard (Official).
-3. **"Apply Once" Matching** - Your AI interview and profile are reused across multiple opportunities, reducing repetitive screening (Official).
-4. **Human Oversight** - In certain instances, human contractors assist in assessing interview or matching performance, but their feedback is used to enhance the models, never for making hiring decisions directly (Official).
+1. **Create an account and apply.** Sign-up is passwordless, with an email link or Google. You find a listing under Explore, submit an application and track its status on your applications page ([Mercor How-to page](https://talent.docs.mercor.com/how-to.md), Official).
+2. **AI interview.** The AI interviewer asks role-specific questions and creates a transcript of your answers. Interviews are in English unless stated. Some are technical and some test language or reasoning. Some need a computer, and some need full-screen sharing ([AI interview help page](https://talent.docs.mercor.com/support/ai-interview.md), Official).
+3. **Retakes.** Mercor says you can retake an interview up to three times across all applications for that interview. A retake resets your application progress, and hiring managers can see your retake count ([AI interview help page](https://talent.docs.mercor.com/support/ai-interview.md), Official).
+4. **Matching.** Mercor says recordings and the transcript are kept to evaluate your candidacy and recommend your profile to potential employers ([AI interview help page](https://talent.docs.mercor.com/support/ai-interview.md), Official).
 
-**Data policy:** Mercor uses interview data to train internal recommendation models and states it never uses this data to train third-party LLMs; interview responses are not sold and are not used to train customer AI models (Official).
+**Data policy (Mercor's words):** Mercor says it uses AI to read résumés, run interviews and recommend profiles. It says interview data trains its internal recommendation models, not external AI models, and that it does not sell your résumé, profile or interview data. It also says human contractors sometimes help assess interview or matching performance, and that their feedback "is never utilized for making hiring decisions" ([How Mercor Uses AI and Data](https://talent.docs.mercor.com/policies/data-ai-usage.md), Official). Read this alongside the security incident section below.
 
-**Minimum qualifications:** Typically undergraduate-level expertise; many projects require years of professional experience or an advanced degree in the relevant domain (Official).
-
-**Project duration:** Ranges from weeks to months, and can be extended, shortened, or concluded early depending on need and performance (Official).
+**Contracts:** Mercor's help pages say hourly contracts have a weekly hour cap and deliverable-based contracts have "no minimum hourly guarantee." The Project Team may end a contract, and a contract may be voided if a customer changes plans ([Mercor Contracts policy](https://talent.docs.mercor.com/policies/contracts.md), Official). Mercor says you can work on several hourly contracts at once ([Contracts policy](https://talent.docs.mercor.com/policies/contracts.md), Official).
 
 ## Assessments
 
-**AI Interview:** Roughly 20 minutes, AI-generated questions based on résumé and job description, retakable up to 3 times from the candidate dashboard (Official). The AI adapts to the applicant's background, asking field-relevant questions to accurately assess their level of knowledge (Official).
-
-**What's assessed:** Résumé content, interview performance, and publicly available profile data (e.g., GitHub) (Official).
-
-**Data Annotation Specialist focus:** Familiarity with multi-step rubric-based evaluations and comfort giving calibrated feedback aligned with strict quality bars (Official).
-
-**Application time:** The Data Annotation Specialist application, including resume upload and AI interview, typically takes 20-30 minutes (Official).
+The only assessment we describe is the AI interview above, using Mercor's own help page. Mercor also has pages on work trials and assessments in its [help index](https://talent.docs.mercor.com/llms.txt). We have not summarised them. We do not cover interview questions or how to pass assessments.
 
 ## Compensation
 
-| Role Type | Reported Rate | Source |
+Listed rates vary by role and are not a promise of pay or hours. They are what listings showed on the date checked. A listing is not a record of what anyone was paid.
+
+| Listing on work.mercor.com (checked 16 November 2026) | Listed rate | Source |
 |---|---|---|
-| AI Model Specialist (entry) | ~$16/hr starting | Community |
-| Expert contracts | ~$70/hr | Community |
-| Engineering roles | $70-$200+/hr | Community |
-| Data Annotation Specialist | $50/hr contractor rate | Official |
+| Open Source Maintainer / Core Contributor, Software Engineer | $150 / hour | [Explore page](https://work.mercor.com/explore) - Official |
+| Senior Software Engineer, Backend | $50-$80 / hour | [Explore page](https://work.mercor.com/explore) - Official |
+| FP&A Expert | $100 / hour | [Explore page](https://work.mercor.com/explore) - Official |
+| HR Expert | $95 / hour | [Explore page](https://work.mercor.com/explore) - Official |
+| Enterprise Sales Expert | $50-$70 / hour | [Explore page](https://work.mercor.com/explore) - Official |
+| Ophthalmologist | $175 / hour | [Explore page](https://work.mercor.com/explore) - Official |
 
-**Payment:** Weekly, via Stripe Connect (Official). Mercor documents how it handles payouts, taxes, and data usage on its platform (Official).
+Other statements about pay:
 
-**Domain factors:** Specialized domains such as medicine, law, and finance command significantly higher rates than general-purpose tasks (Official).
+- Mercor's newsroom links a Financial Times article whose headline says experts average over $95 an hour on Mercor ([Mercor newsroom](https://www.mercor.com/newsroom/), Official). We did not open the Financial Times article, so we cannot confirm how that figure was calculated.
+- Mercor's help pages say contract rates are always in USD, and Stripe or Wise converts to your local currency at payout ([Payments help page](https://talent.docs.mercor.com/how-to/payments.md), Official).
 
-**Time tracking:** Mercor uses Insightful for time tracking, and a dedicated device is recommended for this purpose (Community).
+**How payment works (Mercor's help page):** Hourly contractors are paid every Wednesday, for the prior work week. Stripe Connect is used in supported countries. Standard payouts are free and usually arrive within 5 business days. Instant payouts carry a 1.0% fee. Wise is used where Stripe is not supported. Mercor assigns the provider by region, and the bank account must be in your own legal name ([Payments help page](https://talent.docs.mercor.com/how-to/payments.md), Official).
 
-*Note: The $16/hr entry-level figure and $200+/hr engineering ceiling represent a wide range - actual pay depends heavily on domain, seniority, and project complexity.*
+**Time tracking:** Mercor's Getting Started page says to log time only while actively working, and to use the Insightful desktop app. Chromebooks, iPads and phones are not supported ([Getting Started](https://talent.docs.mercor.com/working.md), Official).
 
 ## Geographic Availability
 
-The Data Annotation Specialist role is fully remote, allowing work from any location (Official). Mercor accepts international applicants generally (Official), though engineering roles may be primarily US/Canada-facing (Community).
+Mercor has a help page listing which payment providers cover which countries (linked from its [How-to page](https://talent.docs.mercor.com/how-to.md)). It also has country pages for India, the UK, the EU and the US ([help index](https://talent.docs.mercor.com/llms.txt), Official). Two listings on the Explore page were marked "US only" in their titles ([Explore page](https://work.mercor.com/explore), Official). We have not confirmed other location rules. Check the listing you are applying to.
 
 ## Skills Required
 
-- Domain expertise: medicine, law, finance, engineering, physics, hedge fund/finance (Official)
-- LLM output evaluation (Official)
-- Rubric-based scoring and calibration (Official)
-- Data annotation and labeling (Official)
-- RLHF task completion (Official)
-- Critical analysis and attention to detail (Official)
-- Coding (engineering roles): Python, JavaScript, and GitHub proficiency (Official)
-- Graduate-level academic credentials for specialist roles (Official)
+Skills depend on the listing. Read the requirements in each role description on [work.mercor.com](https://work.mercor.com/explore) (Official). We no longer list general skills because we could not source them.
+
+## 2026 Security Incident and Lawsuits
+
+**What Mercor says.** In a post dated 25 June 2026, Mercor said it was hit by a supply chain attack in late March 2026 involving LiteLLM, which it calls "a commonly used open-source tool." Mercor says a malicious actor published compromised LiteLLM versions designed to steal credentials. It says that, of nearly five million experts, "only a very limited subset had sensitive information affected," that there is no evidence the data has been used fraudulently, and that no employee data was affected ([Mercor security update](https://www.mercor.com/blog/update-on-mercor-security-incident/), Official).
+
+**What Mercor says it did.** Mercor says it contained the activity, worked with outside forensics experts including Google's Mandiant and Latacora, notified affected experts directly with an offer of TransUnion identity protection, rotated credentials, tightened cloud and network controls, added 24/7 monitoring, began independent penetration testing, and worked with law enforcement ([Mercor security update](https://www.mercor.com/blog/update-on-mercor-security-incident/), Official).
+
+**What has been reported.** TechCrunch reported on 9 April 2026 that Mercor disclosed the breach on 31 March, and that a hacker group claimed to have stolen 4TB of data. TechCrunch says Mercor had not commented on whether that claim is authentic. TechCrunch also reported, citing Wired, that Meta paused its contracts with Mercor, and that OpenAI said it was investigating its exposure ([TechCrunch](https://techcrunch.com/2026/04/09/after-data-breach-10b-valued-startup-mercor-is-having-a-month), Verified). Mercor's own June update, by contrast, describes the impact on customers as very limited ([Mercor security update](https://www.mercor.com/blog/update-on-mercor-security-incident/), Official). We have not seen a later report on whether any customer resumed work.
+
+**The lawsuits (allegations).** HR Dive reported on 13 April 2026 that several contractors filed class-action suits in the U.S. District Court for the Northern District of California, starting on 1 April, with at least four cases that month. The suits allege negligence, unjust enrichment, breach of implied contract, breach of privacy and violation of California's Unfair Competition Law, and say Mercor did not train staff on cybersecurity practices. HR Dive reported that Mercor did not immediately respond to its request for comment, and it reported no court ruling ([HR Dive](https://www.hrdive.com/news/ai-industry-recruiting-platform-faces-multiple-lawsuits-data-breach/817319/), Verified). TechCrunch, citing Business Insider, reported five contractors had sued, and said one suit also names LiteLLM and Delve ([TechCrunch](https://techcrunch.com/2026/04/09/after-data-breach-10b-valued-startup-mercor-is-having-a-month), Verified). These are claims by the plaintiffs. No outcome has been found in our research. We did not search for later court filings, so there may be newer developments.
 
 ## Community Experiences
 
-### Positive Feedback
-
-- The "apply once" model reduces the repetitive screening burden common on other platforms, since the AI interview and profile are reused across opportunities (Official).
-- Mercor's stated data policy - not selling interview data and not using it for third-party LLM training - is viewed as a clear, worker-favorable stance (Official).
-- High-profile investor backing (Benchmark, Peter Thiel, Jack Dorsey, and others) adds credibility (Verified).
-
-### Common Complaints
-
-- Not extensively documented in available research; specific negative community sentiment for Mercor was less represented in the dossier compared with other platforms (Unknown).
+We have not added worker reviews or forum posts to this version, because we could not source them to a page we opened. A previous version said little community feedback was documented. That is still the case. If you have general questions about working on Mercor, you can ask in the Talent Collective community, and please avoid sharing personal details or confidential project information.
 
 ## Who Should Consider Mercor?
 
-Domain experts - particularly in software engineering, medicine, law, finance, or physics - who want an efficient AI-screened application process that doesn't require repeating interviews for every new opportunity, and who value a stated no-third-party-data-sale policy.
-
-## Who Should Skip This Platform?
-
-- Entry-level candidates without professional domain expertise, given minimum qualifications typically require undergraduate-level expertise or higher (Official).
-- Anyone uncomfortable with algorithmic time tracking - Mercor uses Insightful and recommends a dedicated device (Community).
-- Workers seeking guaranteed hourly minimums - entry-level AI Model Specialist rates start around $16/hr, well below the platform's advertised expert and engineering ceilings (Community).
+This guide does not recommend whether to apply. Things to compare before you decide, all taken from Mercor's own pages above: the listed rate for your role, the contract type (hourly or deliverable-based), the weekly payment schedule, the use of time-tracking software, the data policy, and the security incident described above.
 
 ## Pros and Cons
 
-| Pros | Cons |
-|---|---|
-| "Apply once" model reduces repetitive screening across opportunities | Entry-level rates (~$16/hr) are well below expert/engineering ceilings |
-| Clear stated data policy: no third-party LLM training, no data resale | Limited independent community review data available in current research |
-| High-profile investor backing lends credibility | Requires dedicated time-tracking software (Insightful) for some roles |
-| Weekly payment via Stripe Connect | Minimum qualifications generally require undergraduate expertise or higher |
-| AI interview retakable up to 3 times | Project duration and continuity vary by client need |
+We have removed the pros and cons table. Its entries were not sourced and several depended on unsourced pay data. Use the sourced sections above instead.
 
 ## Interview Tips
 
-- **Optimize your résumé for the AI interview.** Mercor's AI generates questions directly from your résumé and the job description, so specificity matters.
-- **Keep your GitHub (or equivalent public profile) current.** For technical roles, the AI interview considers publicly available profile data alongside your résumé.
-- **Use your retakes wisely.** You get up to 3 attempts from your dashboard - review your first attempt's weak points before retaking.
-- **Lean into specialized domains if you have them.** Medicine, law, and finance command significantly higher rates than general-purpose tasks.
-- **Expect the interview to take about 20 minutes.** Plan for a focused, uninterrupted session rather than treating it casually.
+Only what Mercor's own help page says: interviews usually take about 20 minutes, some need a computer, and some need full-screen sharing. Read [Mercor's interview help page](https://talent.docs.mercor.com/support/ai-interview.md) before you start. Retaking resets your application progress, and hiring managers can see how many retakes you used.
 
 ## Frequently Asked Questions
 
 **What is Mercor?**
-Mercor organizes human intelligence to power the AI economy, connecting domain experts with AI labs and enterprises for frontier research, RLHF data, and AI agent training.
+A platform where experts apply to listings from companies that need human input for AI work ([Mercor Explore page](https://work.mercor.com/explore), Official).
 
 **Who funds Mercor?**
-Mercor raised a $100M Series B at a $2B valuation in February 2025, with investors including Benchmark, General Catalyst, Peter Thiel, Adam D'Angelo, Larry Summers, and Jack Dorsey.
-
-**How does Mercor's AI interview work?**
-Mercor's AI interviewer generates questions based on your résumé and the job description, transcribes your responses, and evaluates performance alongside public profile data like GitHub.
-
-**How long is the Mercor AI interview?**
-Approximately 20 minutes.
-
-**Can I retake the Mercor AI interview?**
-Yes, up to 3 times from your candidate dashboard.
-
-**Does Mercor use my interview data to train AI?**
-Mercor states it uses interview data to train internal recommendation models only, and does not use it to train third-party LLMs; interview responses are not sold.
-
-**How much does Mercor pay for AI training roles?**
-Reported figures include ~$16/hr for entry-level AI Model Specialist roles, ~$70/hr for expert contracts, and $70-$200+/hr for engineering roles.
-
-**What is the Data Annotation Specialist role at Mercor?**
-A role reviewing, evaluating, and annotating AI outputs with strict attention to detail, offering an hourly contractor rate of $50, paid weekly via Stripe Connect.
-
-**What domains does Mercor hire for?**
-Software engineering, medicine, law, finance, physics, sales, and general RLHF/annotation work.
-
-**Does Mercor require a degree?**
-Minimum qualifications typically require undergraduate-level expertise; many projects require years of experience or an advanced degree.
-
-**How do I apply to Mercor?**
-Share your background and expertise with Mercor; if it's a fit, you're connected to aligned projects and complete an AI interview.
-
-**What is Mercor's "apply once" model?**
-Your AI interview and profile are reused across multiple opportunities, reducing the need for repetitive screening.
-
-**How long do Mercor projects last?**
-Project lengths vary from weeks to months, and can be extended, shortened, or concluded early depending on need and performance.
-
-**Does Mercor pay weekly?**
-Yes, payments are processed weekly via Stripe Connect.
-
-**What payment method does Mercor use?**
-Stripe Connect.
-
-**What is the difference between Mercor and Outlier AI?**
-Mercor uses a short (~20 minute), retakable AI interview reused across opportunities; Outlier AI (operated by Scale AI) gates entry with a General Reasoning Screening requiring an 80%+ score.
-
-**What is the difference between Mercor and Micro1?**
-Mercor's AI interview is shorter (~20 minutes, retakable 3 times) and reused across opportunities; Micro1's Zara interview is paired with a proctored, full-desktop-share technical assessment and a stated ~top-1% acceptance rate.
-
-**Is Mercor legitimate?**
-Mercor is backed by high-profile investors and raised a $100M Series B at a $2B valuation in 2025, according to TechCrunch, which supports its legitimacy as a company.
-
-**What time tracking software does Mercor use?**
-Insightful; a dedicated device is recommended for roles that require it.
-
-**How does Mercor match me with projects?**
-Through its AI evaluation of résumé, interview performance, and public profile data, matched against domain needs from AI labs and enterprise clients.
-
-**Can I work on multiple Mercor projects simultaneously?**
-Not explicitly addressed in available research.
-
-**What is a Mercor Generalist Expert?**
-A common freelance role covering basic data annotation, image tagging, and generalized RLHF rankings.
-
-**What is the Mercor Radiology Expert role?**
-A domain expert role connecting radiologists with AI labs needing medical imaging expertise for AI training.
-
-**What is the Mercor Hedge Fund Expert role?**
-A domain expert role connecting finance professionals with hedge fund experience to AI training projects.
-
-**Does Mercor have a minimum hours requirement?**
-Not specified in available research.
-
-**Is Mercor available in my country?**
-Mercor accepts international applicants generally, though engineering roles may skew toward US/Canada-facing work.
+Mercor's Series D post (10 November 2026) lists participants including Benchmark, Felicis, General Catalyst, NVIDIA, Salesforce and Zoom ([Series D post](https://www.mercor.com/blog/series-d/), Official).
 
 **What is Mercor's valuation?**
-$2B, following a $100M Series B raised in February 2025.
+Mercor says $20 billion after a $750 million Series D ([Series D post](https://www.mercor.com/blog/series-d/), Official).
 
-**How does Mercor differ from Scale AI?**
-Mercor is an independently funded AI talent platform; Scale AI is the parent company behind Outlier AI and operates its own separate data-labeling programs.
+**How long is the Mercor AI interview?**
+Mercor says most take about 20 minutes, though some are shorter or longer ([AI interview help page](https://talent.docs.mercor.com/support/ai-interview.md), Official).
 
-**How does Mercor's AI interview compare to Micro1's Zara?**
-Mercor's is shorter (~20 minutes) and explicitly retakable up to 3 times, reused across opportunities; Micro1's Zara interview is paired with a longer, proctored technical assessment requiring full desktop sharing.
+**Can I retake it?**
+Up to three times across all applications for that interview, per Mercor ([AI interview help page](https://talent.docs.mercor.com/support/ai-interview.md), Official).
 
-**What community reviews exist for Mercor?**
-Limited independent community review data was available in this research compared with other platforms; most sourced information reflects official company statements and funding coverage.
+**Does Mercor use my interview data to train AI?**
+Mercor says it uses it for its internal recommendation models and not for external AI models, and does not sell it ([Data and AI policy](https://talent.docs.mercor.com/policies/data-ai-usage.md), Official).
+
+**How much does Mercor pay?**
+It depends on the role. See the Compensation section for listed rates and dates. Rates are not a promise ([Explore page](https://work.mercor.com/explore), Official).
+
+**How and when is pay sent?**
+Weekly on Wednesdays, through Stripe or Wise by region ([Payments help page](https://talent.docs.mercor.com/how-to/payments.md), Official).
+
+**What currency are rates in?**
+USD ([Payments help page](https://talent.docs.mercor.com/how-to/payments.md), Official).
+
+**Does Mercor guarantee hours?**
+Mercor's contracts page says deliverable-based contracts have no minimum hourly guarantee. Hourly contracts have a weekly cap, not a stated minimum ([Contracts policy](https://talent.docs.mercor.com/policies/contracts.md), Official).
+
+**Can I work on several projects at once?**
+Mercor says you can work on multiple hourly contracts, and tells you to let each project lead know your availability ([Contracts policy](https://talent.docs.mercor.com/policies/contracts.md), Official).
+
+**What time tracking does Mercor use?**
+Insightful, on Windows 10+ or macOS 11+ ([Getting Started](https://talent.docs.mercor.com/working.md), Official).
+
+**Was Mercor affected by a security incident?**
+Mercor says yes, in late March 2026, and says a very limited subset of experts had sensitive information affected ([Mercor security update](https://www.mercor.com/blog/update-on-mercor-security-incident/), Official).
+
+**Has Mercor been sued over it?**
+Contractors have filed lawsuits alleging negligence and other claims, as reported by [HR Dive](https://www.hrdive.com/news/ai-industry-recruiting-platform-faces-multiple-lawsuits-data-breach/817319/) (Verified). These are allegations, and we found no reported ruling.
+
+**Is Mercor available in my country?**
+Check the "Payment Countries" page linked from [Mercor's How-to page](https://talent.docs.mercor.com/how-to.md) for payments and the listing for location rules.
+
+**How does Mercor compare with other platforms?**
+This version of the guide does not compare platforms. See the other Talent Collective guides.
+
+**Mercor's minimum qualifications, project length, or valuation history before 2025?**
+Not confirmed in this version (Unknown).
 
 ## Related Topics
 
@@ -272,8 +192,26 @@ Limited independent community review data was available in this research compare
 - Resume Guide for AI Training Roles
 - AI Interview Preparation Guide
 - AI Evaluator Salary Guide
-- Best AI Evaluation Platforms Comparison
+- AI Evaluation Platforms Comparison
 
 ## Conclusion
 
-Mercor suits domain experts - particularly in software engineering, medicine, law, finance, or physics - who want an efficient AI-screened application process that avoids repeated interviews across opportunities, backed by a stated data policy that doesn't sell or reuse interview data for third-party AI training. Its high-profile funding and investor backing support its legitimacy. Reported pay spans widely, from around $16/hr for entry-level annotation work to $200+/hr for specialized engineering roles, and compensation should be treated as approximate given the limited independent community review data currently available.
+This guide sets out what Mercor says about itself and what named outlets have reported, so you can check each claim yourself. Mercor's pay varies by role, its own pages describe weekly payment and contract rules, and it has confirmed a 2026 security incident that is the subject of lawsuits whose claims have not been ruled on in anything we found. Decide using the sources below.
+
+## Sources
+
+All checked 16 November 2026.
+
+- https://www.mercor.com/blog/update-on-mercor-security-incident/
+- https://www.mercor.com/blog/series-d/
+- https://www.mercor.com/newsroom/
+- https://www.hrdive.com/news/ai-industry-recruiting-platform-faces-multiple-lawsuits-data-breach/817319/
+- https://techcrunch.com/2026/04/09/after-data-breach-10b-valued-startup-mercor-is-having-a-month
+- https://work.mercor.com/explore
+- https://talent.docs.mercor.com/how-to.md
+- https://talent.docs.mercor.com/working.md
+- https://talent.docs.mercor.com/llms.txt
+- https://talent.docs.mercor.com/support/ai-interview.md
+- https://talent.docs.mercor.com/how-to/payments.md
+- https://talent.docs.mercor.com/policies/data-ai-usage.md
+- https://talent.docs.mercor.com/policies/contracts.md
