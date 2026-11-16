@@ -1,5 +1,5 @@
 import { PlatformMeta } from '@/lib/platforms';
-import { Clock, DollarSign, Zap, CalendarDays, CheckCircle, Wifi } from 'lucide-react';
+import { Clock, Zap, CalendarDays, CheckCircle, Wifi } from 'lucide-react';
 import { useLanguage } from './LanguageProvider';
 
 interface GuideMetaHeaderProps {
@@ -59,13 +59,6 @@ export default function GuideMetaHeader({ meta }: GuideMetaHeaderProps) {
 
       {/* Details list */}
       <ul className="space-y-3 text-sm">
-        <li className="flex items-start gap-3">
-          <DollarSign className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-          <div>
-            <p className="text-[10px] text-muted-foreground uppercase tracking-wide font-bold">{t('ui.payRange')}</p>
-            <p className="font-semibold text-foreground">{meta.payRange}</p>
-          </div>
-        </li>
         <li className="flex items-start gap-3">
           <CheckCircle className="w-4 h-4 text-primary mt-0.5 shrink-0" />
           <div>

@@ -69,7 +69,6 @@ export default function HomePageClient({ highlights }: { highlights: HomePlatfor
     const copy = highlightCopy[p.folderName];
     return {
       name: p.name,
-      rate: p.payRange,
       difficulty: translateDifficulty(p.difficulty),
       type: copy ? t(copy.typeKey) : '',
       link: `/platforms/${p.slugSegment}`,
@@ -171,7 +170,6 @@ export default function HomePageClient({ highlights }: { highlights: HomePlatfor
             {highlights.map((p) => (
               <div key={p.name} className="flex items-start justify-between gap-3">
                 <span className="font-body text-xs font-semibold shrink-0">{p.name}</span>
-                <span className="text-[10px] font-bold text-primary bg-primary/10 px-2 py-0.5 rounded-xl text-right">{p.payRange}</span>
               </div>
             ))}
           </div>
@@ -268,11 +266,7 @@ export default function HomePageClient({ highlights }: { highlights: HomePlatfor
                   <p className="text-xs text-muted-foreground leading-relaxed font-body">
                     {plat.desc}
                   </p>
-                  <div className="grid grid-cols-2 gap-4 pt-2 border-t-2 border-dashed border-rule text-xs font-body">
-                    <div>
-                      <span className="text-[10px] font-bold text-muted-foreground block uppercase">{t('ui.payRange')}</span>
-                      <span className="font-semibold text-foreground">{plat.rate}</span>
-                    </div>
+                  <div className="grid grid-cols-1 gap-4 pt-2 border-t-2 border-dashed border-rule text-xs font-body">
                     <div>
                       <span className="text-[10px] font-bold text-muted-foreground block uppercase">Project Type</span>
                       <span className="font-semibold text-foreground">{plat.type}</span>

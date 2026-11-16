@@ -82,11 +82,7 @@ export default function PlatformCard({ platform }: PlatformCardProps) {
         </div>
 
         {/* Info Grid */}
-        <div className="grid grid-cols-2 gap-4 pt-2 text-xs font-body">
-          <div>
-            <span className="text-[9px] font-bold text-muted-foreground block uppercase tracking-wider">{t('ui.payRange')}</span>
-            <span className="font-bold text-foreground mt-0.5 block">{platform.payRange}</span>
-          </div>
+        <div className="grid grid-cols-1 gap-4 pt-2 text-xs font-body">
           <div>
             <span className="text-[9px] font-bold text-muted-foreground block uppercase tracking-wider">{t('ui.interview')}</span>
             <span className="font-bold text-foreground mt-0.5 block line-clamp-1">{translateMetadata(platform.interviewType)}</span>
