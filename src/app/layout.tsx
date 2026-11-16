@@ -55,23 +55,16 @@ export const metadata: Metadata = {
     canonical: 'https://talent-collective.org',
   },
   openGraph: {
-    title: 'Talent Collective — Vetted AI Evaluator Hub & Community',
+    title: 'Talent Collective — The independent home for AI evaluators and remote freelancers',
     description: 'An independent, non-aligned knowledge base and community for AI evaluators, trainers, annotators, prompt engineers, and remote AI freelancers.',
     type: 'website',
     url: 'https://talent-collective.org',
     siteName: 'Talent Collective',
-    images: [
-      {
-        url: '/favicon.ico',
-        width: 256,
-        height: 256,
-        alt: 'Talent Collective Logo',
-      }
-    ]
+    // The preview image comes from src/app/opengraph-image.tsx (1200x630).
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Talent Collective — Vetted AI Evaluator Hub & Community',
+    title: 'Talent Collective — The independent home for AI evaluators and remote freelancers',
     description: 'Independent platform guides, pay benchmarks, safety resources, and community support for AI freelancers.',
   },
   robots: {
@@ -100,7 +93,7 @@ export default function RootLayout({
         'logo': {
           '@type': 'ImageObject',
           '@id': 'https://talent-collective.org/#logo',
-          'url': 'https://talent-collective.org/favicon.ico',
+          'url': 'https://talent-collective.org/icon.svg',
           'caption': 'Talent Collective Logo'
         },
         'image': {
