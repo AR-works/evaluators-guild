@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useLanguage } from './LanguageProvider';
 import { Mail, Globe } from 'lucide-react';
 import Logo from './Logo';
+import { CONTACT_EMAIL, DISCORD_INVITE_URL, REDDIT_URL } from '@/lib/siteConfig';
 
 /* Hallmark · footer: Ft5 · genre: playful · theme: custom (pink zine)
  * knobs: handwritten sign-off, warm directory columns, hairline rule above meta
@@ -36,8 +37,8 @@ export default function Footer() {
             </Link>
             <div className="flex items-center gap-2 text-xs text-muted-foreground font-body">
               <Mail className="w-3.5 h-3.5 text-primary" />
-              <a href="mailto:contact@evaluatorsguild.org" className="hover:text-primary transition-colors">
-                contact@evaluatorsguild.org
+              <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-primary transition-colors">
+                {CONTACT_EMAIL}
               </a>
             </div>
           </div>
@@ -50,7 +51,7 @@ export default function Footer() {
             <ul className="space-y-2 text-xs text-muted-foreground font-body">
               <li>
                 <a
-                  href="https://discord.gg/56xGWJRqEQ"
+                  href={DISCORD_INVITE_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors"
@@ -60,7 +61,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://www.reddit.com/r/talentcollective/"
+                  href={REDDIT_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors"

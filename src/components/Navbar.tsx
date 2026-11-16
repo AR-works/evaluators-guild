@@ -7,6 +7,7 @@ import { useLanguage } from './LanguageProvider';
 import { useTheme } from './ThemeProvider';
 import LanguageToggle from './LanguageToggle';
 import Logo from './Logo';
+import { DISCORD_INVITE_URL } from '@/lib/siteConfig';
 import { Menu, X, Sun, Moon } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -124,7 +125,7 @@ export default function Navbar() {
 
           {/* CTA — desktop */}
           <a
-            href="https://discord.gg/56xGWJRqEQ"
+            href={DISCORD_INVITE_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:inline-flex items-center gap-1.5 px-4 py-2.5 text-xs font-bold rounded-full bg-primary text-primary-foreground hover:bg-primary/90 btn-press transition-colors duration-150 shadow-sm shrink-0"
@@ -196,7 +197,7 @@ export default function Navbar() {
               </div>
               <div className="mt-2 pt-2 border-t border-border/60">
                 <a
-                  href="https://discord.gg/56xGWJRqEQ"
+                  href={DISCORD_INVITE_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full inline-flex justify-center items-center py-2.5 text-sm font-bold rounded-xl bg-primary text-primary-foreground hover:bg-primary/92 transition-all shadow-sm"

@@ -1,19 +1,20 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { DISCORD_INVITE_CODE, MEMBER_COUNT_FALLBACK } from '@/lib/siteConfig';
 
 interface DiscordMemberCountProps {
   fallback?: string;
 }
 
-export default function DiscordMemberCount({ fallback = '500+' }: DiscordMemberCountProps) {
+export default function DiscordMemberCount({ fallback = MEMBER_COUNT_FALLBACK }: DiscordMemberCountProps) {
   const [displayValue, setDisplayValue] = useState(fallback);
 
   // Fetch live count from Discord invite API
   useEffect(() => {
     async function fetchCount() {
       try {
-        const res = await fetch('https://discord.com/api/v10/invites/56xGWJRqEQ?with_counts=true');
+        const res = await fetch(`https://discord.com/api/v10/invites/${DISCORD_INVITE_CODE}?with_counts=true`);
         if (res.ok) {
           const data = await res.json();
           if (data.approximate_member_count) {

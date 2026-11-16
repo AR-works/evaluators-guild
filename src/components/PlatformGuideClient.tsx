@@ -7,6 +7,7 @@ import GuideMetaHeader from '@/components/GuideMetaHeader';
 import TableOfContents from '@/components/TableOfContents';
 import InternalLinksPanel from '@/components/InternalLinksPanel';
 import { useLanguage } from './LanguageProvider';
+import { DISCORD_INVITE_URL } from '@/lib/siteConfig';
 
 interface PlatformGuideClientProps {
   meta: PlatformMeta;
@@ -65,7 +66,7 @@ export default function PlatformGuideClient({
               {t('ui.discordSubtitle')}
             </p>
             <a
-              href="https://discord.gg/56xGWJRqEQ"
+              href={DISCORD_INVITE_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full py-2.5 px-4 rounded-full bg-primary text-primary-foreground text-xs font-bold hover:bg-primary/95 transition-all text-center"

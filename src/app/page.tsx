@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { useLanguage } from '@/components/LanguageProvider';
 import DiscordMemberCount from '@/components/DiscordMemberCount';
 import { initialResources } from '@/data/initialData';
+import { DISCORD_INVITE_URL, REDDIT_URL } from '@/lib/siteConfig';
 import {
   MessageSquare,
   ArrowRight,
@@ -70,8 +71,8 @@ export default function Home() {
   ];
 
   const platforms = [
-    { name: t('platforms.discord'), href: 'https://discord.gg/56xGWJRqEQ', icon: MessageSquare },
-    { name: t('platforms.reddit'), href: 'https://www.reddit.com/r/talentcollective/', icon: MessageSquare },
+    { name: t('platforms.discord'), href: DISCORD_INVITE_URL, icon: MessageSquare },
+    { name: t('platforms.reddit'), href: REDDIT_URL, icon: MessageSquare },
   ];
 
   return (
@@ -96,7 +97,7 @@ export default function Home() {
 
           <div className="flex flex-wrap gap-3 pt-2">
             <a
-              href="https://discord.gg/56xGWJRqEQ"
+              href={DISCORD_INVITE_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-press px-6 py-3.5 text-sm font-bold rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors flex items-center gap-2 shadow-md"
@@ -144,7 +145,7 @@ export default function Home() {
             </div>
 
             <a
-              href="https://discord.gg/56xGWJRqEQ"
+              href={DISCORD_INVITE_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-between gap-2 w-full px-4 py-3 rounded-full bg-primary text-primary-foreground text-xs font-bold hover:bg-primary/90 transition-colors shadow-sm"
@@ -457,7 +458,7 @@ export default function Home() {
           </p>
           <div className="pt-2">
             <a
-              href="https://discord.gg/56xGWJRqEQ"
+              href={DISCORD_INVITE_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-press inline-flex items-center gap-2 px-8 py-4 rounded-full bg-primary text-primary-foreground font-bold hover:bg-primary/90 shadow-md transition-colors text-sm"
