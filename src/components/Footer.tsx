@@ -126,8 +126,8 @@ export default function Footer() {
                 { href: '/about', labelKey: 'footer.about' },
                 { href: '/contact', labelKey: 'footer.contact' },
                 { href: '/editorial-policy', labelKey: 'footer.editorialPolicy' },
-                { href: '/privacy', labelKey: 'footer.privacy' },
-                { href: '/terms', labelKey: 'footer.terms' },
+                // Privacy and Terms are paused until a lawyer reviews them.
+                // The pages still exist (noindex) but are not linked.
               ].map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="hover:text-primary transition-colors">
