@@ -42,27 +42,54 @@ function parseInlineMarkdown(text: string) {
   return elements.length > 0 ? elements : text;
 }
 
-// Simple Markdown parser for resource contents
+const BULLET_RE = /^- /;
+const NUMBERED_RE = /^\d+\.\s/;
+const LIST_ITEM_CLASS = 'text-muted-foreground my-1.5 text-sm leading-relaxed font-body';
+
+// Simple Markdown parser for resource contents.
+// Consecutive list lines are wrapped in their own <ul> or <ol>. Without a
+// wrapper, every <li> on the page shares one implicit list counter, so a later
+// numbered list carried on from the earlier ones (8 to 19, 27 to 29...).
 function parseMarkdown(md: string) {
-  return md.split('\n').map((line, idx) => {
-    if (line.startsWith('### ')) {
-      return <h3 key={idx} className="font-heading text-2xl font-bold text-foreground mt-8 mb-3 tracking-tight">{parseInlineMarkdown(line.replace('### ', ''))}</h3>;
-    }
-    if (line.startsWith('#### ')) {
-      return <h4 key={idx} className="font-heading text-lg font-bold text-foreground mt-6 mb-2 tracking-tight">{parseInlineMarkdown(line.replace('#### ', ''))}</h4>;
-    }
-    if (line.startsWith('- ')) {
-      return <li key={idx} className="ml-6 list-disc text-muted-foreground my-1.5 text-sm leading-relaxed font-body">{parseInlineMarkdown(line.replace('- ', ''))}</li>;
-    }
-    if (line.match(/^\d+\.\s/)) {
-      return <li key={idx} className="ml-6 list-decimal text-muted-foreground my-1.5 text-sm leading-relaxed font-body">{parseInlineMarkdown(line.replace(/^\d+\.\s/, ''))}</li>;
-    }
-    if (line.trim() === '') {
-      return <div key={idx} className="h-3" />;
+  const lines = md.split('\n');
+  const out: React.ReactNode[] = [];
+  let i = 0;
+
+  while (i < lines.length) {
+    const line = lines[i];
+    const idx = i;
+
+    const listRe = BULLET_RE.test(line) ? BULLET_RE : NUMBERED_RE.test(line) ? NUMBERED_RE : null;
+    if (listRe) {
+      const items: string[] = [];
+      while (i < lines.length && listRe.test(lines[i])) {
+        items.push(lines[i].replace(listRe, ''));
+        i++;
+      }
+      const children = items.map((item, n) => (
+        <li key={n} className={LIST_ITEM_CLASS}>{parseInlineMarkdown(item)}</li>
+      ));
+      out.push(
+        listRe === BULLET_RE
+          ? <ul key={idx} className="ml-6 list-disc">{children}</ul>
+          : <ol key={idx} className="ml-6 list-decimal">{children}</ol>
+      );
+      continue;
     }
 
-    return <p key={idx} className="text-muted-foreground leading-relaxed my-3 text-sm font-body">{parseInlineMarkdown(line)}</p>;
-  });
+    i++;
+    if (line.startsWith('### ')) {
+      out.push(<h3 key={idx} className="font-heading text-2xl font-bold text-foreground mt-8 mb-3 tracking-tight">{parseInlineMarkdown(line.replace('### ', ''))}</h3>);
+    } else if (line.startsWith('#### ')) {
+      out.push(<h4 key={idx} className="font-heading text-lg font-bold text-foreground mt-6 mb-2 tracking-tight">{parseInlineMarkdown(line.replace('#### ', ''))}</h4>);
+    } else if (line.trim() === '') {
+      out.push(<div key={idx} className="h-3" />);
+    } else {
+      out.push(<p key={idx} className="text-muted-foreground leading-relaxed my-3 text-sm font-body">{parseInlineMarkdown(line)}</p>);
+    }
+  }
+
+  return out;
 }
 
 export default function ResourceArticle({ resource }: { resource: ResourceItem }) {
