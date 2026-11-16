@@ -209,7 +209,7 @@ export const translations: Record<Language, TranslationDict> = {
       step1Title: 'Preparation & Platform Context',
       step1Desc: 'Use research-backed guides to understand interviews, pay ranges, task types, verification steps, and realistic expectations before applying.',
       step2Tag: 'Community Hub',
-      step2Title: 'Peer Support & Vetted Leads',
+      step2Title: 'Peer Support & Shared Experience',
       step2Desc: 'Connect with a global network of remote professionals while keeping job posts, recruiter access, and referral links accountable to community safety.',
       step3Tag: 'Professional Growth',
       step3Title: 'Market Intelligence',
@@ -286,7 +286,7 @@ export const translations: Record<Language, TranslationDict> = {
       discussions: 'Discussions',
       globalDesc: '🌏 Global — AI Evaluators · RLHF · Remote Pros',
       joinDiscord: 'Join the Discord',
-      topPlatforms: 'Top Platforms'
+      topPlatforms: 'Platform guides'
     },
     ui: {
       viewAllGuides: 'View all guides',
@@ -372,8 +372,8 @@ export const translations: Record<Language, TranslationDict> = {
       step1Title: 'Preparación y Acceso Verificado',
       step1Desc: 'Accede a pautas rigurosas, exámenes de práctica y rúbricas de evaluación diseñadas para ayudarte a aprobar las evaluaciones de ingreso en Outlier, Alignerr y DataAnnotation.',
       step2Tag: 'Centro Comunitario',
-      step2Title: 'Soporte entre Pares y Recomendaciones',
-      step2Desc: 'Conéctate con una red global de profesionales remotos. Descubre oportunidades de trabajo activas, recibe códigos de recomendación verificados y comparte soporte de localización.',
+      step2Title: 'Apoyo entre pares y experiencias compartidas',
+      step2Desc: 'Conéctate con profesionales remotos de todo el mundo, comparte experiencias y haz preguntas. Las ofertas de trabajo, el acceso de reclutadores y los enlaces de referidos siguen las normas de seguridad de la comunidad.',
       step3Tag: 'Crecimiento Profesional',
       step3Title: 'Inteligencia de Mercado',
       step3Desc: 'Analiza modelos de pago, variaciones de tarifas por hora, cambios en las directrices y consideraciones fiscales con colaboradores experimentados que llevan años en esto.'
@@ -449,7 +449,7 @@ export const translations: Record<Language, TranslationDict> = {
       discussions: 'Conversaciones',
       globalDesc: '🌏 Global — Evaluadores de IA · RLHF · Profesionales Remotos',
       joinDiscord: 'Unirse al Discord',
-      topPlatforms: 'Principales Plataformas'
+      topPlatforms: 'Guías de plataformas'
     },
     ui: {
       viewAllGuides: 'Ver todas las guías',
@@ -535,8 +535,8 @@ export const translations: Record<Language, TranslationDict> = {
       step1Title: 'Préparation et Accès Validé',
       step1Desc: 'Accédez à des directives rigoureuses, des tests d\'entraînement et des grilles d\'évaluation conçus pour vous aider à réussir les examens d\'entrée sur Outlier, Alignerr et DataAnnotation.',
       step2Tag: 'Pôle Communautaire',
-      step2Title: 'Soutien et Recommandations',
-      step2Desc: 'Connectez-vous avec un réseau mondial de professionnels à distance. Découvrez des offres d\'emploi actives, obtenez des codes de parrainage validés et partagez une assistance locale.',
+      step2Title: 'Entraide et expériences partagées',
+      step2Desc: 'Échangez avec des professionnels à distance du monde entier, partagez vos expériences et posez vos questions. Les offres d'emploi, l'accès des recruteurs et les liens de parrainage suivent les règles de sécurité de la communauté.',
       step3Tag: 'Évolution Professionnelle',
       step3Title: 'Analyses de Marché',
       step3Desc: 'Discutez des modèles de rémunération, des variations de taux horaires, des changements de directives et des questions fiscales avec des contributeurs chevronnés qui font cela depuis des années.'
@@ -612,7 +612,7 @@ export const translations: Record<Language, TranslationDict> = {
       discussions: 'Discussions',
       globalDesc: '🌏 Global — Évaluateurs IA · RLHF · Pros à Distance',
       joinDiscord: 'Rejoindre le Discord',
-      topPlatforms: 'Meilleures Plateformes'
+      topPlatforms: 'Guides des plateformes'
     },
     ui: {
       viewAllGuides: 'Voir tous les guides',
@@ -698,8 +698,8 @@ export const translations: Record<Language, TranslationDict> = {
       step1Title: '試験対策と検証済みアクセス',
       step1Desc: 'Outlier、Alignerr、DataAnnotationの登録試験に合格するために設計された、厳格なガイドライン、練習テスト、評価基準にアクセスできます。',
       step2Tag: 'コミュニティハブ',
-      step2Title: 'ピアサポートと紹介',
-      step2Desc: 'リモート専門家のグローバルネットワークと繋がります。アクティブな求人情報の発見、検証済み紹介コードの取得、ローカライズサポートの共有が可能です。',
+      step2Title: 'ピアサポートと経験の共有',
+      step2Desc: '世界中のリモートワーカーとつながり、経験を共有し、質問できます。求人投稿、リクルーターのアクセス、紹介リンクはコミュニティの安全ルールに従います。',
       step3Tag: 'プロとしての成長',
       step3Title: '市場インテリジェンス',
       step3Desc: '長年この仕事をしている熟練のコントリビューターと、報酬モデル、時間単価の変動、ガイドラインの変更、税務上の考慮事項について議論できます。'
@@ -775,7 +775,7 @@ export const translations: Record<Language, TranslationDict> = {
       discussions: 'ディスカッション',
       globalDesc: '🌏 グローバル — AI エバリュエーター · RLHF · リモートプロ',
       joinDiscord: 'Discordに参加する',
-      topPlatforms: '主要プラットフォーム'
+      topPlatforms: 'プラットフォームガイド'
     },
     ui: {
       viewAllGuides: 'すべてのガイドを見る',
@@ -861,8 +861,8 @@ export const translations: Record<Language, TranslationDict> = {
       step1Title: 'Preparazione e Accesso Verificato',
       step1Desc: 'Accedi a linee guida rigorose, test pratici e rubriche di valutazione progettate per aiutarti a superare i test d\'ingresso su Outlier, Alignerr e DataAnnotation.',
       step2Tag: 'Hub della Comunità',
-      step2Title: 'Supporto tra Pari e Referral',
-      step2Desc: 'Connettiti con una rete globale de professionisti da remoto. Scopri opportunità di lavoro attive, ricevi codici referral verificati e condividi il supporto alla localizzazione.',
+      step2Title: 'Supporto tra pari ed esperienze condivise',
+      step2Desc: 'Entra in contatto con professionisti da remoto di tutto il mondo, condividi esperienze e fai domande. Offerte di lavoro, accesso dei recruiter e link referral seguono le regole di sicurezza della community.',
       step3Tag: 'Crescita Professionale',
       step3Title: 'Intelligenza di Mercato',
       step3Desc: 'Discuti modelli di pagamento, variazioni delle tariffe orarie, modifiche alle linee guida e considerazioni fiscali con collaboratori esperti che lo fanno da anni.'
@@ -938,7 +938,7 @@ export const translations: Record<Language, TranslationDict> = {
       discussions: 'Discussioni',
       globalDesc: '🌏 Globale — Valutatori IA · RLHF · Professionisti da Remoto',
       joinDiscord: 'Unisciti al Discord',
-      topPlatforms: 'Principali Piattaforme'
+      topPlatforms: 'Guide alle piattaforme'
     },
     ui: {
       viewAllGuides: 'Vedi tutte le guide',
@@ -1024,8 +1024,8 @@ export const translations: Record<Language, TranslationDict> = {
       step1Title: 'Vorbereitung & Geprüfter Zugang',
       step1Desc: 'Greife auf strenge Richtlinien, Übungstests und Bewertungsrubriken zu, die dir helfen sollen, Eignungstests bei Outlier, Alignerr und DataAnnotation zu bestehen.',
       step2Tag: 'Community-Knotenpunkt',
-      step2Title: 'Peer-Support & Empfehlungen',
-      step2Desc: 'Vernetze dich mit einem globalen Netzwerk von Remote-Profis. Entdecke aktive Jobangebote, erhalte geprüfte Empfehlungscodes und teile Lokalisierungshilfe.',
+      step2Title: 'Peer-Support & geteilte Erfahrungen',
+      step2Desc: 'Vernetze dich weltweit mit Remote-Profis, teile Erfahrungen und stelle Fragen. Jobangebote, Recruiter-Zugang und Empfehlungslinks unterliegen den Sicherheitsregeln der Community.',
       step3Tag: 'Berufliches Wachstum',
       step3Title: 'Marktanalysen',
       step3Desc: 'Diskutiere Vergütungsmodelle, Abweichungen bei Stundensätzen, Richtlinienänderungen und steuerliche Aspekte mit erfahrenen Mitwirkenden, die dies seit Jahren tun.'
@@ -1101,7 +1101,7 @@ export const translations: Record<Language, TranslationDict> = {
       discussions: 'Diskussionen',
       globalDesc: '🌏 Global — KI-Bewerter · RLHF · Remote-Profis',
       joinDiscord: 'Discord beitreten',
-      topPlatforms: 'Top-Plattformen'
+      topPlatforms: 'Plattform-Guides'
     },
     ui: {
       viewAllGuides: 'Alle Guides anzeigen',
@@ -1187,8 +1187,8 @@ export const translations: Record<Language, TranslationDict> = {
       step1Title: 'Preparação e Acesso Verificado',
       step1Desc: 'Acesse diretrizes rigorosas, testes práticos e rubricas de avaliação projetadas para ajudar você a passar nas avaliações de entrada no Outlier, Alignerr e DataAnnotation.',
       step2Tag: 'Centro Comunitário',
-      step2Title: 'Suporte entre Pares e Indicações',
-      step2Desc: 'Conecte-se com uma rede global de profissionais remotos. Descubra oportunidades de trabalho ativas, receba códigos de indicação verificados e compartilhe suporte de localização.',
+      step2Title: 'Apoio entre pares e experiências compartilhadas',
+      step2Desc: 'Conecte-se com profissionais remotos do mundo todo, compartilhe experiências e tire dúvidas. Vagas, acesso de recrutadores e links de indicação seguem as regras de segurança da comunidade.',
       step3Tag: 'Crescimento Profissional',
       step3Title: 'Inteligência de Mercado',
       step3Desc: 'Discuta modelos de pagamento, variações de taxas horárias, mudanças de diretrizes e considerações fiscais com colaboradores experientes que fazem isso há anos.'
@@ -1264,7 +1264,7 @@ export const translations: Record<Language, TranslationDict> = {
       discussions: 'Discussões',
       globalDesc: 'Avaliadores de IA · RLHF · Profissionais Remotos',
       joinDiscord: 'Entrar no Discord',
-      topPlatforms: 'Principais Plataformas'
+      topPlatforms: 'Guias de plataformas'
     },
     ui: {
       viewAllGuides: 'Ver todos os guias',
