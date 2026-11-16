@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { useLanguage } from '@/components/LanguageProvider';
 import DiscordMemberCount from '@/components/DiscordMemberCount';
 import { initialResources } from '@/data/initialData';
-import { DISCORD_INVITE_URL, INSTAGRAM_URL, REDDIT_URL } from '@/lib/siteConfig';
+import { DISCORD_INVITE_URL, INSTAGRAM_URL, REDDIT_URL, X_URL } from '@/lib/siteConfig';
 import {
   MessageSquare,
   ArrowRight,
@@ -82,6 +82,7 @@ export default function HomePageClient({ highlights }: { highlights: HomePlatfor
     { name: t('platforms.discord'), href: DISCORD_INVITE_URL, icon: MessageSquare },
     { name: t('platforms.reddit'), href: REDDIT_URL, icon: MessageSquare },
     { name: t('platforms.instagram'), href: INSTAGRAM_URL, icon: MessageSquare },
+    { name: t('platforms.x'), href: X_URL, icon: MessageSquare },
   ];
 
   return (

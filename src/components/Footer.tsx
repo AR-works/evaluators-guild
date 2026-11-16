@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useLanguage } from './LanguageProvider';
 import { Mail, Globe } from 'lucide-react';
 import Logo from './Logo';
-import { CONTACT_EMAIL, DISCORD_INVITE_URL, INSTAGRAM_URL, REDDIT_URL } from '@/lib/siteConfig';
+import { CONTACT_EMAIL, DISCORD_INVITE_URL, INSTAGRAM_URL, REDDIT_URL, X_URL } from '@/lib/siteConfig';
 
 /* Hallmark · footer: Ft5 · genre: playful · theme: custom (pink zine)
  * knobs: handwritten sign-off, warm directory columns, hairline rule above meta
@@ -77,6 +77,16 @@ export default function Footer() {
                   className="hover:text-primary transition-colors"
                 >
                   {t('platforms.instagram')} (@talentcollective_org)
+                </a>
+              </li>
+              <li>
+                <a
+                  href={X_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  {t('platforms.x')} (@TalentCo_Org)
                 </a>
               </li>
             </ul>

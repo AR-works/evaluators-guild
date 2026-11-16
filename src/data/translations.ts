@@ -57,6 +57,7 @@ export interface TranslationDict {
     reddit: string;
     twitter: string;
     instagram: string;
+    x: string;
     linkedin: string;
     facebook: string;
     vettedData: string;
@@ -221,6 +222,7 @@ export const translations: Record<Language, TranslationDict> = {
       reddit: 'Reddit',
       twitter: 'Twitter / X',
       instagram: 'Instagram',
+      x: 'X',
       linkedin: 'LinkedIn',
       facebook: 'Facebook',
       vettedData: 'Platform Research',
@@ -383,6 +385,7 @@ export const translations: Record<Language, TranslationDict> = {
       reddit: 'Reddit',
       twitter: 'Twitter / X',
       instagram: 'Instagram',
+      x: 'X',
       linkedin: 'LinkedIn',
       facebook: 'Facebook',
       vettedData: 'Investigación de plataformas',
@@ -545,6 +548,7 @@ export const translations: Record<Language, TranslationDict> = {
       reddit: 'Reddit',
       twitter: 'Twitter / X',
       instagram: 'Instagram',
+      x: 'X',
       linkedin: 'LinkedIn',
       facebook: 'Facebook',
       vettedData: 'Recherche sur les plateformes',
@@ -707,6 +711,7 @@ export const translations: Record<Language, TranslationDict> = {
       reddit: 'Reddit',
       twitter: 'Twitter / X',
       instagram: 'Instagram',
+      x: 'X',
       linkedin: 'LinkedIn',
       facebook: 'Facebook',
       vettedData: 'プラットフォーム調査',
@@ -869,6 +874,7 @@ export const translations: Record<Language, TranslationDict> = {
       reddit: 'Reddit',
       twitter: 'Twitter / X',
       instagram: 'Instagram',
+      x: 'X',
       linkedin: 'LinkedIn',
       facebook: 'Facebook',
       vettedData: 'Ricerca sulle piattaforme',
@@ -1031,6 +1037,7 @@ export const translations: Record<Language, TranslationDict> = {
       reddit: 'Reddit',
       twitter: 'Twitter / X',
       instagram: 'Instagram',
+      x: 'X',
       linkedin: 'LinkedIn',
       facebook: 'Facebook',
       vettedData: 'Plattform-Recherche',
@@ -1193,6 +1200,7 @@ export const translations: Record<Language, TranslationDict> = {
       reddit: 'Reddit',
       twitter: 'Twitter / X',
       instagram: 'Instagram',
+      x: 'X',
       linkedin: 'LinkedIn',
       facebook: 'Facebook',
       vettedData: 'Pesquisa de plataformas',

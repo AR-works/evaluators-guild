@@ -19,6 +19,7 @@ export const MEMBER_COUNT_FALLBACK = '1,800+';
 
 export const REDDIT_URL = 'https://www.reddit.com/r/talentcollective/';
 export const INSTAGRAM_URL = 'https://www.instagram.com/talentcollective_org/';
+export const X_URL = 'https://x.com/TalentCo_Org';
 
 export const SITE_URL = 'https://talent-collective.org';
 export const SITE_TAGLINE = 'The independent home for AI evaluators and remote freelancers';
