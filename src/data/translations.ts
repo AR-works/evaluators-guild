@@ -536,7 +536,7 @@ export const translations: Record<Language, TranslationDict> = {
       step1Desc: 'Accédez à des directives rigoureuses, des tests d\'entraînement et des grilles d\'évaluation conçus pour vous aider à réussir les examens d\'entrée sur Outlier, Alignerr et DataAnnotation.',
       step2Tag: 'Pôle Communautaire',
       step2Title: 'Entraide et expériences partagées',
-      step2Desc: 'Échangez avec des professionnels à distance du monde entier, partagez vos expériences et posez vos questions. Les offres d'emploi, l'accès des recruteurs et les liens de parrainage suivent les règles de sécurité de la communauté.',
+      step2Desc: 'Échangez avec des professionnels à distance du monde entier, partagez vos expériences et posez vos questions. Les offres d\'emploi, l\'accès des recruteurs et les liens de parrainage suivent les règles de sécurité de la communauté.',
       step3Tag: 'Évolution Professionnelle',
       step3Title: 'Analyses de Marché',
       step3Desc: 'Discutez des modèles de rémunération, des variations de taux horaires, des changements de directives et des questions fiscales avec des contributeurs chevronnés qui font cela depuis des années.'
