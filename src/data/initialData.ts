@@ -49,7 +49,7 @@ The work sounds simple until you do it. Good evaluators notice small failures: a
 
 #### The Difference Between Entry Work and Expert Work
 
-Entry-level work usually tests writing quality, attention to detail, and guideline-following. DataAnnotation, Appen, Telus Digital, Mindrift/Toloka, and some generalist roles can fit beginners.
+Entry-level work usually tests writing quality, attention to detail, and guideline-following. Check each platform's own listings to see what it asks of new contributors.
 
 Expert work pays more because the platform needs judgment that a general worker cannot fake. Micro1, Mercor, Alignerr, Outlier AI specialist projects, Handshake AI, Surge AI, and similar platforms often look for coding skill, STEM depth, medical knowledge, legal training, finance experience, advanced writing, or language expertise.
 
@@ -547,7 +547,7 @@ Current technical context includes Next.js, Vercel hosting, Vercel Analytics, an
 
 #### SEO and Public Voice
 
-The long-term SEO goal is to become Google's best independent resource for topics around AI freelancing: AI evaluator, AI evaluation guide, freelance AI jobs, data annotation, RLHF, platform guides, payment guides, interview guides, and verification guides.
+The long-term SEO goal is clear, independent, sourced coverage of topics around AI freelancing: AI evaluator, AI evaluation guide, freelance AI jobs, data annotation, RLHF, platform guides, payment guides, interview guides, and verification guides.
 
 Talent Collective's social presence should not feel like a corporate account. It should become the public voice of AI freelancers: warm, helpful, professional, occasionally humorous, and human.
 
@@ -580,9 +580,9 @@ The market is growing quickly because AI labs need human feedback for increasing
 
 #### Four Platform Types
 
-1. **Premium expert networks**: Micro1, Mercor, Alignerr, Handshake AI, and Surge AI focus on higher-skill contributors, domain experts, and more selective screening.
+1. **Expert networks**: Micro1, Mercor, Alignerr, Handshake AI, and Surge AI focus on higher-skill contributors, domain experts, and more selective screening.
 2. **Large contributor platforms**: Outlier AI and Scale AI-related programs use large pools of contributors for RLHF, ranking, specialist tasks, and data operations.
-3. **Accessible entry platforms**: DataAnnotation, Appen, Telus Digital, Mindrift/Toloka, and similar platforms are often easier starting points for beginners.
+3. **General-skill platforms**: DataAnnotation, Appen, Telus Digital, Mindrift/Toloka, and similar platforms often list roles that do not require domain expertise.
 4. **Aggregators and marketplaces**: OpenTrain AI aggregates opportunities across many underlying platforms rather than acting as a single direct employer.
 
 Do not judge a platform only by its top pay claim. A beginner-friendly platform with steady work may beat a premium platform where you pass onboarding and receive no tasks.
@@ -618,7 +618,7 @@ If you code, prioritize code evaluator roles. Keep examples ready: languages use
 
 If you have medical, legal, finance, STEM, or graduate-level domain expertise, do not hide it in a generic resume.
 
-If you are multilingual, track platforms that support your language. Mindrift/Toloka and language-specific roles can matter more than US-centric generalist platforms.
+If you are multilingual, track platforms that support your language. Language-specific roles can matter more than generalist ones.
 
 #### What Makes Platforms Feel Different
 
@@ -741,7 +741,7 @@ That sentence forces a decision. Freelancers lose money when they keep feeding t
 
 #### Stability Warning
 
-Most AI evaluation platforms work best as supplemental income unless you have high-demand specialization and multiple active accounts. Treat pay ranges as approximate and time-sensitive, not guaranteed income.
+Most AI evaluation work is best treated as supplemental income unless you have high-demand specialization and active work on several different platforms (never more than one account on the same platform, which most platforms forbid). Treat pay ranges as approximate and time-sensitive, not guaranteed income.
 
 If you need stable income, keep a separate primary income source until the numbers prove this work can carry more weight.`
   },
