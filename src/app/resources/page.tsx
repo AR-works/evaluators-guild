@@ -4,6 +4,7 @@ import { ArrowUpRight, ChevronRight } from 'lucide-react';
 import { initialResources } from '@/data/initialData';
 import ResourceArticle from '@/components/ResourceArticle';
 import ResourcesHubClient from '@/components/ResourcesHubClient';
+import MemberTools from '@/components/MemberTools';
 
 /* Hallmark · genre: playful · macrostructure: Bento / Grid · theme: custom (pink zine)
  * designed-as-app · zine card layout
@@ -117,7 +118,14 @@ export default async function ResourcesPage({ searchParams }: ResourcesPageProps
           )}
         </nav>
 
-        {selectedResource ? <ResourceArticle resource={selectedResource} /> : <ResourcesHubClient />}
+        {selectedResource ? (
+          <ResourceArticle resource={selectedResource} />
+        ) : (
+          <>
+            <ResourcesHubClient />
+            <MemberTools />
+          </>
+        )}
       </div>
     </>
   );
