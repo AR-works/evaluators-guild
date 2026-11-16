@@ -212,7 +212,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 3. Vetted Platform Highlights — Pinned dossier cards on corkboard */}
+      {/* 3. Platform Highlights — Pinned dossier cards on corkboard */}
       <section className="zine-corkboard border-y-2 border-rule">
         <div className="max-w-7xl mx-auto px-6 py-20 sm:px-8 lg:px-12 space-y-12">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">

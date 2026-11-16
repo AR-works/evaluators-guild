@@ -177,7 +177,7 @@ export const translations: Record<Language, TranslationDict> = {
       headline: 'The independent home for AI evaluators and remote freelancers.',
       subheadline: 'Ask questions, compare platforms, discover opportunities, and build professional support across the AI freelance ecosystem.',
       ctaJoin: 'Join Our Community',
-      ctaExplore: 'Explore the Guild',
+      ctaExplore: 'Browse Platform Guides',
       badgeText: 'Community-first and non-aligned'
     },
     stats: {
@@ -223,8 +223,8 @@ export const translations: Record<Language, TranslationDict> = {
       instagram: 'Instagram',
       linkedin: 'LinkedIn',
       facebook: 'Facebook',
-      vettedData: 'Vetted Data',
-      vettedTitle: 'Vetted platform intelligence.',
+      vettedData: 'Platform Research',
+      vettedTitle: 'Platform research at a glance.',
       vettedSubtitle: 'Compare pay scales, assessment difficulty, project types, and research confidence before applying.',
       dataannotationDesc: 'Beginner-friendly conversation rating and annotation work with weekly PayPal payments.',
       outlierDesc: 'Massive scale platform owned by Scale AI. High pay but rigorous quality checks.',
@@ -266,7 +266,7 @@ export const translations: Record<Language, TranslationDict> = {
       rule4Desc: 'No fake recruiters, MLM schemes, referral spam, unvetted paid gigs, code sharing, or NDA violations.'
     },
     footer: {
-      desc: 'The professional association and community network for AI annotators, evaluators, and distributed remote freelancers.',
+      desc: 'An independent community for AI annotators, evaluators, and remote freelancers.',
       community: 'Community',
       quickLinks: 'Quick Links',
       contact: 'Contact',
@@ -312,9 +312,9 @@ export const translations: Record<Language, TranslationDict> = {
       payApproximate: 'Pay ranges are approximate, time-sensitive, and vary by role, platform demand, location, and contributor expertise. No data is fabricated.',
       independentNode: 'Independent & Non-Aligned Node',
       noCorporateBS: 'Your crew in AI freelancing. No corporate BS.',
-      vettedData: 'Vetted Data',
-      vettedPlatformTitle: 'Vetted platform intelligence.',
-      vettedPlatformSubtitle: 'Compare pay scales, assessment difficulties, and project types before applying. Vetted by active community members.',
+      vettedData: 'Platform Research',
+      vettedPlatformTitle: 'Platform research at a glance.',
+      vettedPlatformSubtitle: 'Compare pay scales, assessment difficulties, and project types before applying. Researched from official pages and community reports.',
       connectEvaluators: 'Connect with AI Evaluators.',
       connectSubtitle: 'Get support, compare projects, avoid scams, and stay ahead of empty queues with a neutral global community.',
       joinDiscordCrew: 'Join the Discord Crew',
@@ -339,7 +339,7 @@ export const translations: Record<Language, TranslationDict> = {
       headline: 'Tu hogar para evaluadores de IA y profesionales remotos.',
       subheadline: 'Conéctate con otros evaluadores, descubre oportunidades, comparte recursos y crezcan juntos en una comunidad global.',
       ctaJoin: 'Unirse a la Comunidad',
-      ctaExplore: 'Explorar el Gremio',
+      ctaExplore: 'Ver guías de plataformas',
       badgeText: 'La Red Global para Profesionales Remotos'
     },
     stats: {
@@ -352,7 +352,7 @@ export const translations: Record<Language, TranslationDict> = {
       growingLabel: 'Cada Día'
     },
     whyJoin: {
-      title: '¿Por qué unirse al Gremio?',
+      title: '¿Por qué unirse a Talent Collective?',
       subtitle: 'Proporcionamos la infraestructura, recursos y conexiones que necesitas para tener éxito como evaluador remoto.',
       card1Title: 'Oportunidades y Recomendaciones',
       card1Desc: 'Accede a contratos verificados, actualizaciones de microtareas y enlaces de recomendación para empresas líderes de IA.',
@@ -385,9 +385,9 @@ export const translations: Record<Language, TranslationDict> = {
       instagram: 'Instagram',
       linkedin: 'LinkedIn',
       facebook: 'Facebook',
-      vettedData: 'Datos Verificados',
-      vettedTitle: 'Inteligencia de plataforma verificada.',
-      vettedSubtitle: 'Compara escalas salariales, dificultades de evaluación y tipos de proyectos antes de postularte. Verificado por miembros activos de la comunidad.',
+      vettedData: 'Investigación de plataformas',
+      vettedTitle: 'Investigación de plataformas de un vistazo.',
+      vettedSubtitle: 'Compara escalas salariales, dificultades de evaluación y tipos de proyectos antes de postularte. Investigado a partir de páginas oficiales e informes de la comunidad.',
       dataannotationDesc: 'Proyectos de calificación de prompts/respuestas de alta calidad con horarios flexibles.',
       outlierDesc: 'Plataforma de gran escala propiedad de Scale AI. Alta remuneración pero estrictos controles de calidad.',
       alignerrDesc: 'Plataforma de evaluación especializada centrada en datos de dominio de alta precisión.',
@@ -400,7 +400,7 @@ export const translations: Record<Language, TranslationDict> = {
     },
     communityVoices: {
       title: 'Voces de la Comunidad',
-      subtitle: 'Escucha directamente de los miembros del Gremio sobre sus experiencias.',
+      subtitle: 'Escucha directamente de los miembros de la comunidad sobre sus experiencias.',
       comingSoon: 'Las voces de la comunidad llegarán pronto. Vuelve a consultar.',
       readMore: 'Leer más'
     },
@@ -417,7 +417,7 @@ export const translations: Record<Language, TranslationDict> = {
     },
     guidelines: {
       title: 'Directrices de la Comunidad',
-      subtitle: 'El Gremio se basa en el respeto mutuo y la excelencia profesional. Hacemos cumplir estos estándares esenciales.',
+      subtitle: 'Talent Collective se basa en el respeto mutuo y la excelencia profesional. Hacemos cumplir estos estándares esenciales.',
       rule1Title: 'Profesionalismo Primero',
       rule1Desc: 'Comparte comentarios constructivos, mantén datos precisos y trata a las plataformas de trabajo con rigor profesional.',
       rule2Title: 'Respeto Inquebrantable',
@@ -428,7 +428,7 @@ export const translations: Record<Language, TranslationDict> = {
       rule4Desc: 'Prohibición estricta de spam de referidos, ofertas de pago no verificadas, compartir respuestas o violar NDAs de proyectos.'
     },
     footer: {
-      desc: 'La asociación profesional y red comunitaria para anotadores de IA, evaluadores y freelancers remotos distribuidos.',
+      desc: 'Una comunidad independiente para anotadores de IA, evaluadores y freelancers remotos.',
       community: 'Comunidad',
       quickLinks: 'Enlaces Rápidos',
       contact: 'Contacto',
@@ -474,9 +474,9 @@ export const translations: Record<Language, TranslationDict> = {
       payApproximate: 'Los rangos de pago son aproximados, basados en informes de miembros activos y sujetos a cambios. No se fabrican datos.',
       independentNode: 'Nodo Independiente y No Alineado',
       noCorporateBS: 'Tu equipo en el trabajo independiente de IA. Sin tonterías corporativas.',
-      vettedData: 'Datos Verificados',
-      vettedPlatformTitle: 'Inteligencia de plataforma verificada.',
-      vettedPlatformSubtitle: 'Compara escalas salariales, dificultades de evaluación y tipos de proyectos antes de postularte. Verificado por miembros activos de la comunidad.',
+      vettedData: 'Investigación de plataformas',
+      vettedPlatformTitle: 'Investigación de plataformas de un vistazo.',
+      vettedPlatformSubtitle: 'Compara escalas salariales, dificultades de evaluación y tipos de proyectos antes de postularte. Investigado a partir de páginas oficiales e informes de la comunidad.',
       connectEvaluators: 'Conéctate con Evaluadores de IA.',
       connectSubtitle: 'Obtén soporte instantáneo, compara proyectos y anticípate a las colas vacías con nuestra comunidad global.',
       joinDiscordCrew: 'Unirse al Equipo de Discord',
@@ -501,7 +501,7 @@ export const translations: Record<Language, TranslationDict> = {
       headline: 'Votre foyer pour les évaluateurs IA et professionnels à distance.',
       subheadline: 'Connectez-vous avec d\'autres évaluateurs, découvrez des opportunités, partagez des ressources et grandissez ensemble dans une communauté mondiale.',
       ctaJoin: 'Rejoindre la Communauté',
-      ctaExplore: 'Explorer la Guilde',
+      ctaExplore: 'Voir les guides des plateformes',
       badgeText: 'Le Réseau Mondial des Professionnels à Distance'
     },
     stats: {
@@ -514,7 +514,7 @@ export const translations: Record<Language, TranslationDict> = {
       growingLabel: 'Chaque Jour'
     },
     whyJoin: {
-      title: 'Pourquoi rejoindre la Guilde ?',
+      title: 'Pourquoi rejoindre Talent Collective ?',
       subtitle: 'Nous fournissons l\'infrastructure, les ressources et les connexions nécessaires pour réussir en tant qu\'évaluateur à distance.',
       card1Title: 'Offres et Recommandations',
       card1Desc: 'Accédez à des contrats vérifiés, des micro-tâches et des liens de parrainage vers les plus grandes entreprises d\'IA.',
@@ -547,9 +547,9 @@ export const translations: Record<Language, TranslationDict> = {
       instagram: 'Instagram',
       linkedin: 'LinkedIn',
       facebook: 'Facebook',
-      vettedData: 'Données Vérifiées',
-      vettedTitle: 'Analyses de plateformes vérifiées.',
-      vettedSubtitle: 'Comparez les grilles de salaire, les difficultés d\'évaluation et les types de projets avant de postuler. Validé par les membres actifs de la communauté.',
+      vettedData: 'Recherche sur les plateformes',
+      vettedTitle: 'Les plateformes en un coup d\'œil.',
+      vettedSubtitle: 'Comparez les grilles de salaire, les difficultés d\'évaluation et les types de projets avant de postuler. Recherches fondées sur les pages officielles et les retours de la communauté.',
       dataannotationDesc: 'Projets d\'évaluation de prompts/réponses de haute qualité avec horaires flexibles.',
       outlierDesc: 'Plateforme à grande échelle détenue par Scale AI. Rémunération élevée mais contrôles de qualité rigoureux.',
       alignerrDesc: 'Plateforme d\'évaluation spécialisée axée sur des données de domaine de haute précision.',
@@ -562,7 +562,7 @@ export const translations: Record<Language, TranslationDict> = {
     },
     communityVoices: {
       title: 'Voix de la Communauté',
-      subtitle: 'Écoutez directement les membres de la Guilde parler de leurs expériences.',
+      subtitle: 'Écoutez directement les membres de la communauté parler de leurs expériences.',
       comingSoon: 'Les voix de la communauté arrivent bientôt. Revenez sous peu.',
       readMore: 'Lire la suite'
     },
@@ -579,7 +579,7 @@ export const translations: Record<Language, TranslationDict> = {
     },
     guidelines: {
       title: 'Règles de la Communauté',
-      subtitle: 'La Guilde repose sur le respect mutuel et l\'excellence professionnelle. Nous appliquons ces normes fondamentales.',
+      subtitle: 'Talent Collective repose sur le respect mutuel et l\'excellence professionnelle. Nous appliquons ces normes fondamentales.',
       rule1Title: 'Professionnalisme d\'abord',
       rule1Desc: 'Partagez des avis constructifs, fournissez des détails exacts et traitez les plateformes de travail avec rigueur professionnelle.',
       rule2Title: 'Respect Absolu',
@@ -590,7 +590,7 @@ export const translations: Record<Language, TranslationDict> = {
       rule4Desc: 'Interdiction stricte du spam de parrainage, des offres payantes non vérifiées, du partage de réponses ou de la violation des NDA.'
     },
     footer: {
-      desc: 'L\'association professionnelle et le réseau communautaire pour les annotateurs d\'IA, les évaluateurs et les freelances à distance.',
+      desc: 'Une communauté indépendante pour les annotateurs d\'IA, les évaluateurs et les freelances à distance.',
       community: 'Communauté',
       quickLinks: 'Liens Rapides',
       contact: 'Contact',
@@ -636,9 +636,9 @@ export const translations: Record<Language, TranslationDict> = {
       payApproximate: 'Les fourchettes de rémunération sont approximatives, basées sur les rapports des membres actifs, et sujettes à modification. Aucune donnée n\'est inventée.',
       independentNode: 'Nœud Indépendant et Non Alignée',
       noCorporateBS: 'Votre équipe dans le freelancing IA. Pas de jargon corporatif.',
-      vettedData: 'Données Vérifiées',
-      vettedPlatformTitle: 'Analyses de plateformes vérifiées.',
-      vettedPlatformSubtitle: 'Comparez les grilles de salaire, les difficultés d\'évaluation et les types de projets avant de postuler. Validé par les membres actifs de la communauté.',
+      vettedData: 'Recherche sur les plateformes',
+      vettedPlatformTitle: 'Les plateformes en un coup d\'œil.',
+      vettedPlatformSubtitle: 'Comparez les grilles de salaire, les difficultés d\'évaluation et les types de projets avant de postuler. Recherches fondées sur les pages officielles et les retours de la communauté.',
       connectEvaluators: 'Connectez-vous avec les évaluateurs IA.',
       connectSubtitle: 'Obtenez une assistance instantanée, comparez les projets et évitez les files d\'attente grâce à notre communauté.',
       joinDiscordCrew: 'Rejoindre l\'équipe Discord',
@@ -663,7 +663,7 @@ export const translations: Record<Language, TranslationDict> = {
       headline: 'AI エバリュエーターとリモートプロフェッショナルのためのホーム。',
       subheadline: 'グローバルなコミュニティで、他のエバリュエーターと繋がり、仕事を発見し、リソースを共有し、共に成長しましょう。',
       ctaJoin: 'コミュニティに参加',
-      ctaExplore: 'ギルドを探索する',
+      ctaExplore: 'プラットフォームガイドを見る',
       badgeText: 'リモートプロフェッショナルのためのグローバルネットワーク'
     },
     stats: {
@@ -676,7 +676,7 @@ export const translations: Record<Language, TranslationDict> = {
       growingLabel: '継続中'
     },
     whyJoin: {
-      title: 'ギルドに参加する理由',
+      title: 'Talent Collectiveに参加する理由',
       subtitle: 'リモートエバリュエーターとして成功するために必要なインフラ、リソース、ネットワークを提供します。',
       card1Title: '求人案件と紹介',
       card1Desc: '審査済みの契約案件、マイクロタスクの更新、主要AI企業への紹介リンクを提供します。',
@@ -709,9 +709,9 @@ export const translations: Record<Language, TranslationDict> = {
       instagram: 'Instagram',
       linkedin: 'LinkedIn',
       facebook: 'Facebook',
-      vettedData: '検証データ',
-      vettedTitle: '検証済みのプラットフォーム情報。',
-      vettedSubtitle: '応募する前に、給与体系、試験の難易度、プロジェクトの種類を比較できます。アクティブなコミュニティメンバーによって検証されています。',
+      vettedData: 'プラットフォーム調査',
+      vettedTitle: 'プラットフォーム調査の概要。',
+      vettedSubtitle: '応募する前に、給与体系、試験の難易度、プロジェクトの種類を比較できます。公式ページとコミュニティからの報告をもとに調査しています。',
       dataannotationDesc: '柔軟なスケジュールで提供される、高品質なプロンプト/回答評価プロジェクト。',
       outlierDesc: 'Scale AI傘下の最大規模プラットフォーム。報酬は高いが、厳格な品質管理が行われる。',
       alignerrDesc: '高精度な専門分野データに焦点を当てた、特化型評価プラットフォーム。',
@@ -724,7 +724,7 @@ export const translations: Record<Language, TranslationDict> = {
     },
     communityVoices: {
       title: 'コミュニティの声',
-      subtitle: 'ギルドメンバーの体験談を直接お聞きください。',
+      subtitle: 'コミュニティメンバーの体験談を直接お聞きください。',
       comingSoon: 'コミュニティの声はまもなく公開されます。しばらくお待ちください。',
       readMore: '続きを読む'
     },
@@ -741,7 +741,7 @@ export const translations: Record<Language, TranslationDict> = {
     },
     guidelines: {
       title: 'コミュニティガイドライン',
-      subtitle: 'ギルドは相互の尊重とプロフェッショナルとしての優秀性に基づいて構築されています。以下の基準を厳守します。',
+      subtitle: 'Talent Collectiveは相互の尊重とプロフェッショナルとしての優秀性に基づいて構築されています。以下の基準を厳守します。',
       rule1Title: 'プロフェッショナリズム第一',
       rule1Desc: '建設的な洞察を共有し、正確な情報を維持し、仕事のプラットフォームに対してプロ意識を持って接します。',
       rule2Title: '確固たる敬意',
@@ -752,7 +752,7 @@ export const translations: Record<Language, TranslationDict> = {
       rule4Desc: '紹介スパム、未検証の有料案件の勧誘、解答の共有、プロジェクトNDA違反は厳しく禁止します。'
     },
     footer: {
-      desc: 'AIアノテーター、エバリュエーター、および分散型リモートフリーランサーのためのプロフェッショナル協会およびコミュニティネットワーク。',
+      desc: 'AIアノテーター、エバリュエーター、リモートフリーランサーのための独立したコミュニティ。',
       community: 'コミュニティ',
       quickLinks: 'クイックリンク',
       contact: 'お問い合わせ',
@@ -798,9 +798,9 @@ export const translations: Record<Language, TranslationDict> = {
       payApproximate: '給与範囲は目安であり、アクティブメンバーの報告に基づいており、変更される場合があります。データの捏造は一切ありません。',
       independentNode: '独立非加盟ノード',
       noCorporateBS: 'AIフリーランスのクルー。企業的な無駄話はなし。',
-      vettedData: '検証データ',
-      vettedPlatformTitle: '検証済みのプラットフォーム情報。',
-      vettedPlatformSubtitle: '応募する前に、給与体系、試験の難易度、プロジェクトの種類を比較できます。アクティブなコミュニティメンバーによって検証されています。',
+      vettedData: 'プラットフォーム調査',
+      vettedPlatformTitle: 'プラットフォーム調査の概要。',
+      vettedPlatformSubtitle: '応募する前に、給与体系、試験の難易度、プロジェクトの種類を比較できます。公式ページとコミュニティからの報告をもとに調査しています。',
       connectEvaluators: 'AIエバリュエーターと繋がる。',
       connectSubtitle: 'グローバルなコミュニティで、即時のサポートを受け、プロジェクトを比較し、案件枯渇を防ぎましょう。',
       joinDiscordCrew: 'Discordクルーに参加する',
@@ -825,7 +825,7 @@ export const translations: Record<Language, TranslationDict> = {
       headline: 'La tua casa per valutatori IA e professionisti da remoto.',
       subheadline: 'Connettiti con altri valutatori, scopri opportunità, condividi risorse e cresci insieme in una comunità globale.',
       ctaJoin: 'Unisciti alla Comunità',
-      ctaExplore: 'Esplora la Gilda',
+      ctaExplore: 'Vedi le guide alle piattaforme',
       badgeText: 'La Rete Globale per Professionisti da Remoto'
     },
     stats: {
@@ -838,7 +838,7 @@ export const translations: Record<Language, TranslationDict> = {
       growingLabel: 'Ogni Giorno'
     },
     whyJoin: {
-      title: 'Perché unirsi alla Gilda?',
+      title: 'Perché unirsi a Talent Collective?',
       subtitle: 'Forniamo l\'infrastruttura, le risorse e i contatti necessari per avere successo come valutatore da remoto.',
       card1Title: 'Offerte e Referenze',
       card1Desc: 'Accedi a contratti verificati, aggiornamenti su micro-task e link di referenza per le principali aziende di IA.',
@@ -871,9 +871,9 @@ export const translations: Record<Language, TranslationDict> = {
       instagram: 'Instagram',
       linkedin: 'LinkedIn',
       facebook: 'Facebook',
-      vettedData: 'Dati Verificati',
-      vettedTitle: 'Informazioni verificate sulle piattaforme.',
-      vettedSubtitle: 'Confronta tariffe, difficoltà dei test e tipi di progetti prima di candidarti. Verificato dai membri attivi della comunità.',
+      vettedData: 'Ricerca sulle piattaforme',
+      vettedTitle: 'Le piattaforme in sintesi.',
+      vettedSubtitle: 'Confronta tariffe, difficoltà dei test e tipi di progetti prima di candidarti. Ricerche basate sulle pagine ufficiali e sulle segnalazioni della community.',
       dataannotationDesc: 'Progetti di valutazione prompt/risposta di alta qualità con orari flessibili.',
       outlierDesc: 'Piattaforma su larga scala di proprietà di Scale AI. Pagamento alto ma rigidi controlli di qualità.',
       alignerrDesc: 'Piattaforma di valutazione specializzata focalizzata su dati di dominio ad alta precisione.',
@@ -886,7 +886,7 @@ export const translations: Record<Language, TranslationDict> = {
     },
     communityVoices: {
       title: 'Voci della Comunità',
-      subtitle: 'Ascolta direttamente i membri della Gilda raccontare le loro esperienze.',
+      subtitle: 'Ascolta direttamente i membri della community raccontare le loro esperienze.',
       comingSoon: 'Le voci della comunità arriveranno presto. Torna a breve.',
       readMore: 'Leggi di più'
     },
@@ -903,7 +903,7 @@ export const translations: Record<Language, TranslationDict> = {
     },
     guidelines: {
       title: 'Linee Guida della Comunità',
-      subtitle: 'La Gilda si fonda sul rispetto reciproco e sull\'eccellenza professionale. Applichiamo questi standard fondamentali.',
+      subtitle: 'Talent Collective si fonda sul rispetto reciproco e sull\'eccellenza professionale. Applichiamo questi standard fondamentali.',
       rule1Title: 'Professionalità Prima di Tutto',
       rule1Desc: 'Condividi opinioni costruttive, mantieni informazioni accurate e tratta le piattaforme di lavoro con rigore professionale.',
       rule2Title: 'Rispetto Incrollabile',
@@ -914,7 +914,7 @@ export const translations: Record<Language, TranslationDict> = {
       rule4Desc: 'Divieto assoluto di spam di referral, offerte non verificate, condivisione di risposte o violazione di NDA.'
     },
     footer: {
-      desc: 'L\'associazione professionale e la rete comunitaria per annotatori IA, valutatori e freelancer da remoto.',
+      desc: 'Una community indipendente per annotatori IA, valutatori e freelancer da remoto.',
       community: 'Comunità',
       quickLinks: 'Link Rapidi',
       contact: 'Contatti',
@@ -960,9 +960,9 @@ export const translations: Record<Language, TranslationDict> = {
       payApproximate: 'Le fasce di pagamento sono approssimative, basate sui rapporti dei membri attivi e soggette a modifiche. Nessun dato è inventato.',
       independentNode: 'Nodo Indipendente e Non Allineato',
       noCorporateBS: 'Il tuo team nel freelancing dell\'IA. Niente formalità aziendali.',
-      vettedData: 'Dati Verificati',
-      vettedPlatformTitle: 'Informazioni verificate sulle piattaforme.',
-      vettedPlatformSubtitle: 'Confronta tariffe, difficoltà dei test e tipi di progetti prima di candidarti. Verificato dai membri attivi della comunità.',
+      vettedData: 'Ricerca sulle piattaforme',
+      vettedPlatformTitle: 'Le piattaforme in sintesi.',
+      vettedPlatformSubtitle: 'Confronta tariffe, difficoltà dei test e tipi di progetti prima di candidarti. Ricerche basate sulle pagine ufficiali e sulle segnalazioni della community.',
       connectEvaluators: 'Connettiti con i Valutatori IA.',
       connectSubtitle: 'Ricevi supporto immediato, confronta i progetti e previeni le code vuote con la nostra comunità globale.',
       joinDiscordCrew: 'Unisciti alla ciurma di Discord',
@@ -987,7 +987,7 @@ export const translations: Record<Language, TranslationDict> = {
       headline: 'Dein Zuhause für KI-Bewerter und Remote-Profis.',
       subheadline: 'Vernetze dich mit anderen Bewertern, entdecke Möglichkeiten, teile Ressourcen und wachse gemeinsam in einer globalen Community.',
       ctaJoin: 'Community beitreten',
-      ctaExplore: 'Die Gilde erkunden',
+      ctaExplore: 'Plattform-Guides ansehen',
       badgeText: 'Das globale Netzwerk für Remote-Profis'
     },
     stats: {
@@ -1000,7 +1000,7 @@ export const translations: Record<Language, TranslationDict> = {
       growingLabel: 'Jeden Tag'
     },
     whyJoin: {
-      title: 'Warum der Gilde beitreten?',
+      title: 'Warum Talent Collective beitreten?',
       subtitle: 'Wir bieten die Infrastruktur, Ressourcen und Verbindungen, die du brauchst, um als Remote-Bewerter erfolgreich zu sein.',
       card1Title: 'Jobangebote & Empfehlungen',
       card1Desc: 'Erhalte geprüfte Vertragsaufträge, Micro-Task-Updates und Empfehlungslinks zu führenden KI-Unternehmen.',
@@ -1033,9 +1033,9 @@ export const translations: Record<Language, TranslationDict> = {
       instagram: 'Instagram',
       linkedin: 'LinkedIn',
       facebook: 'Facebook',
-      vettedData: 'Geprüfte Daten',
-      vettedTitle: 'Geprüfte Plattform-Analysen.',
-      vettedSubtitle: 'Vergleiche Gehaltsskalen, Testschwierigkeiten und Projekttypen vor deiner Bewerbung. Von aktiven Community-Mitgliedern geprüft.',
+      vettedData: 'Plattform-Recherche',
+      vettedTitle: 'Plattform-Recherche im Überblick.',
+      vettedSubtitle: 'Vergleiche Gehaltsskalen, Testschwierigkeiten und Projekttypen vor deiner Bewerbung. Recherchiert anhand offizieller Seiten und Berichte aus der Community.',
       dataannotationDesc: 'Hochwertige Prompt/Response-Bewertungsprojekte bei flexibler Zeiteinteilung.',
       outlierDesc: 'Große Plattform im Besitz von Scale AI. Hohe Vergütung, aber strenge Qualitätsprüfungen.',
       alignerrDesc: 'Spezialisierte Bewertungsplattform mit Fokus auf hochpräzise Fachdaten.',
@@ -1048,7 +1048,7 @@ export const translations: Record<Language, TranslationDict> = {
     },
     communityVoices: {
       title: 'Stimmen der Community',
-      subtitle: 'Höre direkt von Mitgliedern der Gilde über ihre Erfahrungen.',
+      subtitle: 'Höre direkt von Mitgliedern der Community über ihre Erfahrungen.',
       comingSoon: 'Community-Stimmen kommen bald. Schau in Kürze wieder vorbei.',
       readMore: 'Weiterlesen'
     },
@@ -1065,7 +1065,7 @@ export const translations: Record<Language, TranslationDict> = {
     },
     guidelines: {
       title: 'Community-Richtlinien',
-      subtitle: 'Die Gilde basiert auf gegenseitigem Respekt und professioneller Exzellenz. Wir setzen diese Kernstandards durch.',
+      subtitle: 'Talent Collective basiert auf gegenseitigem Respekt und professioneller Exzellenz. Wir setzen diese Kernstandards durch.',
       rule1Title: 'Professionalität zuerst',
       rule1Desc: 'Teile konstruktive Einblicke, pflege genaue Angaben und behandle Arbeitsplattformen mit professioneller Sorgfalt.',
       rule2Title: 'Unerschütterlicher Respekt',
@@ -1076,7 +1076,7 @@ export const translations: Record<Language, TranslationDict> = {
       rule4Desc: 'Striktes Verbot von Empfehlungs-Spam, ungeprüften Jobangeboten, Antwort-Sharing oder NDA-Verletzungen.'
     },
     footer: {
-      desc: 'Der Berufsverband und das Community-Netzwerk für KI-Annotatoren, Bewerter und verteilte Remote-Freelancer.',
+      desc: 'Eine unabhängige Community für KI-Annotatoren, Bewerter und Remote-Freelancer.',
       community: 'Community',
       quickLinks: 'Schnelllinks',
       contact: 'Kontakt',
@@ -1122,9 +1122,9 @@ export const translations: Record<Language, TranslationDict> = {
       payApproximate: 'Die Gehaltsspannen sind Richtwerte, basieren auf Berichten aktiver Mitglieder und können sich ändern. Es werden keine Daten erfunden.',
       independentNode: 'Unabhängiger & eigenständiger Knotenpunkt',
       noCorporateBS: 'Deine Crew im KI-Freelancing. Kein Konzern-Blödsinn.',
-      vettedData: 'Geprüfte Daten',
-      vettedPlatformTitle: 'Geprüfte Plattform-Analysen.',
-      vettedPlatformSubtitle: 'Vergleiche Gehaltsskalen, Testschwierigkeiten und Projekttypen vor deiner Bewerbung. Von aktiven Community-Mitgliedern geprüft.',
+      vettedData: 'Plattform-Recherche',
+      vettedPlatformTitle: 'Plattform-Recherche im Überblick.',
+      vettedPlatformSubtitle: 'Vergleiche Gehaltsskalen, Testschwierigkeiten und Projekttypen vor deiner Bewerbung. Recherchiert anhand offizieller Seiten und Berichte aus der Community.',
       connectEvaluators: 'Vernetze dich mit KI-Bewertern.',
       connectSubtitle: 'Erhalte sofortigen Support, vergleiche Projekte und vermeide leere Warteschlangen mit unserer globalen Community.',
       joinDiscordCrew: 'Tritt der Discord-Crew bei',
@@ -1149,7 +1149,7 @@ export const translations: Record<Language, TranslationDict> = {
       headline: 'Seu lar para avaliadores de IA e profissionais remotos.',
       subheadline: 'Conecte-se com outros avaliadores, descubra oportunidades, compartilhe recursos e cresça junto em uma comunidade global.',
       ctaJoin: 'Junte-se à Comunidade',
-      ctaExplore: 'Explorar a Guilda',
+      ctaExplore: 'Ver guias de plataformas',
       badgeText: 'A Rede Global para Profissionais Remotos'
     },
     stats: {
@@ -1162,7 +1162,7 @@ export const translations: Record<Language, TranslationDict> = {
       growingLabel: 'Todo Dia'
     },
     whyJoin: {
-      title: 'Por que se juntar à Guilda?',
+      title: 'Por que se juntar ao Talent Collective?',
       subtitle: 'Fornecemos a infraestrutura, recursos e conexões que você precisa para ter sucesso como avaliador remoto.',
       card1Title: 'Vagas e Indicações',
       card1Desc: 'Acesse contratos verificados, atualizações de micro-tarefas e links de indicação para empresas líderes de IA.',
@@ -1195,9 +1195,9 @@ export const translations: Record<Language, TranslationDict> = {
       instagram: 'Instagram',
       linkedin: 'LinkedIn',
       facebook: 'Facebook',
-      vettedData: 'Dados Verificados',
-      vettedTitle: 'Informações verificadas de plataformas.',
-      vettedSubtitle: 'Compare faixas de pagamento, dificuldades de avaliação e tipos de projeto antes de se candidatar. Verificado por membros ativos da comunidade.',
+      vettedData: 'Pesquisa de plataformas',
+      vettedTitle: 'Pesquisa de plataformas em resumo.',
+      vettedSubtitle: 'Compare faixas de pagamento, dificuldades de avaliação e tipos de projeto antes de se candidatar. Pesquisado a partir de páginas oficiais e relatos da comunidade.',
       dataannotationDesc: 'Projetos de avaliação de prompts/respostas de alta qualidade com horários flexíveis.',
       outlierDesc: 'Plataforma de grande escala de propriedade da Scale AI. Alta remuneração, mas rigorosos controles de qualidade.',
       alignerrDesc: 'Plataforma de avaliação especializada focada em dados de domínio de alta eficiência.',
@@ -1210,7 +1210,7 @@ export const translations: Record<Language, TranslationDict> = {
     },
     communityVoices: {
       title: 'Vozes da Comunidade',
-      subtitle: 'Ouça diretamente dos membros da Guilda sobre suas experiências.',
+      subtitle: 'Ouça diretamente dos membros da comunidade sobre suas experiências.',
       comingSoon: 'As vozes da comunidade chegarão em breve. Volte em breve.',
       readMore: 'Leia mais'
     },
@@ -1227,7 +1227,7 @@ export const translations: Record<Language, TranslationDict> = {
     },
     guidelines: {
       title: 'Diretrizes da Comunidade',
-      subtitle: 'A Guilda é construída sobre respeito mútuo e excelência profissional. Aplicamos estes padrões fundamentais.',
+      subtitle: 'O Talent Collective é construído sobre respeito mútuo e excelência profissional. Aplicamos estes padrões fundamentais.',
       rule1Title: 'Profissionalismo em Primeiro Lugar',
       rule1Desc: 'Compartilhe insights construtivos, mantenha informações precisas e trate plataformas de trabalho com rigor profissional.',
       rule2Title: 'Respeito Inabalável',
@@ -1238,7 +1238,7 @@ export const translations: Record<Language, TranslationDict> = {
       rule4Desc: 'Proibição estrita de spam de indicações, ofertas não verificadas, compartilhamento de respostas ou violação de NDAs.'
     },
     footer: {
-      desc: 'A associação profissional e rede comunitária para anotadores de IA, avaliadores e freelancers remotos distribuídos.',
+      desc: 'Uma comunidade independente para anotadores de IA, avaliadores e freelancers remotos.',
       community: 'Comunidade',
       quickLinks: 'Links Rápidos',
       contact: 'Contato',
@@ -1284,9 +1284,9 @@ export const translations: Record<Language, TranslationDict> = {
       payApproximate: 'As faixas salariais são aproximadas, baseadas em relatórios de membros ativos e sujeitas a alterações. Nenhum dado é inventado.',
       independentNode: 'Nó Independente e Não Alinhado',
       noCorporateBS: 'Sua equipe em freelancing de IA. Sem burocracia corporativa.',
-      vettedData: 'Dados Verificados',
-      vettedPlatformTitle: 'Informações verificadas de plataformas.',
-      vettedPlatformSubtitle: 'Compare faixas de pagamento, dificuldades de avaliação e tipos de projeto antes de se candidatar. Verificado por membros ativos da comunidade.',
+      vettedData: 'Pesquisa de plataformas',
+      vettedPlatformTitle: 'Pesquisa de plataformas em resumo.',
+      vettedPlatformSubtitle: 'Compare faixas de pagamento, dificuldades de avaliação e tipos de projeto antes de se candidatar. Pesquisado a partir de páginas oficiais e relatos da comunidade.',
       connectEvaluators: 'Conecte-se com Avaliadores de IA.',
       connectSubtitle: 'Obtenha suporte instantâneo, compare projetos e fique à frente das filas vazias com nossa comunidade global.',
       joinDiscordCrew: 'Junte-se à Equipe do Discord',
