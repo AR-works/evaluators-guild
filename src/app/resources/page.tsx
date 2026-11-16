@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowUpRight, ChevronRight } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 import { initialResources } from '@/data/initialData';
 import ResourceArticle from '@/components/ResourceArticle';
 import ResourcesHubClient from '@/components/ResourcesHubClient';
@@ -81,23 +81,6 @@ export default async function ResourcesPage({ searchParams }: ResourcesPageProps
 
   return (
     <>
-      {/* Migration notice — sticky bottom bar */}
-      <div className="fixed bottom-0 left-0 right-0 z-40 border-t-2 border-primary/20 bg-card/95 backdrop-blur-md py-3 px-6 shadow-lg animate-slide-up">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs font-body">
-          <p className="text-muted-foreground font-medium">
-            <strong className="text-foreground font-bold">Looking for platform reviews?</strong>{' '}
-            This section is being replaced by our new, in-depth Platform Guides.
-          </p>
-          <Link
-            href="/platforms"
-            className="inline-flex items-center gap-1 text-primary font-bold hover:underline underline-offset-2 shrink-0"
-          >
-            Go to Platform Guides
-            <ArrowUpRight className="w-3.5 h-3.5" />
-          </Link>
-        </div>
-      </div>
-
       <div className="w-full max-w-7xl mx-auto px-6 pt-32 pb-24 sm:px-8 lg:px-12 flex-grow flex flex-col gap-8">
         <script
           type="application/ld+json"
