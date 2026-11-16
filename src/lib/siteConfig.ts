@@ -8,7 +8,7 @@ export const CONTACT_EMAIL = 'talentcollective.org@gmail.com';
 
 // Discord invite code (the part after discord.gg/). Replace it here when you
 // create a new permanent invite from the welcome channel.
-export const DISCORD_INVITE_CODE = 'RKqVtGJ8z';
+export const DISCORD_INVITE_CODE = 'vh4AKtR4AQ';
 export const DISCORD_INVITE_URL = `https://discord.gg/${DISCORD_INVITE_CODE}`;
 
 // Shown until the live Discord count loads, or if Discord cannot be reached.
