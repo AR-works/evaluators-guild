@@ -28,10 +28,10 @@ export default function Footer() {
         </div>
 
         {/* Info & Directory Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 pt-8 border-t-2 border-dashed border-rule">
+        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-8 pt-8 border-t-2 border-dashed border-rule">
 
           {/* Brand Col */}
-          <div className="md:col-span-2 space-y-4">
+          <div className="sm:col-span-3 md:col-span-2 space-y-4">
             <Link href="/" className="flex items-center">
               <Logo variant="horizontal" size={32} />
             </Link>
@@ -98,6 +98,28 @@ export default function Footer() {
                   {t('nav.communityVoices')}
                 </Link>
               </li>
+            </ul>
+          </div>
+
+          {/* Directory column: Information */}
+          <div>
+            <h4 className="zine-handwritten text-lg text-foreground mb-3">
+              {t('footer.info')}
+            </h4>
+            <ul className="space-y-2 text-xs text-muted-foreground font-body">
+              {[
+                { href: '/about', labelKey: 'footer.about' },
+                { href: '/contact', labelKey: 'footer.contact' },
+                { href: '/editorial-policy', labelKey: 'footer.editorialPolicy' },
+                { href: '/privacy', labelKey: 'footer.privacy' },
+                { href: '/terms', labelKey: 'footer.terms' },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="hover:text-primary transition-colors">
+                    {t(link.labelKey)}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 

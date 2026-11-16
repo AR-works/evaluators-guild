@@ -40,6 +40,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: 'weekly' as const,
       priority: 0.6,
     },
+    // Privacy and Terms are left out while they are drafts awaiting legal review.
+    ...['/about', '/contact', '/editorial-policy'].map((pagePath) => ({
+      url: `${baseUrl}${pagePath}`,
+      lastModified: today,
+      changeFrequency: 'monthly' as const,
+      priority: 0.5,
+    })),
   ];
 
   return [...staticUrls, ...platformUrls];

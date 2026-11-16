@@ -106,6 +106,11 @@ export interface TranslationDict {
     community: string;
     quickLinks: string;
     contact: string;
+    info: string;
+    about: string;
+    editorialPolicy: string;
+    privacy: string;
+    terms: string;
     rights: string;
   };
 heroCard: {
@@ -265,6 +270,11 @@ export const translations: Record<Language, TranslationDict> = {
       community: 'Community',
       quickLinks: 'Quick Links',
       contact: 'Contact',
+      info: 'Information',
+      about: 'About',
+      editorialPolicy: 'Editorial policy',
+      privacy: 'Privacy',
+      terms: 'Terms',
       rights: 'All rights reserved.'
     },
     heroCard: {
@@ -422,6 +432,11 @@ export const translations: Record<Language, TranslationDict> = {
       community: 'Comunidad',
       quickLinks: 'Enlaces Rápidos',
       contact: 'Contacto',
+      info: 'Información',
+      about: 'Acerca de',
+      editorialPolicy: 'Política editorial',
+      privacy: 'Privacidad',
+      terms: 'Términos de uso',
       rights: 'Todos los derechos reservados.'
     },
     heroCard: {
@@ -579,6 +594,11 @@ export const translations: Record<Language, TranslationDict> = {
       community: 'Communauté',
       quickLinks: 'Liens Rapides',
       contact: 'Contact',
+      info: 'Informations',
+      about: 'À propos',
+      editorialPolicy: 'Politique éditoriale',
+      privacy: 'Confidentialité',
+      terms: 'Conditions d\'utilisation',
       rights: 'Tous droits réservés.'
     },
     heroCard: {
@@ -736,6 +756,11 @@ export const translations: Record<Language, TranslationDict> = {
       community: 'コミュニティ',
       quickLinks: 'クイックリンク',
       contact: 'お問い合わせ',
+      info: '情報',
+      about: '私たちについて',
+      editorialPolicy: '編集方針',
+      privacy: 'プライバシー',
+      terms: '利用規約',
       rights: 'All rights reserved.'
     },
     heroCard: {
@@ -893,6 +918,11 @@ export const translations: Record<Language, TranslationDict> = {
       community: 'Comunità',
       quickLinks: 'Link Rapidi',
       contact: 'Contatti',
+      info: 'Informazioni',
+      about: 'Chi siamo',
+      editorialPolicy: 'Politica editoriale',
+      privacy: 'Privacy',
+      terms: 'Termini di utilizzo',
       rights: 'Tutti i diritti riservati.'
     },
     heroCard: {
@@ -1050,6 +1080,11 @@ export const translations: Record<Language, TranslationDict> = {
       community: 'Community',
       quickLinks: 'Schnelllinks',
       contact: 'Kontakt',
+      info: 'Informationen',
+      about: 'Über uns',
+      editorialPolicy: 'Redaktionelle Richtlinien',
+      privacy: 'Datenschutz',
+      terms: 'Nutzungsbedingungen',
       rights: 'Alle Rechte vorbehalten.'
     },
     heroCard: {
@@ -1207,6 +1242,11 @@ export const translations: Record<Language, TranslationDict> = {
       community: 'Comunidade',
       quickLinks: 'Links Rápidos',
       contact: 'Contato',
+      info: 'Informações',
+      about: 'Sobre',
+      editorialPolicy: 'Política editorial',
+      privacy: 'Privacidade',
+      terms: 'Termos de uso',
       rights: 'Todos os direitos reservados.'
     },
     heroCard: {
