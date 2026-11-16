@@ -35,8 +35,7 @@ export default function Navbar() {
   const navLinks = [
     { href: '/', label: t('nav.home') },
     { href: '/platforms', label: t('nav.platforms') },
-    { href: '/resources', label: t('nav.resources') },
-    { href: '/community-voices', label: t('nav.communityVoices') }
+    { href: '/resources', label: t('nav.resources') }
   ];
 
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);

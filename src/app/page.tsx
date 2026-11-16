@@ -284,9 +284,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. Where to Find Us + Community Voices — Zine scrapbook collage */}
+      {/* 4. Where to Find Us — Zine scrapbook collage */}
       <section className="max-w-7xl mx-auto px-6 py-20 sm:px-8 lg:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 gap-10 lg:gap-16 items-center">
           {/* Left: Where to Find Us */}
           <div className="space-y-6">
             <div className="space-y-2">
@@ -316,30 +316,6 @@ export default function Home() {
               })}
             </div>
           </div>
-
-          {/* Right: Community Voices sticky note */}
-          <motion.div
-            initial={{ opacity: 0, y: 15, rotate: 0 }}
-            whileInView={{ opacity: 1, y: 0, rotate: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="zine-sticky p-6 sm:p-8 space-y-4"
-            style={{ transform: 'rotate(1.2deg)' }}
-          >
-            <h3 className="zine-handwritten text-2xl text-secondary-ink leading-tight">
-              {t('communityVoices.title')}
-            </h3>
-            <p className="font-body text-sm text-secondary-ink leading-relaxed">
-              {t('communityVoices.subtitle')}
-            </p>
-            <Link
-              href="/community-voices"
-              className="inline-flex items-center gap-1 text-xs font-bold text-primary hover:underline font-body"
-            >
-              <span>{t('communityVoices.readMore')}</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </Link>
-          </motion.div>
         </div>
       </section>
 

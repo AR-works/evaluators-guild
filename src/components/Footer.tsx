@@ -93,11 +93,6 @@ export default function Footer() {
                   {t('nav.resources')}
                 </Link>
               </li>
-              <li>
-                <Link href="/community-voices" className="hover:text-primary transition-colors">
-                  {t('nav.communityVoices')}
-                </Link>
-              </li>
             </ul>
           </div>
 
