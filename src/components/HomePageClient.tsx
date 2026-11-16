@@ -145,7 +145,7 @@ export default function HomePageClient({ highlights }: { highlights: HomePlatfor
 
             <div className="space-y-3 py-1">
               <p className="font-body text-sm text-foreground leading-relaxed">
-                <DiscordMemberCount fallback="500+" /> <span className="text-muted-foreground">{t('heroCard.members')}</span>
+                <DiscordMemberCount /> <span className="text-muted-foreground">{t('heroCard.members')}</span>
               </p>
               <p className="font-body text-xs text-muted-foreground leading-relaxed">
                 {t('heroCard.globalDesc')}
