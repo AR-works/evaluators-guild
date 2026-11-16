@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { useLanguage } from '@/components/LanguageProvider';
 import DiscordMemberCount from '@/components/DiscordMemberCount';
 import { initialResources } from '@/data/initialData';
-import { DISCORD_INVITE_URL, REDDIT_URL } from '@/lib/siteConfig';
+import { DISCORD_INVITE_URL, INSTAGRAM_URL, REDDIT_URL } from '@/lib/siteConfig';
 import {
   MessageSquare,
   ArrowRight,
@@ -81,6 +81,7 @@ export default function HomePageClient({ highlights }: { highlights: HomePlatfor
   const platforms = [
     { name: t('platforms.discord'), href: DISCORD_INVITE_URL, icon: MessageSquare },
     { name: t('platforms.reddit'), href: REDDIT_URL, icon: MessageSquare },
+    { name: t('platforms.instagram'), href: INSTAGRAM_URL, icon: MessageSquare },
   ];
 
   return (
@@ -315,7 +316,7 @@ export default function HomePageClient({ highlights }: { highlights: HomePlatfor
                     target="_blank"
                     rel="noopener noreferrer"
                     className="zine-sticky sticky-lift group flex items-center gap-3 px-5 py-3 transition-all hover:shadow-lg"
-                    style={{ transform: idx === 0 ? 'rotate(-1.5deg)' : 'rotate(1.2deg)' }}
+                    style={{ transform: idx % 2 === 0 ? 'rotate(-1.5deg)' : 'rotate(1.2deg)' }}
                   >
                     <MessageSquare className="w-4 h-4 text-secondary-ink" />
                     <span className="text-xs font-bold text-secondary-ink font-body">{platform.name}</span>
