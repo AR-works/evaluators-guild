@@ -53,7 +53,7 @@ Entry-level work usually tests writing quality, attention to detail, and guideli
 
 Expert work pays more because the platform needs judgment that a general worker cannot fake. Micro1, Mercor, Alignerr, Outlier AI specialist projects, Handshake AI, Surge AI, and similar platforms often look for coding skill, STEM depth, medical knowledge, legal training, finance experience, advanced writing, or language expertise.
 
-If you are new, do not chase only the highest advertised rate. Start with the platform that matches your evidence. A beginner with strong writing may do better on DataAnnotation or search quality work than on a proctored expert interview. A software engineer should target code evaluation roles sooner.
+If you are new, do not chase only the highest advertised rate. Start with the platform that matches your evidence. A software engineer should target code evaluation roles sooner.
 
 #### How Contracts Usually Work
 
@@ -585,7 +585,7 @@ The market is growing quickly because AI labs need human feedback for increasing
 3. **Accessible entry platforms**: DataAnnotation, Appen, Telus Digital, Mindrift/Toloka, and similar platforms are often easier starting points for beginners.
 4. **Aggregators and marketplaces**: OpenTrain AI aggregates opportunities across many underlying platforms rather than acting as a single direct employer.
 
-Do not judge a platform only by its top pay claim. A beginner-friendly platform with steady $18/hr work may beat a premium platform where you pass onboarding and receive no tasks.
+Do not judge a platform only by its top pay claim. A beginner-friendly platform with steady work may beat a premium platform where you pass onboarding and receive no tasks.
 
 #### Core Task Types
 
@@ -603,10 +603,10 @@ Do not judge a platform only by its top pay claim. A beginner-friendly platform 
 - **Micro1**: Global expert network using Zara, an asynchronous AI interviewer, plus proctored assessments and certification.
 - **Outlier AI**: Scale AI contributor platform with domain roles, general reasoning screening, and flexible no-minimum-hours work.
 - **Alignerr**: Labelbox-powered platform with AI training, search quality, coding, accounting, video, and language roles.
-- **Mercor**: AI talent platform with a reusable AI interview, domain expert matching, weekly Stripe Connect payments, and strong funding signals.
-- **DataAnnotation**: Beginner-friendly conversation rating and annotation work, weekly PayPal payments, and a lower pay ceiling.
-- **Handshake AI**: Secondary research positions it as high-ceiling expert work for prompt engineering and domain-specific reasoning.
-- **OpenTrain AI**: Aggregator for jobs across 20+ platforms, best treated as a discovery layer rather than a direct employer.
+- **Mercor**: AI talent platform with a reusable AI interview, domain expert matching, and weekly Stripe Connect payments.
+- **DataAnnotation**: Conversation rating and annotation work, with weekly PayPal payments.
+- **Handshake AI**: Expert work in prompt engineering and domain-specific reasoning. Research on it is limited.
+- **OpenTrain AI**: Aggregator for jobs across 20+ platforms, working as a discovery layer rather than a direct employer.
 
 #### How to Choose Your First Targets
 
@@ -616,7 +616,7 @@ If you have strong writing but no technical background, apply to accessible anno
 
 If you code, prioritize code evaluator roles. Keep examples ready: languages used, projects shipped, tests written, bugs fixed, and any experience reviewing code.
 
-If you have medical, legal, finance, STEM, or graduate-level domain expertise, do not hide it in a generic resume. These credentials unlock the highest-paying work.
+If you have medical, legal, finance, STEM, or graduate-level domain expertise, do not hide it in a generic resume.
 
 If you are multilingual, track platforms that support your language. Mindrift/Toloka and language-specific roles can matter more than US-centric generalist platforms.
 
@@ -639,7 +639,6 @@ If you are multilingual, track platforms that support your language. Mindrift/To
 
 #### Search Topics Talent Collective Tracks
 
-- Best AI evaluator platforms
 - AI evaluator jobs remote
 - RLHF pay rates
 - Data annotation work
@@ -652,27 +651,18 @@ If you are multilingual, track platforms that support your language. Mindrift/To
 
 #### Bottom Line
 
-The best platform depends on your background and risk tolerance. Beginners should optimize for access and feedback. Specialists should optimize for proof of expertise and rate negotiation. Everyone should diversify.`
+The right platform depends on your background and risk tolerance. Beginners should optimize for access and feedback. Specialists should optimize for proof of expertise and rate negotiation. Everyone should diversify.`
   },
   {
     id: 'res-7',
     title: 'AI Evaluator Pay, Stability, and Platform Diversification',
-    description: 'Realistic pay bands, income math, empty-queue planning, and how to build a safer platform mix.',
+    description: 'Real hourly rates, empty-queue planning, and how to build a safer platform mix.',
     category: 'bestPractices',
     readTime: '12 min read',
     date: '2026-07-08',
-    content: `### Realistic Pay Bands
+    content: `### What Pay Depends On
 
 AI evaluation pay varies by task complexity, contributor expertise, location, platform demand, and project availability.
-
-Common benchmarks from the research dossier:
-
-- Basic annotation: roughly $8-$20/hr
-- Mid-level evaluation work: roughly $20-$50/hr
-- Specialized STEM, coding, medical, legal, or finance work: roughly $50-$300+/hr
-- Accessible prompt evaluator jobs: often around $12-$40/hr
-
-The headline "$50/hr AI jobs for anyone" is misleading. Those rates exist, but usually for verified subject-matter experts with strong writing skills and reliable platform history.
 
 #### Hourly Rate vs Real Rate
 
@@ -691,21 +681,6 @@ Your real rate includes unpaid time:
 If you earn $90 for three paid hours but spent six unpaid hours qualifying that week, you did not make $30/hr for the full effort. You made $10/hr for that week's platform time.
 
 That does not mean the platform is bad. It means you need to track the ramp-up cost.
-
-#### Platform-Level Examples
-
-- Micro1: roughly $20-$150/hr depending on role, with AI trainer/annotator roles around $20-$40/hr and engineering roles higher.
-- Outlier AI: advertised around $15-$50/hr, with effective community-reported rates often lower after unpaid time and task gaps.
-- Alignerr: community-reported general range around $15-$60/hr, with a higher advertised specialist ceiling.
-- Mercor: broad range from entry AI model specialist rates around $16/hr to engineering contracts above $70/hr, depending on role.
-- DataAnnotation: roughly $15-$23/hr, paid weekly via PayPal.
-- Handshake AI: secondary research groups high-end expert work in the $50-$300+/hr range, but platform-specific verification is limited.
-
-#### Beginner Income Expectations
-
-A beginner working around 20 hours per week on accessible platforms such as Telus or DataAnnotation may realistically earn around $240-$400/week.
-
-Experienced evaluators with STEM or legal backgrounds working across multiple premium platforms can sometimes reach $2,500-$5,000/month at 25-30 hours per week, but that is not typical for beginners and usually takes time to build.
 
 #### Why Empty Queues Happen
 
@@ -755,8 +730,8 @@ At the end of each week, write five numbers:
 1. Gross pay received
 2. Paid hours
 3. Unpaid platform hours
-4. Best effective platform rate
-5. Worst effective platform rate
+4. Highest effective platform rate
+5. Lowest effective platform rate
 
 Then write one sentence:
 
@@ -801,51 +776,35 @@ Do not rely on old screenshots or recycled job posts.
 
 #### Appen
 
-Appen is one of the oldest and largest AI data companies globally. It offers AI evaluation projects under various codenames, including search rating work. Prompt-specific work may appear under LLM quality or conversational AI projects. Research suggests typical pay around $14-$20/hr.
-
-Best fit: contributors who want established search rating or data work and can tolerate project-specific onboarding.
+Appen is one of the oldest and largest AI data companies globally. It offers AI evaluation projects under various codenames, including search rating work. Prompt-specific work may appear under LLM quality or conversational AI projects.
 
 #### Telus Digital
 
 Telus Digital, formerly associated with Telus International and Lionbridge, runs AI Trainer and Internet Analyst programs, including search quality rating. It is often grouped with beginner-accessible platforms.
 
-Best fit: patient applicants looking for search quality and internet analyst-style work.
-
 #### Mindrift / Toloka
 
-Mindrift by Toloka focuses on human evaluation of AI outputs, requiring precision and analytical thinking. Toloka operates globally across 100+ languages, making it especially relevant for non-English speakers. Pay can be lower per task, but volume and language coverage are strengths.
-
-Best fit: multilingual contributors and people outside the main US-centric platform pipeline.
+Mindrift by Toloka focuses on human evaluation of AI outputs, requiring precision and analytical thinking. Toloka operates globally across 100+ languages, making it especially relevant for non-English speakers.
 
 #### Surge AI
 
-Surge AI is positioned as a higher-paying freelance AI site for advanced AI training tasks. It hires experts in fields such as medicine, law, journalism, venture capital, and finance. The application process is less transparent in the available research.
-
-Best fit: experts with strong credentials who can handle an opaque application process.
+Surge AI offers advanced AI training tasks. It hires experts in fields such as medicine, law, journalism, venture capital, and finance. The application process is less transparent in the available research.
 
 #### TaskUs
 
 TaskUs recruits full-time and part-time remote content and AI reviewers. Unlike many crowdwork platforms, some TaskUs roles may include employee-style benefits.
 
-Best fit: people who prefer structured employment-like roles over pure marketplace work.
-
 #### Scale AI Direct
 
 Scale AI manages AI data labeling and evaluation programs directly. It is most relevant for managed AI data operations rather than broad freelancer recruiting. Outlier AI is part of the Scale ecosystem but should be understood separately from direct Scale AI programs.
-
-Best fit: contributors tracking larger AI data operations, not only freelance marketplaces.
 
 #### Afterquery
 
 Afterquery looks for software engineers, PhDs, and experienced professionals in finance, law, data science, health, and business to evaluate real-world outputs.
 
-Best fit: professionals with advanced domain backgrounds who want expert review work.
-
 #### Meridial AI
 
 Meridial AI specializes in projects that require skillset or domain expertise.
-
-Best fit: contributors with a specific professional skillset rather than general annotation interest.
 
 #### Research Gaps
 
